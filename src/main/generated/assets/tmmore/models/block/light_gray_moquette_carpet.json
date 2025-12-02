@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/carpet",
+  "textures": {
+    "wool": "tmmore:block/light_gray_moquette"
+  }
+}
