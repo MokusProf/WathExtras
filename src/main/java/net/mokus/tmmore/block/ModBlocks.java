@@ -17,7 +17,7 @@ public class ModBlocks {
     public static final Block KHAKI_RIVETED_HULL_SMALL = registerBlock("khaki_riveted_hull_small",
             new Block(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
 
-    public static final Block KHAKI_RIVETED_HULL_SMAlL_SLAB = registerBlock("khaki_riveted_hull_small_slab",
+    public static final Block KHAKI_RIVETED_HULL_SMALL_SLAB = registerBlock("khaki_riveted_hull_small_slab",
             new SlabBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
 
     public static final Block KHAKI_RIVETED_HULL_SMALL_STAIRS = registerBlock("khaki_riveted_hull_small_stairs",
