@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "tmmore:block/navy_riveted_hull_small"
+  }
+}

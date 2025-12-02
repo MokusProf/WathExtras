@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "tmmore:block/muntz_riveted_hull_small"
+  }
+}

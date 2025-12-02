@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "tmmore:block/anthracite_riveted_hull_small_panel"
+  }
+}

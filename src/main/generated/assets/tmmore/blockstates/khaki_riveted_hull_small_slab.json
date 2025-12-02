@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "tmmore:block/khaki_riveted_hull_small_slab"
+    },
+    "type=double": {
+      "model": "tmmore:block/khaki_riveted_hull_small"
+    },
+    "type=top": {
+      "model": "tmmore:block/khaki_riveted_hull_small_slab_top"
+    }
+  }
+}

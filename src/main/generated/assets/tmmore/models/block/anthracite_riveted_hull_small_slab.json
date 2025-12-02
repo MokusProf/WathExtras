@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "tmmore:block/anthracite_riveted_hull_small",
+    "side": "tmmore:block/anthracite_riveted_hull_small",
+    "top": "tmmore:block/anthracite_riveted_hull_small"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_side",
+  "textures": {
+    "wall": "tmmore:block/navy_riveted_hull_small"
+  }
+}
