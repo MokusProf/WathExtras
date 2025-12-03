@@ -7,12 +7,15 @@ import net.minecraft.component.type.FoodComponents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.VerticallyAttachableBlockItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.Direction;
 import net.mokus.tmmore.TMMore;
+import net.mokus.tmmore.block.ModBlocks;
 
 public class ModItems {
 
@@ -38,6 +41,11 @@ public class ModItems {
             new Item(new Item.Settings().food(FoodComponents.APPLE)));
     public static final Item YELLOW_LOLLIPOP = registerItem("yellow_lollipop",
             new Item(new Item.Settings().food(FoodComponents.APPLE)));
+
+    public static final Item CANDELABRE_ITEM = registerItem("candelabre_item",
+            new VerticallyAttachableBlockItem(ModBlocks.CANDELABRE, ModBlocks.WALL_CANDELABRE, new Item.Settings(), Direction.DOWN));
+
+
 
 
     private static Item registerItem(String name, Item item){

@@ -7,7 +7,9 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.block.Block;
 import net.minecraft.data.client.*;
 import net.minecraft.state.property.BooleanProperty;
+import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
+import net.mokus.tmmore.TMMore;
 import net.mokus.tmmore.block.ModBlocks;
 import net.mokus.tmmore.item.ModItems;
 import org.jetbrains.annotations.Nullable;
@@ -17,9 +19,11 @@ import java.util.function.Function;
 
 public class ModModelProvider extends FabricModelProvider {
 
+
     public ModModelProvider(FabricDataOutput output) {
         super(output);
     }
+
 
     //Literally just code from TMM, I gave up trying to use other methods to access them. PS if you have other ideas
     //PLEASE SHARE THEM
@@ -64,9 +68,20 @@ public class ModModelProvider extends FabricModelProvider {
 
     //Joinked code end
 
+
+    public final void registerCandelabra(BlockStateModelGenerator generator,Block candelabra){
+        Identifier unlitModel = Identifier.of(TMMore.MOD_ID,"block/candelabre");
+        Identifier litModel = Identifier.of(TMMore.MOD_ID,"block/candelabre_lit");
+        generator.blockStateCollector.accept(VariantsBlockStateSupplier.create(candelabra)
+                .coordinate(BlockStateVariantMap.create(Properties.LIT)
+                        .register(false,BlockStateVariant.create().put(VariantSettings.MODEL,unlitModel))
+                        .register(true,BlockStateVariant.create().put(VariantSettings.MODEL, litModel))));
+    }
+
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator generator) {
 
+        registerCandelabra(generator,ModBlocks.CANDELABRE);
 
         //Small Hulls
         BlockStateModelGenerator.BlockTexturePool KHAKI_RIVETED_HULL_SMALL =
