@@ -5,19 +5,29 @@ import dev.doctor4t.trainmurdermystery.index.TMMBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
+import net.minecraft.block.piston.PistonBehavior;
+import net.minecraft.item.*;
+import net.minecraft.particle.ParticleTypes;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.mokus.tmmore.TMMore;
+import net.mokus.tmmore.item.ModItems;
 
 public class ModBlocks {
 
+
+    public static final Block CANDELABRE = registerBlock("candelabre",
+            new CandelabreBlock(ParticleTypes.SMALL_FLAME,
+                    AbstractBlock.Settings.create().breakInstantly().luminance(CandelabreBlock.STATE_TO_LUMINANCE).
+                            sounds(BlockSoundGroup.WOOD).pistonBehavior(PistonBehavior.DESTROY)));
+    public static final Block WALL_CANDELABRE = registerBlock("wall_candelabre",
+            new WallCandelabreBlock(ParticleTypes.SMALL_FLAME,
+                    AbstractBlock.Settings.create().breakInstantly().luminance(WallCandelabreBlock.STATE_TO_LUMINANCE).
+                            sounds(BlockSoundGroup.WOOD).pistonBehavior(PistonBehavior.DESTROY).dropsLike(ModBlocks.CANDELABRE)));
 
     public static final Block BLEACHED_PLANKS = registerBlock("bleached_planks",
             new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
@@ -301,6 +311,8 @@ public class ModBlocks {
             TMMORE_BLOCKS.add(ModBlocks.BLEACHED_STAIRS);
             TMMORE_BLOCKS.add(ModBlocks.BLEACHED_SLAB);
             TMMORE_BLOCKS.add(ModBlocks.BLEACHED_WALL);
+
+            TMMORE_BLOCKS.add(ModItems.CANDELABRE_ITEM);
                 });
 
         Registry.register(Registries.ITEM_GROUP, MOQUETTES_KEY, MOQUETTES);
