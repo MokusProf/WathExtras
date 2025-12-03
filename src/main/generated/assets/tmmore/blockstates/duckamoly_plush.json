@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "tmmore:block/duckamoly_plush",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "tmmore:block/duckamoly_plush"
+    },
+    "facing=south": {
+      "model": "tmmore:block/duckamoly_plush",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "tmmore:block/duckamoly_plush",
+      "y": 270
+    }
+  }
+}

@@ -15,6 +15,7 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.mokus.tmmore.TMMore;
+import net.mokus.tmmore.block.custom.PlushBlock;
 
 public class ModBlocks {
 
@@ -224,7 +225,18 @@ public class ModBlocks {
             new CarpetBlock(AbstractBlock.Settings.copy(Blocks.BLACK_CARPET).strength(-1.0f,3600000.0f)));
 
 
-
+    public static final Block NORA_PLUSH = registerBlock("nora_plush",
+            new PlushBlock(AbstractBlock.Settings.copy(Blocks.RED_WOOL).nonOpaque()));
+    public static final Block DAVIDANDROCKET_PLUSH = registerBlock("davidandrocket_plush",
+            new PlushBlock(AbstractBlock.Settings.copy(Blocks.ORANGE_WOOL).nonOpaque()));
+    public static final Block DUCKAMOLY_PLUSH = registerBlock("duckamoly_plush",
+            new PlushBlock(AbstractBlock.Settings.copy(Blocks.WHITE_WOOL).nonOpaque()));
+    public static final Block PICKLE_PLUSH = registerBlock("pickle_plush",
+            new PlushBlock(AbstractBlock.Settings.copy(Blocks.PURPLE_WOOL).nonOpaque()));
+    public static final Block VERID__PLUSH = registerBlock("verid__plush",
+            new PlushBlock(AbstractBlock.Settings.copy(Blocks.WHITE_WOOL).nonOpaque()));
+    public static final Block WILLO_PLUSH = registerBlock("willo_plush",
+            new PlushBlock(AbstractBlock.Settings.copy(Blocks.WHITE_WOOL).nonOpaque()));
 
 
     private static Block registerBlock(String name, Block block){

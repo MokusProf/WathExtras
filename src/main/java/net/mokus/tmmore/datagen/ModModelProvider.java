@@ -170,6 +170,14 @@ public class ModModelProvider extends FabricModelProvider {
 
         // Dark Marble
         generator.registerSimpleCubeAll(ModBlocks.DARK_MARBLE_TILE);
+
+        // Plushies!
+        generator.registerNorthDefaultHorizontalRotation(ModBlocks.NORA_PLUSH);
+        generator.registerNorthDefaultHorizontalRotation(ModBlocks.PICKLE_PLUSH);
+        generator.registerNorthDefaultHorizontalRotation(ModBlocks.DAVIDANDROCKET_PLUSH);
+        generator.registerNorthDefaultHorizontalRotation(ModBlocks.VERID__PLUSH);
+        generator.registerNorthDefaultHorizontalRotation(ModBlocks.DUCKAMOLY_PLUSH);
+        generator.registerNorthDefaultHorizontalRotation(ModBlocks.WILLO_PLUSH);
     }
 
     @Override

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "tmmore:block/verid__plush",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "tmmore:block/verid__plush"
+    },
+    "facing=south": {
+      "model": "tmmore:block/verid__plush",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "tmmore:block/verid__plush",
+      "y": 270
+    }
+  }
+}
