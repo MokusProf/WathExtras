@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "tmmore:block/black_riveted_hull_small"
+    "layer0": "tmmore:block/bleached_planks"
   }
 }

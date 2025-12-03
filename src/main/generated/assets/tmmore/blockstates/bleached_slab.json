@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "tmmore:block/bleached_slab"
+    },
+    "type=double": {
+      "model": "tmmore:block/bleached_planks"
+    },
+    "type=top": {
+      "model": "tmmore:block/bleached_slab_top"
+    }
+  }
+}

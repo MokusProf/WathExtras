@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "tmmore:block/khaki_riveted_hull_small_panel"
+    "layer0": "tmmore:block/khaki_riveted_hull_small"
   }
 }

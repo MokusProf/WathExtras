@@ -19,6 +19,18 @@ import net.mokus.tmmore.TMMore;
 public class ModBlocks {
 
 
+    public static final Block BLEACHED_PLANKS = registerBlock("bleached_planks",
+            new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
+    public static final Block BLEACHED_STAIRS = registerBlock("bleached_stairs",
+            new StairsBlock(ModBlocks.BLEACHED_PLANKS.getDefaultState(), AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
+    public static final Block BLEACHED_SLAB = registerBlock("bleached_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
+    public static final Block BLEACHED_WALL = registerBlock("bleached_wall",
+            new WallBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
+    public static final Block BLEACHED_PANEL = registerBlock("bleached_panel",
+            new PanelBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
+
+
     public static final Block KHAKI_RIVETED_HULL_SMALL = registerBlock("khaki_riveted_hull_small",
             new Block(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
     public static final Block KHAKI_RIVETED_HULL_SMALL_SLAB = registerBlock("khaki_riveted_hull_small_slab",
@@ -284,11 +296,11 @@ public class ModBlocks {
             TMMORE_BLOCKS.add(ModBlocks.NAVY_RIVETED_HULL_SMALL_STAIRS);
             TMMORE_BLOCKS.add(ModBlocks.NAVY_RIVETED_HULL_SMALL_SLAB);
             TMMORE_BLOCKS.add(ModBlocks.NAVY_RIVETED_HULL_SMALL_WALL);
-            TMMORE_BLOCKS.add(ModBlocks.WHITE_RIVETED_HULL_SMALL);
-            TMMORE_BLOCKS.add(ModBlocks.WHITE_RIVETED_HULL_SMALL_PANEL);
-            TMMORE_BLOCKS.add(ModBlocks.WHITE_RIVETED_HULL_SMALL_STAIRS);
-            TMMORE_BLOCKS.add(ModBlocks.WHITE_RIVETED_HULL_SMALL_SLAB);
-            TMMORE_BLOCKS.add(ModBlocks.WHITE_RIVETED_HULL_SMALL_WALL);
+            TMMORE_BLOCKS.add(ModBlocks.BLEACHED_PLANKS);
+            TMMORE_BLOCKS.add(ModBlocks.BLEACHED_PANEL);
+            TMMORE_BLOCKS.add(ModBlocks.BLEACHED_STAIRS);
+            TMMORE_BLOCKS.add(ModBlocks.BLEACHED_SLAB);
+            TMMORE_BLOCKS.add(ModBlocks.BLEACHED_WALL);
                 });
 
         Registry.register(Registries.ITEM_GROUP, MOQUETTES_KEY, MOQUETTES);

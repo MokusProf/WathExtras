@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "tmmore:block/bleached_planks",
+    "side": "tmmore:block/bleached_planks",
+    "top": "tmmore:block/bleached_planks"
+  }
+}

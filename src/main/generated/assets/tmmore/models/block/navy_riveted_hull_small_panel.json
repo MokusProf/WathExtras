@@ -1,0 +1,6 @@
+{
+  "parent": "trainmurdermystery:block/template_panel",
+  "textures": {
+    "all": "tmmore:block/navy_riveted_hull_small"
+  }
+}
