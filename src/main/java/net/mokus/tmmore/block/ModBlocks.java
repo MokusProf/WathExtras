@@ -237,6 +237,7 @@ public class ModBlocks {
             new CarpetBlock(AbstractBlock.Settings.copy(Blocks.BLACK_CARPET).strength(-1.0f,3600000.0f)));
 
 
+    // Plushies
     public static final Block NORA_PLUSH = registerBlock("nora_plush",
             new PlushBlock(AbstractBlock.Settings.copy(Blocks.RED_WOOL).nonOpaque()));
     public static final Block DAVIDANDROCKET_PLUSH = registerBlock("davidandrocket_plush",
@@ -253,10 +254,13 @@ public class ModBlocks {
             new PlushBlock(AbstractBlock.Settings.copy(Blocks.BLACK_WOOL).nonOpaque()));
     public static final Block DOOGEY_PLUSH = registerBlock("doogey_plush",
             new PlushBlock(AbstractBlock.Settings.copy(Blocks.WHITE_WOOL).nonOpaque()));
+    public static final Block SQUID_PLUSH = registerBlock("squid_plush",
+            new PlushBlock(AbstractBlock.Settings.copy(Blocks.WHITE_WOOL).nonOpaque()));
 
     public static final Block CANDY_CANE_BLOCK = registerBlock("candy_cane_block",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.BONE_BLOCK)));
 
+    // Benches
     public static final Block PALE_BENCH = registerBlock("pale_bench",
             new BenchBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
     public static final Block QUEEN_BENCH = registerBlock("queen_bench",
@@ -266,6 +270,7 @@ public class ModBlocks {
     public static final Block STEEL_BENCH = registerBlock("steel_bench",
             new BenchBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
 
+    // Double Hull
     public static final Block ANTHRACITE_RIVETED_HULL = registerBlock("anthracite_riveted_hull",
             new DoubleHullBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
     public static final Block BLACK_RIVETED_HULL = registerBlock("black_riveted_hull",
@@ -389,6 +394,7 @@ public class ModBlocks {
             TMMORE_BLOCKS.add(ModBlocks.WILLO_PLUSH);
             TMMORE_BLOCKS.add(ModBlocks.MOKUS_PLUSH);
             TMMORE_BLOCKS.add(ModBlocks.DOOGEY_PLUSH);
+            TMMORE_BLOCKS.add(ModBlocks.SQUID_PLUSH);
                 });
 
         Registry.register(Registries.ITEM_GROUP, MOQUETTES_KEY, MOQUETTES);

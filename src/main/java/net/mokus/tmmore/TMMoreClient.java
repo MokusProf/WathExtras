@@ -18,12 +18,12 @@ public class TMMoreClient implements ClientModInitializer {
                 ModBlocks.WILLO_PLUSH,
                 ModBlocks.MOKUS_PLUSH,
                 ModBlocks.DOOGEY_PLUSH,
+                ModBlocks.SQUID_PLUSH,
+                // Transparent texture blocks;
                 ModBlocks.WALL_CANDELABRE,
                 ModBlocks.PALE_BENCH,
                 ModBlocks.QUEEN_BENCH,
                 ModBlocks.THORN_BENCH,
                 ModBlocks.STEEL_BENCH);
-        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getTranslucent(),
-                ModBlocks.MOKUS_PLUSH);
     }
 }

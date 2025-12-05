@@ -95,6 +95,9 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.PICKLE_PLUSH,"Pickle Plushie");
         translationBuilder.add(ModBlocks.VERID__PLUSH,"Verid__ Plushie");
         translationBuilder.add(ModBlocks.WILLO_PLUSH,"Willofkek Plushie");
+        translationBuilder.add(ModBlocks.DOOGEY_PLUSH,"Doogey Plush");
+        translationBuilder.add(ModBlocks.MOKUS_PLUSH, "Mokus Plush");
+        translationBuilder.add(ModBlocks.SQUID_PLUSH,"Squid Plush");
 
         //Hull Blocks!
         translationBuilder.add(ModBlocks.KHAKI_RIVETED_HULL_SMALL, "Small Khaki Riveted Hull");
