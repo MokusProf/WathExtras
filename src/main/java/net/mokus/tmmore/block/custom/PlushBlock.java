@@ -1,10 +1,9 @@
 package net.mokus.tmmore.block.custom;
 
 import com.mojang.serialization.MapCodec;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.HorizontalFacingBlock;
-import net.minecraft.block.ShapeContext;
+import net.minecraft.block.*;
+import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.item.Equipment;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.state.StateManager;
 import net.minecraft.util.math.BlockPos;
@@ -12,7 +11,7 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import org.jetbrains.annotations.Nullable;
 
-public class PlushBlock extends HorizontalFacingBlock {
+public class PlushBlock extends HorizontalFacingBlock implements Equipment {
     public static final MapCodec<PlushBlock> CODEC = createCodec(PlushBlock::new);
     private static final VoxelShape SHAPE = Block.createCuboidShape(3.0,0.0,3.0,13.0,16.0,13.0);
 
@@ -40,4 +39,10 @@ public class PlushBlock extends HorizontalFacingBlock {
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder){
         builder.add(FACING);
     }
+
+    @Override
+    public EquipmentSlot getSlotType() {
+        return EquipmentSlot.HEAD;
+    }
+
 }

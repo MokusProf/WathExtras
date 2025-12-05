@@ -15,10 +15,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.mokus.tmmore.TMMore;
-import net.mokus.tmmore.block.custom.BenchBlock;
-import net.mokus.tmmore.block.custom.CandelabreBlock;
-import net.mokus.tmmore.block.custom.PlushBlock;
-import net.mokus.tmmore.block.custom.WallCandelabreBlock;
+import net.mokus.tmmore.block.custom.*;
 import net.mokus.tmmore.item.ModItems;
 
 public class ModBlocks {
@@ -253,7 +250,7 @@ public class ModBlocks {
     public static final Block WILLO_PLUSH = registerBlock("willo_plush",
             new PlushBlock(AbstractBlock.Settings.copy(Blocks.WHITE_WOOL).nonOpaque()));
     public static final Block MOKUS_PLUSH = registerBlock("mokus_plush",
-            new PlushBlock(AbstractBlock.Settings.copy(Blocks.BLACK_WOOL)));
+            new PlushBlock(AbstractBlock.Settings.copy(Blocks.BLACK_WOOL).nonOpaque()));
     public static final Block DOOGEY_PLUSH = registerBlock("doogey_plush",
             new PlushBlock(AbstractBlock.Settings.copy(Blocks.WHITE_WOOL).nonOpaque()));
 
@@ -268,6 +265,21 @@ public class ModBlocks {
             new BenchBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
     public static final Block STEEL_BENCH = registerBlock("steel_bench",
             new BenchBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
+
+    public static final Block ANTHRACITE_RIVETED_HULL = registerBlock("anthracite_riveted_hull",
+            new DoubleHullBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final Block BLACK_RIVETED_HULL = registerBlock("black_riveted_hull",
+            new DoubleHullBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final Block KHAKI_RIVETED_HULL = registerBlock("khaki_riveted_hull",
+            new DoubleHullBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final Block MAROON_RIVETED_HULL = registerBlock("maroon_riveted_hull",
+            new DoubleHullBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final Block MUNTZ_RIVETED_HULL = registerBlock("muntz_riveted_hull",
+            new DoubleHullBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final Block NAVY_RIVETED_HULL = registerBlock("navy_riveted_hull",
+            new DoubleHullBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final Block WHITE_RIVETED_HULL = registerBlock("white_riveted_hull",
+            new DoubleHullBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
 
 
     private static Block registerBlock(String name, Block block){
@@ -310,36 +322,49 @@ public class ModBlocks {
 
         Registry.register(Registries.ITEM_GROUP, TMMORE_BUILDING_KEY, TMMORE_BUILDING);
         ItemGroupEvents.modifyEntriesEvent(ModBlocks.TMMORE_BUILDING_KEY).register(TMMORE_BLOCKS -> {
+            TMMORE_BLOCKS.add(ModBlocks.KHAKI_RIVETED_HULL);
             TMMORE_BLOCKS.add(ModBlocks.KHAKI_RIVETED_HULL_SMALL);
             TMMORE_BLOCKS.add(ModBlocks.KHAKI_RIVETED_HULL_SMALL_PANEL);
             TMMORE_BLOCKS.add(ModBlocks.KHAKI_RIVETED_HULL_SMALL_STAIRS);
             TMMORE_BLOCKS.add(ModBlocks.KHAKI_RIVETED_HULL_SMALL_SLAB);
             TMMORE_BLOCKS.add(ModBlocks.KHAKI_RIVETED_HULL_SMALL_WALL);
+            TMMORE_BLOCKS.add(ModBlocks.ANTHRACITE_RIVETED_HULL);
             TMMORE_BLOCKS.add(ModBlocks.ANTHRACITE_RIVETED_HULL_SMALL);
             TMMORE_BLOCKS.add(ModBlocks.ANTHRACITE_RIVETED_HULL_SMALL_PANEL);
             TMMORE_BLOCKS.add(ModBlocks.ANTHRACITE_RIVETED_HULL_SMALL_STAIRS);
             TMMORE_BLOCKS.add(ModBlocks.ANTHRACITE_RIVETED_HULL_SMALL_SLAB);
             TMMORE_BLOCKS.add(ModBlocks.ANTHRACITE_RIVETED_HULL_SMALL_WALL);
+            TMMORE_BLOCKS.add(ModBlocks.BLACK_RIVETED_HULL);
             TMMORE_BLOCKS.add(ModBlocks.BLACK_RIVETED_HULL_SMALL);
             TMMORE_BLOCKS.add(ModBlocks.BLACK_RIVETED_HULL_SMALL_PANEL);
             TMMORE_BLOCKS.add(ModBlocks.BLACK_RIVETED_HULL_SMALL_STAIRS);
             TMMORE_BLOCKS.add(ModBlocks.BLACK_RIVETED_HULL_SMALL_SLAB);
             TMMORE_BLOCKS.add(ModBlocks.BLACK_RIVETED_HULL_SMALL_WALL);
+            TMMORE_BLOCKS.add(ModBlocks.MAROON_RIVETED_HULL);
             TMMORE_BLOCKS.add(ModBlocks.MAROON_RIVETED_HULL_SMALL);
             TMMORE_BLOCKS.add(ModBlocks.MAROON_RIVETED_HULL_SMALL_PANEL);
             TMMORE_BLOCKS.add(ModBlocks.MAROON_RIVETED_HULL_SMALL_STAIRS);
             TMMORE_BLOCKS.add(ModBlocks.MAROON_RIVETED_HULL_SMALL_SLAB);
             TMMORE_BLOCKS.add(ModBlocks.MAROON_RIVETED_HULL_SMALL_WALL);
+            TMMORE_BLOCKS.add(ModBlocks.MUNTZ_RIVETED_HULL);
             TMMORE_BLOCKS.add(ModBlocks.MUNTZ_RIVETED_HULL_SMALL);
             TMMORE_BLOCKS.add(ModBlocks.MUNTZ_RIVETED_HULL_SMALL_PANEL);
             TMMORE_BLOCKS.add(ModBlocks.MUNTZ_RIVETED_HULL_SMALL_STAIRS);
             TMMORE_BLOCKS.add(ModBlocks.MUNTZ_RIVETED_HULL_SMALL_SLAB);
             TMMORE_BLOCKS.add(ModBlocks.MUNTZ_RIVETED_HULL_SMALL_WALL);
+            TMMORE_BLOCKS.add(ModBlocks.NAVY_RIVETED_HULL);
             TMMORE_BLOCKS.add(ModBlocks.NAVY_RIVETED_HULL_SMALL);
             TMMORE_BLOCKS.add(ModBlocks.NAVY_RIVETED_HULL_SMALL_PANEL);
             TMMORE_BLOCKS.add(ModBlocks.NAVY_RIVETED_HULL_SMALL_STAIRS);
             TMMORE_BLOCKS.add(ModBlocks.NAVY_RIVETED_HULL_SMALL_SLAB);
             TMMORE_BLOCKS.add(ModBlocks.NAVY_RIVETED_HULL_SMALL_WALL);
+            TMMORE_BLOCKS.add(ModBlocks.WHITE_RIVETED_HULL);
+            TMMORE_BLOCKS.add(ModBlocks.WHITE_RIVETED_HULL_SMALL);
+            TMMORE_BLOCKS.add(ModBlocks.WHITE_RIVETED_HULL_SMALL_PANEL);
+            TMMORE_BLOCKS.add(ModBlocks.WHITE_RIVETED_HULL_SMALL_STAIRS);
+            TMMORE_BLOCKS.add(ModBlocks.WHITE_RIVETED_HULL_SMALL_SLAB);
+            TMMORE_BLOCKS.add(ModBlocks.WHITE_RIVETED_HULL_SMALL_WALL);
+
             TMMORE_BLOCKS.add(ModBlocks.BLEACHED_PLANKS);
             TMMORE_BLOCKS.add(ModBlocks.BLEACHED_PANEL);
             TMMORE_BLOCKS.add(ModBlocks.BLEACHED_STAIRS);

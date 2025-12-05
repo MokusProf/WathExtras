@@ -12,6 +12,7 @@ import net.minecraft.util.Identifier;
 import net.mokus.tmmore.TMMore;
 import net.mokus.tmmore.block.ModBlocks;
 import net.mokus.tmmore.block.custom.BenchBlock;
+import net.mokus.tmmore.block.custom.DoubleHullBlock;
 import net.mokus.tmmore.item.ModItems;
 import org.jetbrains.annotations.Nullable;
 
@@ -91,13 +92,17 @@ public class ModModelProvider extends FabricModelProvider {
             "block/bench_right_template", TextureKey.ALL
     );
 
+    private static final Model DOUBLE_HULL_BLOCK= templateM(
+            "block/double_hull_block_template", TextureKey.ALL
+    );
+
     private void registerBenchBlock(BlockStateModelGenerator generator, Block block) {
         TextureMap textureMap = TextureMap.all(block);
         Identifier leftModel = BENCH_LEFT.upload(block, "_left", textureMap, generator.modelCollector);
         Identifier centerModel = BENCH_CENTER.upload(block, "_center", textureMap, generator.modelCollector);
         Identifier rightModel = BENCH_RIGHT.upload(block, "_right", textureMap, generator.modelCollector);
-        
-        generator.registerItemModel(block);
+
+        generator.registerParentedItemModel(block, centerModel);
 
         generator.blockStateCollector.accept(
                 VariantsBlockStateSupplier.create(block)
@@ -108,6 +113,28 @@ public class ModModelProvider extends FabricModelProvider {
                                         .register(BenchBlock.PartType.CENTER,
                                                 BlockStateVariant.create().put(VariantSettings.MODEL, centerModel))
                                         .register(BenchBlock.PartType.RIGHT,
+                                                BlockStateVariant.create().put(VariantSettings.MODEL, rightModel))
+                        )
+                        .coordinate(BlockStateModelGenerator.createSouthDefaultHorizontalRotationStates())
+        );
+    }
+
+    private void registerDoubleHullBlock(BlockStateModelGenerator generator, Block block) {
+        TextureMap leftTextureMap = TextureMap.all(TextureMap.getSubId(block, "_left"));
+        TextureMap rightTextureMap = TextureMap.all(TextureMap.getSubId(block, "_right"));
+
+        Identifier leftModel = DOUBLE_HULL_BLOCK.upload(block, "_left", leftTextureMap, generator.modelCollector);
+        Identifier rightModel = DOUBLE_HULL_BLOCK.upload(block, "_right", rightTextureMap, generator.modelCollector);
+
+        generator.registerParentedItemModel(block, leftModel);
+
+        generator.blockStateCollector.accept(
+                VariantsBlockStateSupplier.create(block)
+                        .coordinate(
+                                BlockStateVariantMap.create(DoubleHullBlock.PART)
+                                        .register(DoubleHullBlock.PartType.LEFT,
+                                                BlockStateVariant.create().put(VariantSettings.MODEL, leftModel))
+                                        .register(DoubleHullBlock.PartType.RIGHT,
                                                 BlockStateVariant.create().put(VariantSettings.MODEL, rightModel))
                         )
                         .coordinate(BlockStateModelGenerator.createSouthDefaultHorizontalRotationStates())
@@ -153,12 +180,14 @@ public class ModModelProvider extends FabricModelProvider {
         KHAKI_RIVETED_HULL_SMALL.stairs(ModBlocks.KHAKI_RIVETED_HULL_SMALL_STAIRS);
         KHAKI_RIVETED_HULL_SMALL.slab(ModBlocks.KHAKI_RIVETED_HULL_SMALL_SLAB);
         KHAKI_RIVETED_HULL_SMALL.wall(ModBlocks.KHAKI_RIVETED_HULL_SMALL_WALL);
+        registerDoubleHullBlock(generator,ModBlocks.KHAKI_RIVETED_HULL);
 
         BlockStateModelGenerator.BlockTexturePool ANTHRACITE_RIVETED_HULL_SMALL =
                 generator.registerCubeAllModelTexturePool(ModBlocks.ANTHRACITE_RIVETED_HULL_SMALL);
         ANTHRACITE_RIVETED_HULL_SMALL.stairs(ModBlocks.ANTHRACITE_RIVETED_HULL_SMALL_STAIRS);
         ANTHRACITE_RIVETED_HULL_SMALL.slab(ModBlocks.ANTHRACITE_RIVETED_HULL_SMALL_SLAB);
         ANTHRACITE_RIVETED_HULL_SMALL.wall(ModBlocks.ANTHRACITE_RIVETED_HULL_SMALL_WALL);
+        registerDoubleHullBlock(generator,ModBlocks.ANTHRACITE_RIVETED_HULL);
 
 
         BlockStateModelGenerator.BlockTexturePool BLACK_RIVETED_HULL_SMALL =
@@ -166,6 +195,7 @@ public class ModModelProvider extends FabricModelProvider {
         BLACK_RIVETED_HULL_SMALL.stairs(ModBlocks.BLACK_RIVETED_HULL_SMALL_STAIRS);
         BLACK_RIVETED_HULL_SMALL.slab(ModBlocks.BLACK_RIVETED_HULL_SMALL_SLAB);
         BLACK_RIVETED_HULL_SMALL.wall(ModBlocks.BLACK_RIVETED_HULL_SMALL_WALL);
+        registerDoubleHullBlock(generator,ModBlocks.BLACK_RIVETED_HULL);
 
 
         BlockStateModelGenerator.BlockTexturePool MAROON_RIVETED_HULL_SMALL =
@@ -173,6 +203,7 @@ public class ModModelProvider extends FabricModelProvider {
         MAROON_RIVETED_HULL_SMALL.stairs(ModBlocks.MAROON_RIVETED_HULL_SMALL_STAIRS);
         MAROON_RIVETED_HULL_SMALL.slab(ModBlocks.MAROON_RIVETED_HULL_SMALL_SLAB);
         MAROON_RIVETED_HULL_SMALL.wall(ModBlocks.MAROON_RIVETED_HULL_SMALL_WALL);
+        registerDoubleHullBlock(generator,ModBlocks.MAROON_RIVETED_HULL);
 
 
         BlockStateModelGenerator.BlockTexturePool MUNTZ_RIVETED_HULL_SMALL =
@@ -180,6 +211,7 @@ public class ModModelProvider extends FabricModelProvider {
         MUNTZ_RIVETED_HULL_SMALL.stairs(ModBlocks.MUNTZ_RIVETED_HULL_SMALL_STAIRS);
         MUNTZ_RIVETED_HULL_SMALL.slab(ModBlocks.MUNTZ_RIVETED_HULL_SMALL_SLAB);
         MUNTZ_RIVETED_HULL_SMALL.wall(ModBlocks.MUNTZ_RIVETED_HULL_SMALL_WALL);
+        registerDoubleHullBlock(generator,ModBlocks.MUNTZ_RIVETED_HULL);
 
 
         BlockStateModelGenerator.BlockTexturePool NAVY_RIVETED_HULL_SMALL =
@@ -187,6 +219,7 @@ public class ModModelProvider extends FabricModelProvider {
         NAVY_RIVETED_HULL_SMALL.stairs(ModBlocks.NAVY_RIVETED_HULL_SMALL_STAIRS);
         NAVY_RIVETED_HULL_SMALL.slab(ModBlocks.NAVY_RIVETED_HULL_SMALL_SLAB);
         NAVY_RIVETED_HULL_SMALL.wall(ModBlocks.NAVY_RIVETED_HULL_SMALL_WALL);
+        registerDoubleHullBlock(generator,ModBlocks.NAVY_RIVETED_HULL);
 
 
         BlockStateModelGenerator.BlockTexturePool WHITE_RIVETED_HULL_SMALL =
@@ -194,6 +227,7 @@ public class ModModelProvider extends FabricModelProvider {
         WHITE_RIVETED_HULL_SMALL.stairs(ModBlocks.WHITE_RIVETED_HULL_SMALL_STAIRS);
         WHITE_RIVETED_HULL_SMALL.slab(ModBlocks.WHITE_RIVETED_HULL_SMALL_SLAB);
         WHITE_RIVETED_HULL_SMALL.wall(ModBlocks.WHITE_RIVETED_HULL_SMALL_WALL);
+        registerDoubleHullBlock(generator,ModBlocks.WHITE_RIVETED_HULL);
 
 
         BlockStateModelGenerator.BlockTexturePool BLEACHED =

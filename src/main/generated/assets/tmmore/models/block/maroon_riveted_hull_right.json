@@ -1,0 +1,6 @@
+{
+  "parent": "tmmore:block/double_hull_block_template",
+  "textures": {
+    "all": "tmmore:block/maroon_riveted_hull_right"
+  }
+}

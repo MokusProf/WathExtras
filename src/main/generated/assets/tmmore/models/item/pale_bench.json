@@ -1,6 +1,3 @@
 {
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "tmmore:block/pale_bench"
-  }
+  "parent": "tmmore:block/pale_bench_center"
 }
