@@ -1,0 +1,6 @@
+{
+  "parent": "tmmore:block/bench_left_template",
+  "textures": {
+    "all": "tmmore:block/thorn_bench"
+  }
+}

@@ -5,12 +5,15 @@ import dev.doctor4t.trainmurdermystery.TMM;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.block.Block;
+import net.minecraft.block.HorizontalFacingBlock;
 import net.minecraft.data.client.*;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.Direction;
 import net.mokus.tmmore.TMMore;
 import net.mokus.tmmore.block.ModBlocks;
+import net.mokus.tmmore.block.custom.BenchBlock;
 import net.mokus.tmmore.item.ModItems;
 import org.jetbrains.annotations.Nullable;
 
@@ -48,6 +51,8 @@ public class ModModelProvider extends FabricModelProvider {
             "block/template_panel", TextureKey.ALL
     );
 
+
+
     private void registerPanel(BlockStateModelGenerator generator, Block block, Block textureBlock) {
         registerPanel(generator, block, TextureMap.getId(textureBlock));
     }
@@ -71,6 +76,45 @@ public class ModModelProvider extends FabricModelProvider {
     }
 
     //Joinked code end
+
+    private static Model templateM(String parentName, TextureKey... requiredTextureKeys) {
+        return template(Identifier.of(TMMore.MOD_ID,parentName), requiredTextureKeys);
+    }
+
+    private static final Model BENCH_LEFT = templateM(
+            "block/bench_left_template", TextureKey.ALL
+    );
+
+    private static final Model BENCH_CENTER = templateM(
+            "block/bench_center_template", TextureKey.ALL
+    );
+
+    private static final Model BENCH_RIGHT = templateM(
+            "block/bench_right_template", TextureKey.ALL
+    );
+
+    private void registerBenchBlock(BlockStateModelGenerator generator, Block block) {
+        TextureMap textureMap = TextureMap.all(block);
+        Identifier leftModel = BENCH_LEFT.upload(block, "_left", textureMap, generator.modelCollector);
+        Identifier centerModel = BENCH_CENTER.upload(block, "_center", textureMap, generator.modelCollector);
+        Identifier rightModel = BENCH_RIGHT.upload(block, "_right", textureMap, generator.modelCollector);
+        
+        generator.registerItemModel(block);
+
+        generator.blockStateCollector.accept(
+                VariantsBlockStateSupplier.create(block)
+                        .coordinate(
+                                BlockStateVariantMap.create(BenchBlock.PART)
+                                        .register(BenchBlock.PartType.LEFT,
+                                                BlockStateVariant.create().put(VariantSettings.MODEL, leftModel))
+                                        .register(BenchBlock.PartType.CENTER,
+                                                BlockStateVariant.create().put(VariantSettings.MODEL, centerModel))
+                                        .register(BenchBlock.PartType.RIGHT,
+                                                BlockStateVariant.create().put(VariantSettings.MODEL, rightModel))
+                        )
+                        .coordinate(BlockStateModelGenerator.createSouthDefaultHorizontalRotationStates())
+        );
+    }
 
 
     public final void registerCandelabra(BlockStateModelGenerator generator,Block candelabre, Block wallCandelabre) {
@@ -100,13 +144,17 @@ public class ModModelProvider extends FabricModelProvider {
 
         registerCandelabra(generator,ModBlocks.CANDELABRE,ModBlocks.WALL_CANDELABRE);
 
+        registerBenchBlock(generator,ModBlocks.PALE_BENCH);
+        registerBenchBlock(generator,ModBlocks.QUEEN_BENCH);
+        registerBenchBlock(generator,ModBlocks.STEEL_BENCH);
+        registerBenchBlock(generator,ModBlocks.THORN_BENCH);
+
         //Small Hulls
         BlockStateModelGenerator.BlockTexturePool KHAKI_RIVETED_HULL_SMALL =
                 generator.registerCubeAllModelTexturePool(ModBlocks.KHAKI_RIVETED_HULL_SMALL);
         KHAKI_RIVETED_HULL_SMALL.stairs(ModBlocks.KHAKI_RIVETED_HULL_SMALL_STAIRS);
         KHAKI_RIVETED_HULL_SMALL.slab(ModBlocks.KHAKI_RIVETED_HULL_SMALL_SLAB);
         KHAKI_RIVETED_HULL_SMALL.wall(ModBlocks.KHAKI_RIVETED_HULL_SMALL_WALL);
-        this.registerPanel(generator,ModBlocks.KHAKI_RIVETED_HULL_SMALL_PANEL, ModBlocks.KHAKI_RIVETED_HULL_SMALL);
 
         BlockStateModelGenerator.BlockTexturePool ANTHRACITE_RIVETED_HULL_SMALL =
                 generator.registerCubeAllModelTexturePool(ModBlocks.ANTHRACITE_RIVETED_HULL_SMALL);
@@ -165,6 +213,7 @@ public class ModModelProvider extends FabricModelProvider {
         this.registerPanel(generator,ModBlocks.NAVY_RIVETED_HULL_SMALL_PANEL,ModBlocks.NAVY_RIVETED_HULL_SMALL);
         this.registerPanel(generator,ModBlocks.WHITE_RIVETED_HULL_SMALL_PANEL,ModBlocks.WHITE_RIVETED_HULL_SMALL);
         this.registerPanel(generator,ModBlocks.BLEACHED_PANEL,ModBlocks.BLEACHED_PLANKS);
+        this.registerPanel(generator,ModBlocks.KHAKI_RIVETED_HULL_SMALL_PANEL, ModBlocks.KHAKI_RIVETED_HULL_SMALL);
 
 
 
@@ -212,6 +261,7 @@ public class ModModelProvider extends FabricModelProvider {
         generator.registerNorthDefaultHorizontalRotation(ModBlocks.DUCKAMOLY_PLUSH);
         generator.registerNorthDefaultHorizontalRotation(ModBlocks.WILLO_PLUSH);
         generator.registerNorthDefaultHorizontalRotation(ModBlocks.MOKUS_PLUSH);
+        generator.registerNorthDefaultHorizontalRotation(ModBlocks.DOOGEY_PLUSH);
 
         // Candy Cane
         generator.registerAxisRotated(ModBlocks.CANDY_CANE_BLOCK,TexturedModel.END_FOR_TOP_CUBE_COLUMN, TexturedModel.END_FOR_TOP_CUBE_COLUMN_HORIZONTAL);

@@ -15,6 +15,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.mokus.tmmore.TMMore;
+import net.mokus.tmmore.block.custom.BenchBlock;
 import net.mokus.tmmore.block.custom.CandelabreBlock;
 import net.mokus.tmmore.block.custom.PlushBlock;
 import net.mokus.tmmore.block.custom.WallCandelabreBlock;
@@ -252,10 +253,21 @@ public class ModBlocks {
     public static final Block WILLO_PLUSH = registerBlock("willo_plush",
             new PlushBlock(AbstractBlock.Settings.copy(Blocks.WHITE_WOOL).nonOpaque()));
     public static final Block MOKUS_PLUSH = registerBlock("mokus_plush",
-            new PlushBlock(AbstractBlock.Settings.copy(Blocks.BLACK_WOOL).nonOpaque()));
+            new PlushBlock(AbstractBlock.Settings.copy(Blocks.BLACK_WOOL)));
+    public static final Block DOOGEY_PLUSH = registerBlock("doogey_plush",
+            new PlushBlock(AbstractBlock.Settings.copy(Blocks.WHITE_WOOL).nonOpaque()));
 
     public static final Block CANDY_CANE_BLOCK = registerBlock("candy_cane_block",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.BONE_BLOCK)));
+
+    public static final Block PALE_BENCH = registerBlock("pale_bench",
+            new BenchBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
+    public static final Block QUEEN_BENCH = registerBlock("queen_bench",
+            new BenchBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
+    public static final Block THORN_BENCH = registerBlock("thorn_bench",
+            new BenchBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
+    public static final Block STEEL_BENCH = registerBlock("steel_bench",
+            new BenchBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
 
 
     private static Block registerBlock(String name, Block block){
@@ -267,6 +279,7 @@ public class ModBlocks {
         Registry.register(Registries.ITEM, Identifier.of(TMMore.MOD_ID,name),
                 new BlockItem(block, new Item.Settings()));
     }
+
 
 
 
@@ -337,6 +350,10 @@ public class ModBlocks {
 
             //ETC NON BLOCK CONFORMING BLOCKS
             TMMORE_BLOCKS.add(ModItems.CANDELABRE_ITEM);
+            TMMORE_BLOCKS.add(ModBlocks.PALE_BENCH);
+            TMMORE_BLOCKS.add(ModBlocks.QUEEN_BENCH);
+            TMMORE_BLOCKS.add(ModBlocks.STEEL_BENCH);
+            TMMORE_BLOCKS.add(ModBlocks.THORN_BENCH);
 
             //Plushies
             TMMORE_BLOCKS.add(ModBlocks.NORA_PLUSH);
@@ -345,6 +362,8 @@ public class ModBlocks {
             TMMORE_BLOCKS.add(ModBlocks.DUCKAMOLY_PLUSH);
             TMMORE_BLOCKS.add(ModBlocks.VERID__PLUSH);
             TMMORE_BLOCKS.add(ModBlocks.WILLO_PLUSH);
+            TMMORE_BLOCKS.add(ModBlocks.MOKUS_PLUSH);
+            TMMORE_BLOCKS.add(ModBlocks.DOOGEY_PLUSH);
                 });
 
         Registry.register(Registries.ITEM_GROUP, MOQUETTES_KEY, MOQUETTES);
