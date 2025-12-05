@@ -100,30 +100,35 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.SQUID_PLUSH,"Squid Plush");
 
         //Hull Blocks!
+        translationBuilder.add(ModBlocks.KHAKI_RIVETED_HULL, "Khaki Riveted Hull");
         translationBuilder.add(ModBlocks.KHAKI_RIVETED_HULL_SMALL, "Small Khaki Riveted Hull");
         translationBuilder.add(ModBlocks.KHAKI_RIVETED_HULL_SMALL_PANEL, "Small Khaki Riveted Hull Panel");
         translationBuilder.add(ModBlocks.KHAKI_RIVETED_HULL_SMALL_STAIRS, "Small Khaki Riveted Hull Stair");
         translationBuilder.add(ModBlocks.KHAKI_RIVETED_HULL_SMALL_SLAB, "Small Khaki Riveted Hull Slab");
         translationBuilder.add(ModBlocks.KHAKI_RIVETED_HULL_SMALL_WALL, "Small Khaki Riveted Hull Wall");
 
+        translationBuilder.add(ModBlocks.ANTHRACITE_RIVETED_HULL, "Anthracite Riveted Hull");
         translationBuilder.add(ModBlocks.ANTHRACITE_RIVETED_HULL_SMALL, "Small Anthracite Riveted Hull");
         translationBuilder.add(ModBlocks.ANTHRACITE_RIVETED_HULL_SMALL_PANEL, "Small Anthracite Riveted Hull Panel");
         translationBuilder.add(ModBlocks.ANTHRACITE_RIVETED_HULL_SMALL_STAIRS, "Small Anthracite Riveted Hull Stair");
         translationBuilder.add(ModBlocks.ANTHRACITE_RIVETED_HULL_SMALL_SLAB, "Small Anthracite Riveted Hull Slab");
         translationBuilder.add(ModBlocks.ANTHRACITE_RIVETED_HULL_SMALL_WALL, "Small Anthracite Riveted Hull Wall");
 
+        translationBuilder.add(ModBlocks.BLACK_RIVETED_HULL, "Black Riveted Hull");
         translationBuilder.add(ModBlocks.BLACK_RIVETED_HULL_SMALL, "Small Black Riveted Hull");
         translationBuilder.add(ModBlocks.BLACK_RIVETED_HULL_SMALL_PANEL, "Small Black Riveted Hull Panel");
         translationBuilder.add(ModBlocks.BLACK_RIVETED_HULL_SMALL_STAIRS, "Small Black Riveted Hull Stair");
         translationBuilder.add(ModBlocks.BLACK_RIVETED_HULL_SMALL_SLAB, "Small Black Riveted Hull Slab");
         translationBuilder.add(ModBlocks.BLACK_RIVETED_HULL_SMALL_WALL, "Small Black Riveted Hull Wall");
 
+        translationBuilder.add(ModBlocks.MAROON_RIVETED_HULL, "Maroon Riveted Hull");
         translationBuilder.add(ModBlocks.MAROON_RIVETED_HULL_SMALL, "Small Maroon Riveted Hull");
         translationBuilder.add(ModBlocks.MAROON_RIVETED_HULL_SMALL_PANEL, "Small Maroon Riveted Hull Panel");
         translationBuilder.add(ModBlocks.MAROON_RIVETED_HULL_SMALL_STAIRS, "Small Maroon Riveted Hull Stair");
         translationBuilder.add(ModBlocks.MAROON_RIVETED_HULL_SMALL_SLAB, "Small Maroon Riveted Hull Slab");
         translationBuilder.add(ModBlocks.MAROON_RIVETED_HULL_SMALL_WALL, "Small Maroon Riveted Hull Wall");
 
+        translationBuilder.add(ModBlocks.MUNTZ_RIVETED_HULL, "Muntz Riveted Hull");
         translationBuilder.add(ModBlocks.MUNTZ_RIVETED_HULL_SMALL, "Small Muntz Riveted Hull");
         translationBuilder.add(ModBlocks.MUNTZ_RIVETED_HULL_SMALL_PANEL, "Small Muntz Riveted Hull Panel");
         translationBuilder.add(ModBlocks.MUNTZ_RIVETED_HULL_SMALL_STAIRS, "Small Muntz Riveted Hull Stair");
@@ -131,11 +136,14 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.MUNTZ_RIVETED_HULL_SMALL_WALL, "Small Muntz Riveted Hull Wall");
 
         translationBuilder.add(ModBlocks.NAVY_RIVETED_HULL_SMALL, "Small Navy Riveted Hull");
+        translationBuilder.add(ModBlocks.NAVY_RIVETED_HULL, "Navy Riveted Hull");
         translationBuilder.add(ModBlocks.NAVY_RIVETED_HULL_SMALL_PANEL, "Small Navy Riveted Hull Panel");
         translationBuilder.add(ModBlocks.NAVY_RIVETED_HULL_SMALL_STAIRS, "Small Navy Riveted Hull Stair");
         translationBuilder.add(ModBlocks.NAVY_RIVETED_HULL_SMALL_SLAB, "Small Navy Riveted Hull Slab");
         translationBuilder.add(ModBlocks.NAVY_RIVETED_HULL_SMALL_WALL, "Small Navy Riveted Hull Wall");
 
+
+        translationBuilder.add(ModBlocks.WHITE_RIVETED_HULL, "White Riveted Hull");
         translationBuilder.add(ModBlocks.WHITE_RIVETED_HULL_SMALL, "Small White Riveted Hull");
         translationBuilder.add(ModBlocks.WHITE_RIVETED_HULL_SMALL_PANEL, "Small White Riveted Hull Panel");
         translationBuilder.add(ModBlocks.WHITE_RIVETED_HULL_SMALL_STAIRS, "Small White Riveted Hull Stair");
@@ -152,6 +160,12 @@ public class ModLanguageProvider extends FabricLanguageProvider {
 
         translationBuilder.add(ModBlocks.CANDY_CANE_BLOCK,"Candy Cane Block");
 
+        // Benches
+        translationBuilder.add(ModBlocks.PALE_BENCH, "Pale Bench");
+        translationBuilder.add(ModBlocks.QUEEN_BENCH, "Queen Bench");
+        translationBuilder.add(ModBlocks.STEEL_BENCH, "Steel Bench");
+        translationBuilder.add(ModBlocks.THORN_BENCH, "Thorn Bench");
+
         // Items
         translationBuilder.add(ModItems.CANDELABRE_ITEM,"Candelbra");
         translationBuilder.add(ModItems.MILK_GLASS,"Glass of Milk");
@@ -163,5 +177,18 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.YELLOW_LOLLIPOP, "Yellow Lollipop");
         translationBuilder.add(ModItems.GREEN_LOLLIPOP, "Green Lollipop");
 
+        // Paintings
+        translationBuilder.add("painting.tmmore.cold_whispings.title","Cold Whispings");
+        translationBuilder.add("painting.tmmore.cold_whispings.author","PhantomPickle");
+        translationBuilder.add("painting.tmmore.fishpainting.title","Fish");
+        translationBuilder.add("painting.tmmore.fishpainting.author","PhantomPickle");
+
+
+        translationBuilder.add("painting.tmmore.veraportrait.title","Vera");
+        translationBuilder.add("painting.tmmore.veraportrait.author","duckamoly");
+        translationBuilder.add("painting.tmmore.impression.title","Impression");
+        translationBuilder.add("painting.tmmore.impression.author","duckamoly");
+        translationBuilder.add("painting.tmmore.visitor.title","Visitor");
+        translationBuilder.add("painting.tmmore.visitor.author","duckamoly");
     }
 }
