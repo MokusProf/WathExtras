@@ -300,6 +300,9 @@ public class ModBlocks {
     public static final Block WHITE_RIVETED_HULL = registerBlock("white_riveted_hull",
             new DoubleHullBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
 
+    public static final Block STACK_LIGHTS = registerBlock("stack_lights",
+            new StackLightBlock(AbstractBlock.Settings.copy(Blocks.COPPER_BULB).luminance(StackLightBlock.STATE_TO_LUMINANCE)));
+
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name,block);
@@ -392,8 +395,16 @@ public class ModBlocks {
             TMMORE_BLOCKS.add(BLEACHED_FENCE);
             TMMORE_BLOCKS.add(CANDY_CANE_BLOCK);
 
+            TMMORE_BLOCKS.add(DARK_MARBLE_TILE);
+            TMMORE_BLOCKS.add(CHECKERED_MARBLE_TILES);
+            TMMORE_BLOCKS.add(MIXED_MARBLE_TILES);
+            TMMORE_BLOCKS.add(DEEPWOKEN_TILE);
+
+            TMMORE_BLOCKS.add(ARCADE_FLOOR);
+
             //ETC NON BLOCK CONFORMING BLOCKS
             TMMORE_BLOCKS.add(ModItems.CANDELABRE_ITEM);
+            TMMORE_BLOCKS.add(STACK_LIGHTS);
             TMMORE_BLOCKS.add(PALE_BENCH);
             TMMORE_BLOCKS.add(QUEEN_BENCH);
             TMMORE_BLOCKS.add(STEEL_BENCH);
@@ -412,12 +423,7 @@ public class ModBlocks {
             TMMORE_BLOCKS.add(PENCIL_PLUSH);
             TMMORE_BLOCKS.add(INDIGO_PLUSH);
 
-            TMMORE_BLOCKS.add(DARK_MARBLE_TILE);
-            TMMORE_BLOCKS.add(CHECKERED_MARBLE_TILES);
-            TMMORE_BLOCKS.add(MIXED_MARBLE_TILES);
-            TMMORE_BLOCKS.add(DEEPWOKEN_TILE);
 
-            TMMORE_BLOCKS.add(ARCADE_FLOOR);
                 });
 
         Registry.register(Registries.ITEM_GROUP, MOQUETTES_KEY, MOQUETTES);
