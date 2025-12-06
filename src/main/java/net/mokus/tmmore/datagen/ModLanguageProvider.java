@@ -160,7 +160,7 @@ public class ModLanguageProvider extends FabricLanguageProvider {
 
         // Benches
         translationBuilder.add(ModBlocks.PALE_BENCH, "Pale Bench");
-        translationBuilder.add(ModBlocks.QUEEN_BENCH, "Queen Bench");
+        translationBuilder.add(ModBlocks.QUEEN_BENCH, "Queen's Bench");
         translationBuilder.add(ModBlocks.STEEL_BENCH, "Steel Bench");
         translationBuilder.add(ModBlocks.THORN_BENCH, "Thorn Bench");
 
