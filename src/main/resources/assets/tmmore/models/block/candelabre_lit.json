@@ -1,11 +1,11 @@
 {
 	"format_version": "1.9.0",
 	"credit": "Made with Blockbench",
-	"parent": "5CandleCandelabra",
+	"parent": "minecraft:block/cube_all",
 	"texture_size": [32, 32],
 	"textures": {
 		"1": "tmmore:block/candelabre_lit",
-		"particle": "tmmore:block/candelabre_lit"
+		"particle": "tmmore:block/candelabre"
 	},
 	"elements": [
 		{

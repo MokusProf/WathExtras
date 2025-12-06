@@ -1,10 +1,10 @@
 {
 	"format_version": "1.9.0",
 	"credit": "Made with Blockbench",
-	"parent": "3wallCandleabraa",
 	"texture_size": [32, 32],
 	"textures": {
-		"2": "tmmore:block/wall_candelabre"
+		"2": "tmmore:block/wall_candelabre",
+		"particle": "tmmore:block/wall_candelabre"
 	},
 	"elements": [
 		{
