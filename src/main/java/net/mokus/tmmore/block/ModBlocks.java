@@ -260,10 +260,19 @@ public class ModBlocks {
             new PlushBlock(AbstractBlock.Settings.copy(Blocks.WHITE_WOOL).nonOpaque()));
     public static final Block SQUID_PLUSH = registerBlock("squid_plush",
             new PlushBlock(AbstractBlock.Settings.copy(Blocks.WHITE_WOOL).nonOpaque()));
+    public static final Block PENCIL_PLUSH = registerBlock("pencil_plush",
+            new PlushBlock(AbstractBlock.Settings.copy(Blocks.WHITE_WOOL).nonOpaque()));
+    public static final Block INDIGO_PLUSH = registerBlock("indigo_plush",
+            new PlushBlock(AbstractBlock.Settings.copy(Blocks.WHITE_WOOL).nonOpaque()));
 
     // Candy Cane
     public static final Block CANDY_CANE_BLOCK = registerBlock("candy_cane_block",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.BONE_BLOCK)));
+    public static final Block ZIGZAG_CANDY_BLOCK = registerBlock("zigzagcandy",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.BONE_BLOCK)));
+
+    public static final Block ARCADE_FLOOR = registerBlock("arcade_floor",
+            new Block(AbstractBlock.Settings.copy(Blocks.GRAY_WOOL).strength(-1.0f,3600000.0f)));
 
     // Benches
     public static final Block PALE_BENCH = registerBlock("pale_bench",
@@ -292,8 +301,7 @@ public class ModBlocks {
             new DoubleHullBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
 
     public static final Block STACK_LIGHTS = registerBlock("stack_lights",
-            new StackLightBlock(AbstractBlock.Settings.create().luminance(StackLightBlock.STATE_TO_LUMINANCE).
-                            sounds(BlockSoundGroup.COPPER_BULB)));
+            new StackLightBlock(AbstractBlock.Settings.copy(Blocks.COPPER_BULB).luminance(StackLightBlock.STATE_TO_LUMINANCE)));
 
 
     private static Block registerBlock(String name, Block block){
@@ -305,6 +313,7 @@ public class ModBlocks {
         Registry.register(Registries.ITEM, Identifier.of(TMMore.MOD_ID,name),
                 new BlockItem(block, new Item.Settings()));
     }
+
 
 
 
@@ -335,151 +344,155 @@ public class ModBlocks {
 
         Registry.register(Registries.ITEM_GROUP, TMMORE_BUILDING_KEY, TMMORE_BUILDING);
         ItemGroupEvents.modifyEntriesEvent(ModBlocks.TMMORE_BUILDING_KEY).register(TMMORE_BLOCKS -> {
-            TMMORE_BLOCKS.add(ModBlocks.KHAKI_RIVETED_HULL);
-            TMMORE_BLOCKS.add(ModBlocks.KHAKI_RIVETED_HULL_SMALL);
-            TMMORE_BLOCKS.add(ModBlocks.KHAKI_RIVETED_HULL_SMALL_PANEL);
-            TMMORE_BLOCKS.add(ModBlocks.KHAKI_RIVETED_HULL_SMALL_STAIRS);
-            TMMORE_BLOCKS.add(ModBlocks.KHAKI_RIVETED_HULL_SMALL_SLAB);
-            TMMORE_BLOCKS.add(ModBlocks.KHAKI_RIVETED_HULL_SMALL_WALL);
-            TMMORE_BLOCKS.add(ModBlocks.ANTHRACITE_RIVETED_HULL);
-            TMMORE_BLOCKS.add(ModBlocks.ANTHRACITE_RIVETED_HULL_SMALL);
-            TMMORE_BLOCKS.add(ModBlocks.ANTHRACITE_RIVETED_HULL_SMALL_PANEL);
-            TMMORE_BLOCKS.add(ModBlocks.ANTHRACITE_RIVETED_HULL_SMALL_STAIRS);
-            TMMORE_BLOCKS.add(ModBlocks.ANTHRACITE_RIVETED_HULL_SMALL_SLAB);
-            TMMORE_BLOCKS.add(ModBlocks.ANTHRACITE_RIVETED_HULL_SMALL_WALL);
-            TMMORE_BLOCKS.add(ModBlocks.BLACK_RIVETED_HULL);
-            TMMORE_BLOCKS.add(ModBlocks.BLACK_RIVETED_HULL_SMALL);
-            TMMORE_BLOCKS.add(ModBlocks.BLACK_RIVETED_HULL_SMALL_PANEL);
-            TMMORE_BLOCKS.add(ModBlocks.BLACK_RIVETED_HULL_SMALL_STAIRS);
-            TMMORE_BLOCKS.add(ModBlocks.BLACK_RIVETED_HULL_SMALL_SLAB);
-            TMMORE_BLOCKS.add(ModBlocks.BLACK_RIVETED_HULL_SMALL_WALL);
-            TMMORE_BLOCKS.add(ModBlocks.MAROON_RIVETED_HULL);
-            TMMORE_BLOCKS.add(ModBlocks.MAROON_RIVETED_HULL_SMALL);
-            TMMORE_BLOCKS.add(ModBlocks.MAROON_RIVETED_HULL_SMALL_PANEL);
-            TMMORE_BLOCKS.add(ModBlocks.MAROON_RIVETED_HULL_SMALL_STAIRS);
-            TMMORE_BLOCKS.add(ModBlocks.MAROON_RIVETED_HULL_SMALL_SLAB);
-            TMMORE_BLOCKS.add(ModBlocks.MAROON_RIVETED_HULL_SMALL_WALL);
-            TMMORE_BLOCKS.add(ModBlocks.MUNTZ_RIVETED_HULL);
-            TMMORE_BLOCKS.add(ModBlocks.MUNTZ_RIVETED_HULL_SMALL);
-            TMMORE_BLOCKS.add(ModBlocks.MUNTZ_RIVETED_HULL_SMALL_PANEL);
-            TMMORE_BLOCKS.add(ModBlocks.MUNTZ_RIVETED_HULL_SMALL_STAIRS);
-            TMMORE_BLOCKS.add(ModBlocks.MUNTZ_RIVETED_HULL_SMALL_SLAB);
-            TMMORE_BLOCKS.add(ModBlocks.MUNTZ_RIVETED_HULL_SMALL_WALL);
-            TMMORE_BLOCKS.add(ModBlocks.NAVY_RIVETED_HULL);
-            TMMORE_BLOCKS.add(ModBlocks.NAVY_RIVETED_HULL_SMALL);
-            TMMORE_BLOCKS.add(ModBlocks.NAVY_RIVETED_HULL_SMALL_PANEL);
-            TMMORE_BLOCKS.add(ModBlocks.NAVY_RIVETED_HULL_SMALL_STAIRS);
-            TMMORE_BLOCKS.add(ModBlocks.NAVY_RIVETED_HULL_SMALL_SLAB);
-            TMMORE_BLOCKS.add(ModBlocks.NAVY_RIVETED_HULL_SMALL_WALL);
-            TMMORE_BLOCKS.add(ModBlocks.WHITE_RIVETED_HULL);
-            TMMORE_BLOCKS.add(ModBlocks.WHITE_RIVETED_HULL_SMALL);
-            TMMORE_BLOCKS.add(ModBlocks.WHITE_RIVETED_HULL_SMALL_PANEL);
-            TMMORE_BLOCKS.add(ModBlocks.WHITE_RIVETED_HULL_SMALL_STAIRS);
-            TMMORE_BLOCKS.add(ModBlocks.WHITE_RIVETED_HULL_SMALL_SLAB);
-            TMMORE_BLOCKS.add(ModBlocks.WHITE_RIVETED_HULL_SMALL_WALL);
+            TMMORE_BLOCKS.add(KHAKI_RIVETED_HULL);
+            TMMORE_BLOCKS.add(KHAKI_RIVETED_HULL_SMALL);
+            TMMORE_BLOCKS.add(KHAKI_RIVETED_HULL_SMALL_PANEL);
+            TMMORE_BLOCKS.add(KHAKI_RIVETED_HULL_SMALL_STAIRS);
+            TMMORE_BLOCKS.add(KHAKI_RIVETED_HULL_SMALL_SLAB);
+            TMMORE_BLOCKS.add(KHAKI_RIVETED_HULL_SMALL_WALL);
+            TMMORE_BLOCKS.add(ANTHRACITE_RIVETED_HULL);
+            TMMORE_BLOCKS.add(ANTHRACITE_RIVETED_HULL_SMALL);
+            TMMORE_BLOCKS.add(ANTHRACITE_RIVETED_HULL_SMALL_PANEL);
+            TMMORE_BLOCKS.add(ANTHRACITE_RIVETED_HULL_SMALL_STAIRS);
+            TMMORE_BLOCKS.add(ANTHRACITE_RIVETED_HULL_SMALL_SLAB);
+            TMMORE_BLOCKS.add(ANTHRACITE_RIVETED_HULL_SMALL_WALL);
+            TMMORE_BLOCKS.add(BLACK_RIVETED_HULL);
+            TMMORE_BLOCKS.add(BLACK_RIVETED_HULL_SMALL);
+            TMMORE_BLOCKS.add(BLACK_RIVETED_HULL_SMALL_PANEL);
+            TMMORE_BLOCKS.add(BLACK_RIVETED_HULL_SMALL_STAIRS);
+            TMMORE_BLOCKS.add(BLACK_RIVETED_HULL_SMALL_SLAB);
+            TMMORE_BLOCKS.add(BLACK_RIVETED_HULL_SMALL_WALL);
+            TMMORE_BLOCKS.add(MAROON_RIVETED_HULL);
+            TMMORE_BLOCKS.add(MAROON_RIVETED_HULL_SMALL);
+            TMMORE_BLOCKS.add(MAROON_RIVETED_HULL_SMALL_PANEL);
+            TMMORE_BLOCKS.add(MAROON_RIVETED_HULL_SMALL_STAIRS);
+            TMMORE_BLOCKS.add(MAROON_RIVETED_HULL_SMALL_SLAB);
+            TMMORE_BLOCKS.add(MAROON_RIVETED_HULL_SMALL_WALL);
+            TMMORE_BLOCKS.add(MUNTZ_RIVETED_HULL);
+            TMMORE_BLOCKS.add(MUNTZ_RIVETED_HULL_SMALL);
+            TMMORE_BLOCKS.add(MUNTZ_RIVETED_HULL_SMALL_PANEL);
+            TMMORE_BLOCKS.add(MUNTZ_RIVETED_HULL_SMALL_STAIRS);
+            TMMORE_BLOCKS.add(MUNTZ_RIVETED_HULL_SMALL_SLAB);
+            TMMORE_BLOCKS.add(MUNTZ_RIVETED_HULL_SMALL_WALL);
+            TMMORE_BLOCKS.add(NAVY_RIVETED_HULL);
+            TMMORE_BLOCKS.add(NAVY_RIVETED_HULL_SMALL);
+            TMMORE_BLOCKS.add(NAVY_RIVETED_HULL_SMALL_PANEL);
+            TMMORE_BLOCKS.add(NAVY_RIVETED_HULL_SMALL_STAIRS);
+            TMMORE_BLOCKS.add(NAVY_RIVETED_HULL_SMALL_SLAB);
+            TMMORE_BLOCKS.add(NAVY_RIVETED_HULL_SMALL_WALL);
+            TMMORE_BLOCKS.add(WHITE_RIVETED_HULL);
+            TMMORE_BLOCKS.add(WHITE_RIVETED_HULL_SMALL);
+            TMMORE_BLOCKS.add(WHITE_RIVETED_HULL_SMALL_PANEL);
+            TMMORE_BLOCKS.add(WHITE_RIVETED_HULL_SMALL_STAIRS);
+            TMMORE_BLOCKS.add(WHITE_RIVETED_HULL_SMALL_SLAB);
+            TMMORE_BLOCKS.add(WHITE_RIVETED_HULL_SMALL_WALL);
 
-            TMMORE_BLOCKS.add(ModBlocks.BLEACHED_PLANKS);
-            TMMORE_BLOCKS.add(ModBlocks.BLEACHED_PANEL);
-            TMMORE_BLOCKS.add(ModBlocks.BLEACHED_STAIRS);
-            TMMORE_BLOCKS.add(ModBlocks.BLEACHED_SLAB);
-            TMMORE_BLOCKS.add(ModBlocks.BLEACHED_WALL);
-            TMMORE_BLOCKS.add(ModBlocks.BLEACHED_FENCE);
-            TMMORE_BLOCKS.add(ModBlocks.CANDY_CANE_BLOCK);
+            TMMORE_BLOCKS.add(BLEACHED_PLANKS);
+            TMMORE_BLOCKS.add(BLEACHED_PANEL);
+            TMMORE_BLOCKS.add(BLEACHED_STAIRS);
+            TMMORE_BLOCKS.add(BLEACHED_SLAB);
+            TMMORE_BLOCKS.add(BLEACHED_WALL);
+            TMMORE_BLOCKS.add(BLEACHED_FENCE);
+            TMMORE_BLOCKS.add(CANDY_CANE_BLOCK);
 
             TMMORE_BLOCKS.add(DARK_MARBLE_TILE);
             TMMORE_BLOCKS.add(CHECKERED_MARBLE_TILES);
             TMMORE_BLOCKS.add(MIXED_MARBLE_TILES);
             TMMORE_BLOCKS.add(DEEPWOKEN_TILE);
 
+            TMMORE_BLOCKS.add(ARCADE_FLOOR);
+
             //ETC NON BLOCK CONFORMING BLOCKS
             TMMORE_BLOCKS.add(ModItems.CANDELABRE_ITEM);
-            TMMORE_BLOCKS.add(ModBlocks.STACK_LIGHTS);
-
-            TMMORE_BLOCKS.add(ModBlocks.PALE_BENCH);
-            TMMORE_BLOCKS.add(ModBlocks.QUEEN_BENCH);
-            TMMORE_BLOCKS.add(ModBlocks.STEEL_BENCH);
-            TMMORE_BLOCKS.add(ModBlocks.THORN_BENCH);
+            TMMORE_BLOCKS.add(STACK_LIGHTS);
+            TMMORE_BLOCKS.add(PALE_BENCH);
+            TMMORE_BLOCKS.add(QUEEN_BENCH);
+            TMMORE_BLOCKS.add(STEEL_BENCH);
+            TMMORE_BLOCKS.add(THORN_BENCH);
 
             //Plushies
-            TMMORE_BLOCKS.add(ModBlocks.NORA_PLUSH);
-            TMMORE_BLOCKS.add(ModBlocks.DAVIDANDROCKET_PLUSH);
-            TMMORE_BLOCKS.add(ModBlocks.PICKLE_PLUSH);
-            TMMORE_BLOCKS.add(ModBlocks.DUCKAMOLY_PLUSH);
-            TMMORE_BLOCKS.add(ModBlocks.VERID__PLUSH);
-            TMMORE_BLOCKS.add(ModBlocks.WILLO_PLUSH);
-            TMMORE_BLOCKS.add(ModBlocks.MOKUS_PLUSH);
-            TMMORE_BLOCKS.add(ModBlocks.DOOGEY_PLUSH);
-            TMMORE_BLOCKS.add(ModBlocks.SQUID_PLUSH);
+            TMMORE_BLOCKS.add(NORA_PLUSH);
+            TMMORE_BLOCKS.add(DAVIDANDROCKET_PLUSH);
+            TMMORE_BLOCKS.add(PICKLE_PLUSH);
+            TMMORE_BLOCKS.add(DUCKAMOLY_PLUSH);
+            TMMORE_BLOCKS.add(VERID__PLUSH);
+            TMMORE_BLOCKS.add(WILLO_PLUSH);
+            TMMORE_BLOCKS.add(MOKUS_PLUSH);
+            TMMORE_BLOCKS.add(DOOGEY_PLUSH);
+            TMMORE_BLOCKS.add(SQUID_PLUSH);
+            TMMORE_BLOCKS.add(PENCIL_PLUSH);
+            TMMORE_BLOCKS.add(INDIGO_PLUSH);
+
 
                 });
 
         Registry.register(Registries.ITEM_GROUP, MOQUETTES_KEY, MOQUETTES);
         ItemGroupEvents.modifyEntriesEvent(ModBlocks.MOQUETTES_KEY).register(BUILDING_BLOCKS -> {
             // Normal Moquette Blocks
-            BUILDING_BLOCKS.add(ModBlocks.BLACK_MOQUETTE);
-            BUILDING_BLOCKS.add(ModBlocks.CYAN_MOQUETTE);
-            BUILDING_BLOCKS.add(ModBlocks.GRAY_MOQUETTE);
-            BUILDING_BLOCKS.add(ModBlocks.GREEN_MOQUETTE);
-            BUILDING_BLOCKS.add(ModBlocks.LIGHT_BLUE_MOQUETTE);
-            BUILDING_BLOCKS.add(ModBlocks.LIGHT_GRAY_MOQUETTE);
-            BUILDING_BLOCKS.add(ModBlocks.LIME_MOQUETTE);
-            BUILDING_BLOCKS.add(ModBlocks.MAGENTA_MOQUETTE);
-            BUILDING_BLOCKS.add(ModBlocks.ORANGE_MOQUETTE);
-            BUILDING_BLOCKS.add(ModBlocks.PINK_MOQUETTE);
-            BUILDING_BLOCKS.add(ModBlocks.PURPLE_MOQUETTE);
-            BUILDING_BLOCKS.add(ModBlocks.WHITE_MOQUETTE);
-            BUILDING_BLOCKS.add(ModBlocks.YELLOW_MOQUETTE);
+            BUILDING_BLOCKS.add(BLACK_MOQUETTE);
+            BUILDING_BLOCKS.add(CYAN_MOQUETTE);
+            BUILDING_BLOCKS.add(GRAY_MOQUETTE);
+            BUILDING_BLOCKS.add(GREEN_MOQUETTE);
+            BUILDING_BLOCKS.add(LIGHT_BLUE_MOQUETTE);
+            BUILDING_BLOCKS.add(LIGHT_GRAY_MOQUETTE);
+            BUILDING_BLOCKS.add(LIME_MOQUETTE);
+            BUILDING_BLOCKS.add(MAGENTA_MOQUETTE);
+            BUILDING_BLOCKS.add(ORANGE_MOQUETTE);
+            BUILDING_BLOCKS.add(PINK_MOQUETTE);
+            BUILDING_BLOCKS.add(PURPLE_MOQUETTE);
+            BUILDING_BLOCKS.add(WHITE_MOQUETTE);
+            BUILDING_BLOCKS.add(YELLOW_MOQUETTE);
 
             // Carpets
-            BUILDING_BLOCKS.add(ModBlocks.BLACK_MOQUETTE_CARPET);
-            BUILDING_BLOCKS.add(ModBlocks.CYAN_MOQUETTE_CARPET);
-            BUILDING_BLOCKS.add(ModBlocks.GRAY_MOQUETTE_CARPET);
-            BUILDING_BLOCKS.add(ModBlocks.GREEN_MOQUETTE_CARPET);
-            BUILDING_BLOCKS.add(ModBlocks.LIGHT_BLUE_MOQUETTE_CARPET);
-            BUILDING_BLOCKS.add(ModBlocks.LIGHT_GRAY_MOQUETTE_CARPET);
-            BUILDING_BLOCKS.add(ModBlocks.LIME_MOQUETTE_CARPET);
-            BUILDING_BLOCKS.add(ModBlocks.MAGENTA_MOQUETTE_CARPET);
-            BUILDING_BLOCKS.add(ModBlocks.ORANGE_MOQUETTE_CARPET);
-            BUILDING_BLOCKS.add(ModBlocks.PINK_MOQUETTE_CARPET);
-            BUILDING_BLOCKS.add(ModBlocks.PURPLE_MOQUETTE_CARPET);
-            BUILDING_BLOCKS.add(ModBlocks.WHITE_MOQUETTE_CARPET);
-            BUILDING_BLOCKS.add(ModBlocks.YELLOW_MOQUETTE_CARPET);
+            BUILDING_BLOCKS.add(BLACK_MOQUETTE_CARPET);
+            BUILDING_BLOCKS.add(CYAN_MOQUETTE_CARPET);
+            BUILDING_BLOCKS.add(GRAY_MOQUETTE_CARPET);
+            BUILDING_BLOCKS.add(GREEN_MOQUETTE_CARPET);
+            BUILDING_BLOCKS.add(LIGHT_BLUE_MOQUETTE_CARPET);
+            BUILDING_BLOCKS.add(LIGHT_GRAY_MOQUETTE_CARPET);
+            BUILDING_BLOCKS.add(LIME_MOQUETTE_CARPET);
+            BUILDING_BLOCKS.add(MAGENTA_MOQUETTE_CARPET);
+            BUILDING_BLOCKS.add(ORANGE_MOQUETTE_CARPET);
+            BUILDING_BLOCKS.add(PINK_MOQUETTE_CARPET);
+            BUILDING_BLOCKS.add(PURPLE_MOQUETTE_CARPET);
+            BUILDING_BLOCKS.add(WHITE_MOQUETTE_CARPET);
+            BUILDING_BLOCKS.add(YELLOW_MOQUETTE_CARPET);
         });
 
         Registry.register(Registries.ITEM_GROUP, STRIPED_CARPET_KEY, STRIPED_CARPET);
-        ItemGroupEvents.modifyEntriesEvent(ModBlocks.STRIPED_CARPET_KEY).register(STRIPED_CARPET -> {
+        ItemGroupEvents.modifyEntriesEvent(STRIPED_CARPET_KEY).register(STRIPED_CARPET -> {
             // Striped Carpets
             // Blocks
-            STRIPED_CARPET.add(ModBlocks.BLACK_STRIPED_CARPET_BLOCK);
-            STRIPED_CARPET.add(ModBlocks.BLUE_STRIPED_CARPET_BLOCK);
-            STRIPED_CARPET.add(ModBlocks.CYAN_STRIPED_CARPET_BLOCK);
-            STRIPED_CARPET.add(ModBlocks.GRAY_STRIPED_CARPET_BLOCK);
-            STRIPED_CARPET.add(ModBlocks.GREEN_STRIPED_CARPET_BLOCK);
+            STRIPED_CARPET.add(BLACK_STRIPED_CARPET_BLOCK);
+            STRIPED_CARPET.add(BLUE_STRIPED_CARPET_BLOCK);
+            STRIPED_CARPET.add(CYAN_STRIPED_CARPET_BLOCK);
+            STRIPED_CARPET.add(GRAY_STRIPED_CARPET_BLOCK);
+            STRIPED_CARPET.add(GREEN_STRIPED_CARPET_BLOCK);
             // STRIPED_CARPET.add(ModBlocks.LIGHT_BLUE_STRIPED_CARPET_BLOCK);
-            STRIPED_CARPET.add(ModBlocks.LIGHT_GRAY_STRIPED_CARPET_BLOCK);
-            STRIPED_CARPET.add(ModBlocks.LIME_STRIPED_CARPET_BLOCK);
-            STRIPED_CARPET.add(ModBlocks.ORANGE_STRIPED_CARPET_BLOCK);
-            STRIPED_CARPET.add(ModBlocks.PURPLE_STRIPED_CARPET_BLOCK);
-            STRIPED_CARPET.add(ModBlocks.WHITE_STRIPED_CARPET_BLOCK);
-            STRIPED_CARPET.add(ModBlocks.YELLOW_STRIPED_CARPET_BLOCK);
-            STRIPED_CARPET.add(ModBlocks.RED_STRIPED_CARPET_BLOCK);
-            STRIPED_CARPET.add(ModBlocks.BROWN_STRIPED_CARPET_BLOCK);
+            STRIPED_CARPET.add(LIGHT_GRAY_STRIPED_CARPET_BLOCK);
+            STRIPED_CARPET.add(LIME_STRIPED_CARPET_BLOCK);
+            STRIPED_CARPET.add(ORANGE_STRIPED_CARPET_BLOCK);
+            STRIPED_CARPET.add(PURPLE_STRIPED_CARPET_BLOCK);
+            STRIPED_CARPET.add(WHITE_STRIPED_CARPET_BLOCK);
+            STRIPED_CARPET.add(YELLOW_STRIPED_CARPET_BLOCK);
+            STRIPED_CARPET.add(RED_STRIPED_CARPET_BLOCK);
+            STRIPED_CARPET.add(BROWN_STRIPED_CARPET_BLOCK);
 
             // Carpets
-            STRIPED_CARPET.add(ModBlocks.BLACK_STRIPED_CARPET);
-            STRIPED_CARPET.add(ModBlocks.CYAN_STRIPED_CARPET);
-            STRIPED_CARPET.add(ModBlocks.GRAY_STRIPED_CARPET);
-            STRIPED_CARPET.add(ModBlocks.GREEN_STRIPED_CARPET);
+            STRIPED_CARPET.add(BLACK_STRIPED_CARPET);
+            STRIPED_CARPET.add(CYAN_STRIPED_CARPET);
+            STRIPED_CARPET.add(GRAY_STRIPED_CARPET);
+            STRIPED_CARPET.add(GREEN_STRIPED_CARPET);
             // STRIPED_CARPET.add(ModBlocks.LIGHT_BLUE_STRIPED_CARPET);
-            STRIPED_CARPET.add(ModBlocks.LIGHT_GRAY_STRIPED_CARPET);
-            STRIPED_CARPET.add(ModBlocks.LIME_STRIPED_CARPET);
-            STRIPED_CARPET.add(ModBlocks.ORANGE_STRIPED_CARPET);
-            STRIPED_CARPET.add(ModBlocks.PURPLE_STRIPED_CARPET);
-            STRIPED_CARPET.add(ModBlocks.WHITE_STRIPED_CARPET);
-            STRIPED_CARPET.add(ModBlocks.YELLOW_STRIPED_CARPET);
-            STRIPED_CARPET.add(ModBlocks.BLUE_STRIPED_CARPET);
-            STRIPED_CARPET.add(ModBlocks.RED_STRIPED_CARPET);
-            STRIPED_CARPET.add(ModBlocks.BROWN_STRIPED_CARPET);
+            STRIPED_CARPET.add(LIGHT_GRAY_STRIPED_CARPET);
+            STRIPED_CARPET.add(LIME_STRIPED_CARPET);
+            STRIPED_CARPET.add(ORANGE_STRIPED_CARPET);
+            STRIPED_CARPET.add(PURPLE_STRIPED_CARPET);
+            STRIPED_CARPET.add(WHITE_STRIPED_CARPET);
+            STRIPED_CARPET.add(YELLOW_STRIPED_CARPET);
+            STRIPED_CARPET.add(BLUE_STRIPED_CARPET);
+            STRIPED_CARPET.add(RED_STRIPED_CARPET);
+            STRIPED_CARPET.add(BROWN_STRIPED_CARPET);
         });
     }
 }
