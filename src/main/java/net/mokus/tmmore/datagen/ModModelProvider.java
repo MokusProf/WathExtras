@@ -301,6 +301,10 @@ public class ModModelProvider extends FabricModelProvider {
         generator.registerNorthDefaultHorizontalRotation(ModBlocks.PENCIL_PLUSH);
         generator.registerNorthDefaultHorizontalRotation(ModBlocks.INDIGO_PLUSH);
 
+        generator.registerSimpleCubeAll(ModBlocks.PINK_CITRINE_BRICKS);
+        generator.registerSimpleCubeAll(ModBlocks.POLISHED_PINK_CITRINE);
+        generator.registerSimpleCubeAll(ModBlocks.SMOOTH_PINK_CITRINE);
+
         // Candy Cane
         generator.registerAxisRotated(ModBlocks.CANDY_CANE_BLOCK,TexturedModel.END_FOR_TOP_CUBE_COLUMN, TexturedModel.END_FOR_TOP_CUBE_COLUMN_HORIZONTAL);
         generator.registerSimpleCubeAll(ModBlocks.ZIGZAG_CANDY_BLOCK);

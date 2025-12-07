@@ -4,7 +4,7 @@
 	"texture_size": [128, 128],
 	"textures": {
 		"0": "tmmore:block/duckamolyplushie",
-		"particle": "minecraft:block/lime_wool"
+		"particle": "minecraft:block/pink_wool"
 	},
 	"elements": [
 		{
