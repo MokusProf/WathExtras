@@ -303,6 +303,9 @@ public class ModBlocks {
     public static final Block STACK_LIGHTS = registerBlock("stack_lights",
             new StackLightBlock(AbstractBlock.Settings.copy(Blocks.COPPER_BULB).luminance(StackLightBlock.STATE_TO_LUMINANCE)));
 
+    public static final Block ROOF_LAMP = registerBlock("roof_lamp",
+            new RoofLampBlock(AbstractBlock.Settings.copy(Blocks.COPPER_BULB).luminance(StackLightBlock.STATE_TO_LUMINANCE)));
+
 
     public static final Block SMOOTH_PINK_CITRINE = registerBlock("smooth_pink_citrine",
             new Block(AbstractBlock.Settings.copy(Blocks.QUARTZ_BLOCK)));
@@ -412,6 +415,7 @@ public class ModBlocks {
             //ETC NON BLOCK CONFORMING BLOCKS
             TMMORE_BLOCKS.add(ModItems.CANDELABRE_ITEM);
             TMMORE_BLOCKS.add(STACK_LIGHTS);
+            TMMORE_BLOCKS.add(ROOF_LAMP);
             TMMORE_BLOCKS.add(PALE_BENCH);
             TMMORE_BLOCKS.add(QUEEN_BENCH);
             TMMORE_BLOCKS.add(STEEL_BENCH);

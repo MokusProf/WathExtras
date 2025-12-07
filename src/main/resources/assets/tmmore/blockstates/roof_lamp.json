@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "active=true,lit=false": {
+      "model": "tmmore:block/roof_lamp"
+    },
+    "active=true,lit=true": {
+      "model": "tmmore:block/roof_lamp_on"
+    },
+    "active=false,lit=false": {
+      "model": "tmmore:block/roof_lamp"
+    },
+    "active=false,lit=true": {
+      "model": "tmmore:block/roof_lamp"
+    }
+  }
+}

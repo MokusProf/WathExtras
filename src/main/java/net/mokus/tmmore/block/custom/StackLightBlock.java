@@ -2,9 +2,7 @@ package net.mokus.tmmore.block.custom;
 
 import dev.doctor4t.trainmurdermystery.index.TMMProperties;
 import dev.doctor4t.trainmurdermystery.index.TMMSounds;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.ShapeContext;
+import net.minecraft.block.*;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.state.StateManager;
@@ -23,12 +21,13 @@ public class StackLightBlock extends Block {
     public static final BooleanProperty LIT = Properties.LIT;
     public static final BooleanProperty ACTIVE = TMMProperties.ACTIVE;
     public static final ToIntFunction<BlockState> STATE_TO_LUMINANCE = state -> state.get(LIT) && state.get(ACTIVE) ? 15 : 0;
-    protected static final VoxelShape SHAPE = Block.createCuboidShape(2.0, 0.0, 2.0, 14.0, 16.0, 14.0);
 
     public StackLightBlock(Settings settings) {
         super(settings);
         this.setDefaultState(this.stateManager.getDefaultState().with(LIT, false).with(ACTIVE,true));
     }
+
+    public static final VoxelShape SHAPE = Block.createCuboidShape(2.0, 0.0, 2.0, 14.0, 16.0, 14.0);
 
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
