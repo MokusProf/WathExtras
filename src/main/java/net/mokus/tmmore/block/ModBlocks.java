@@ -17,6 +17,7 @@ import net.minecraft.util.Identifier;
 import net.mokus.tmmore.TMMore;
 import net.mokus.tmmore.block.custom.*;
 import net.mokus.tmmore.item.ModItems;
+import net.mokus.tmmore.util.ModSounds;
 
 public class ModBlocks {
 
@@ -243,27 +244,27 @@ public class ModBlocks {
 
     // Plushies
     public static final Block NORA_PLUSH = registerBlock("nora_plush",
-            new PlushBlock(AbstractBlock.Settings.copy(Blocks.RED_WOOL).nonOpaque()));
+            new PlushBlock(ModSounds.DOOGEY_PLUSH,AbstractBlock.Settings.copy(Blocks.RED_WOOL).nonOpaque()));
     public static final Block DAVIDANDROCKET_PLUSH = registerBlock("davidandrocket_plush",
-            new PlushBlock(AbstractBlock.Settings.copy(Blocks.ORANGE_WOOL).nonOpaque()));
+            new PlushBlock(ModSounds.DOOGEY_PLUSH,AbstractBlock.Settings.copy(Blocks.ORANGE_WOOL).nonOpaque()));
     public static final Block DUCKAMOLY_PLUSH = registerBlock("duckamoly_plush",
-            new PlushBlock(AbstractBlock.Settings.copy(Blocks.WHITE_WOOL).nonOpaque()));
+            new PlushBlock(ModSounds.DOOGEY_PLUSH,AbstractBlock.Settings.copy(Blocks.WHITE_WOOL).nonOpaque()));
     public static final Block PICKLE_PLUSH = registerBlock("pickle_plush",
-            new PlushBlock(AbstractBlock.Settings.copy(Blocks.PURPLE_WOOL).nonOpaque()));
+            new PlushBlock(ModSounds.PICKLE_PLUSH,AbstractBlock.Settings.copy(Blocks.PURPLE_WOOL).nonOpaque()));
     public static final Block VERID__PLUSH = registerBlock("verid__plush",
-            new PlushBlock(AbstractBlock.Settings.copy(Blocks.WHITE_WOOL).nonOpaque()));
+            new PlushBlock(ModSounds.VERID__PLUSH,AbstractBlock.Settings.copy(Blocks.WHITE_WOOL).nonOpaque()));
     public static final Block WILLO_PLUSH = registerBlock("willo_plush",
-            new PlushBlock(AbstractBlock.Settings.copy(Blocks.WHITE_WOOL).nonOpaque()));
+            new PlushBlock(ModSounds.WILLO_PLUSH,AbstractBlock.Settings.copy(Blocks.WHITE_WOOL).nonOpaque()));
     public static final Block MOKUS_PLUSH = registerBlock("mokus_plush",
-            new PlushBlock(AbstractBlock.Settings.copy(Blocks.BLACK_WOOL).nonOpaque()));
+            new PlushBlock(ModSounds.DOOGEY_PLUSH,AbstractBlock.Settings.copy(Blocks.BLACK_WOOL).nonOpaque()));
     public static final Block DOOGEY_PLUSH = registerBlock("doogey_plush",
-            new PlushBlock(AbstractBlock.Settings.copy(Blocks.WHITE_WOOL).nonOpaque()));
+            new PlushBlock(ModSounds.DOOGEY_PLUSH,AbstractBlock.Settings.copy(Blocks.WHITE_WOOL).nonOpaque()));
     public static final Block SQUID_PLUSH = registerBlock("squid_plush",
-            new PlushBlock(AbstractBlock.Settings.copy(Blocks.WHITE_WOOL).nonOpaque()));
+            new PlushBlock(ModSounds.DOOGEY_PLUSH,AbstractBlock.Settings.copy(Blocks.WHITE_WOOL).nonOpaque()));
     public static final Block PENCIL_PLUSH = registerBlock("pencil_plush",
-            new PlushBlock(AbstractBlock.Settings.copy(Blocks.WHITE_WOOL).nonOpaque()));
+            new PlushBlock(ModSounds.DOOGEY_PLUSH,AbstractBlock.Settings.copy(Blocks.WHITE_WOOL).nonOpaque()));
     public static final Block INDIGO_PLUSH = registerBlock("indigo_plush",
-            new PlushBlock(AbstractBlock.Settings.copy(Blocks.WHITE_WOOL).nonOpaque()));
+            new PlushBlock(ModSounds.DOOGEY_PLUSH,AbstractBlock.Settings.copy(Blocks.WHITE_WOOL).nonOpaque()));
 
     // Candy Cane
     public static final Block CANDY_CANE_BLOCK = registerBlock("candy_cane_block",

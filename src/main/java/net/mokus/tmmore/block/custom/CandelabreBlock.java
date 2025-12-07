@@ -32,10 +32,6 @@ import org.jetbrains.annotations.Nullable;
 import java.util.function.ToIntFunction;
 
 public class CandelabreBlock extends Block {
-    public static final BooleanProperty LIT = Properties.LIT;
-    public static final ToIntFunction<BlockState> STATE_TO_LUMINANCE = state -> state.get(LIT) ? 7 : 0;
-
-    //BTW yes this is basically the torch code
     protected static final MapCodec<SimpleParticleType> PARTICLE_TYPE_CODEC = Registries.PARTICLE_TYPE
             .getCodec()
             .comapFlatMap(
@@ -48,6 +44,11 @@ public class CandelabreBlock extends Block {
     public static final MapCodec<CandelabreBlock> CODEC = RecordCodecBuilder.mapCodec(
             instance -> instance.group(PARTICLE_TYPE_CODEC.forGetter(block -> block.particle), createSettingsCodec()).apply(instance, CandelabreBlock::new)
     );
+
+    public static final BooleanProperty LIT = Properties.LIT;
+    public static final ToIntFunction<BlockState> STATE_TO_LUMINANCE = state -> state.get(LIT) ? 7 : 0;
+
+    //BTW yes this is basically the torch code
 
     protected static final VoxelShape SHAPE = Block.createCuboidShape(1.0, 0.0, 1.0, 15.0, 15.0, 15.0);
     protected final SimpleParticleType particle;

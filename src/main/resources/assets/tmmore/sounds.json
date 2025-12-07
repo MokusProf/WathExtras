@@ -1,0 +1,26 @@
+{
+  "willo_plush": {
+    "subtitle": "sounds.tmmore.willo_plush",
+    "sounds": [
+      "tmmore:willo_plush"
+    ]
+  },
+  "pickle_plush": {
+    "subtitle": "sounds.tmmore.pickle_plush",
+    "sounds": [
+      "tmmore:pickle_plush"
+    ]
+  },
+  "verid__plush": {
+    "subtitle": "sounds.tmmore.verid__plush",
+    "sounds": [
+      "tmmore:verid__plush"
+    ]
+  },
+  "doogey_plush": {
+    "subtitle": "sounds.tmmore.doogey_plush",
+    "sounds": [
+      "tmmore:doogey_plush"
+    ]
+  }
+}
