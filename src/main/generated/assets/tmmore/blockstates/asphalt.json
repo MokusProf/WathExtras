@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "tmmore:block/asphalt"
+      },
+      {
+        "model": "tmmore:block/asphalt",
+        "y": 90
+      },
+      {
+        "model": "tmmore:block/asphalt",
+        "y": 180
+      },
+      {
+        "model": "tmmore:block/asphalt",
+        "y": 270
+      }
+    ]
+  }
+}
