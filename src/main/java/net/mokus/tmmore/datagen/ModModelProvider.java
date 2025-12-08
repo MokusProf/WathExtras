@@ -14,6 +14,7 @@ import net.mokus.tmmore.TMMore;
 import net.mokus.tmmore.block.ModBlocks;
 import net.mokus.tmmore.block.custom.BenchBlock;
 import net.mokus.tmmore.block.custom.DoubleHullBlock;
+import net.mokus.tmmore.block.custom.WallPanelBlock;
 import net.mokus.tmmore.item.ModItems;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -166,6 +167,45 @@ public class ModModelProvider extends FabricModelProvider {
         generator.excludeFromSimpleItemModelGeneration(wallCandelabre);
     }
 
+    private void registerConnectiveBlock(BlockStateModelGenerator generator, Block block) {
+        TextureMap singleTexture = new TextureMap()
+                .put(TextureKey.SIDE, TextureMap.getSubId(block, "_side_single"))
+                .put(TextureKey.END, TextureMap.getSubId(block, "_top"));
+
+        TextureMap topTexture = new TextureMap()
+                .put(TextureKey.SIDE, TextureMap.getSubId(block, "_side_top"))
+                .put(TextureKey.END, TextureMap.getSubId(block, "_top"));
+
+        TextureMap middleTexture = new TextureMap()
+                .put(TextureKey.SIDE, TextureMap.getSubId(block, "_side_middle"))
+                .put(TextureKey.END, TextureMap.getSubId(block, "_top"));
+
+        TextureMap bottomTexture = new TextureMap()
+                .put(TextureKey.SIDE, TextureMap.getSubId(block, "_side_bottom"))
+                .put(TextureKey.END, TextureMap.getSubId(block, "_top"));
+
+        Identifier singleModel = Models.CUBE_COLUMN.upload(block, "_single", singleTexture, generator.modelCollector);
+        Identifier topModel = Models.CUBE_COLUMN.upload(block, "_top", topTexture, generator.modelCollector);
+        Identifier middleModel = Models.CUBE_COLUMN.upload(block, "_middle", middleTexture, generator.modelCollector);
+        Identifier bottomModel = Models.CUBE_COLUMN.upload(block, "_bottom", bottomTexture, generator.modelCollector);
+
+        generator.registerParentedItemModel(block,singleModel);
+
+        generator.blockStateCollector.accept(
+                VariantsBlockStateSupplier.create(block)
+                        .coordinate(BlockStateVariantMap.create(WallPanelBlock.PART)
+                                .register(WallPanelBlock.PartType.SINGLE,
+                                        BlockStateVariant.create().put(VariantSettings.MODEL, singleModel))
+                                .register(WallPanelBlock.PartType.TOP,
+                                        BlockStateVariant.create().put(VariantSettings.MODEL, topModel))
+                                .register(WallPanelBlock.PartType.MIDDLE,
+                                        BlockStateVariant.create().put(VariantSettings.MODEL, middleModel))
+                                .register(WallPanelBlock.PartType.BOTTOM,
+                                        BlockStateVariant.create().put(VariantSettings.MODEL, bottomModel))
+                        )
+        );
+    }
+
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator generator) {
 
@@ -314,6 +354,11 @@ public class ModModelProvider extends FabricModelProvider {
         generator.registerSimpleCubeAll(ModBlocks.ARCADE_FLOOR);
 
         generator.registerRotatable(ModBlocks.ASPHALT);
+
+        registerConnectiveBlock(generator,ModBlocks.BLEACHED_WALL_PANEL);
+        registerConnectiveBlock(generator,ModBlocks.DARK_OAK_WALL_PANEL);
+        registerConnectiveBlock(generator,ModBlocks.MAHOGANY_WALL_PANEL);
+        registerConnectiveBlock(generator,ModBlocks.EBONY_WALL_PANEL);
     }
 
     @Override

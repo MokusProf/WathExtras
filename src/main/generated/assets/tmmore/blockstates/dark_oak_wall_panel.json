@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "part=bottom": {
+      "model": "tmmore:block/dark_oak_wall_panel_bottom"
+    },
+    "part=middle": {
+      "model": "tmmore:block/dark_oak_wall_panel_middle"
+    },
+    "part=single": {
+      "model": "tmmore:block/dark_oak_wall_panel_single"
+    },
+    "part=top": {
+      "model": "tmmore:block/dark_oak_wall_panel_top"
+    }
+  }
+}

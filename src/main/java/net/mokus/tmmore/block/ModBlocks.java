@@ -318,6 +318,15 @@ public class ModBlocks {
     public static final Block ASPHALT = registerBlock("asphalt",
             new Block(AbstractBlock.Settings.copy(Blocks.GRAVEL)));
 
+    public static final Block BLEACHED_WALL_PANEL = registerBlock("bleached_wall_panel",
+            new WallPanelBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
+    public static final Block DARK_OAK_WALL_PANEL = registerBlock("dark_oak_wall_panel",
+            new WallPanelBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
+    public static final Block EBONY_WALL_PANEL = registerBlock("ebony_wall_panel",
+            new WallPanelBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
+    public static final Block MAHOGANY_WALL_PANEL = registerBlock("mahogany_wall_panel",
+            new WallPanelBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
+
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name,block);
         return Registry.register(Registries.BLOCK, Identifier.of(TMMore.MOD_ID,name),block);
@@ -407,6 +416,13 @@ public class ModBlocks {
             TMMORE_BLOCKS.add(BLEACHED_SLAB);
             TMMORE_BLOCKS.add(BLEACHED_WALL);
             TMMORE_BLOCKS.add(BLEACHED_FENCE);
+
+            //Wall panels
+            TMMORE_BLOCKS.add(BLEACHED_WALL_PANEL);
+            TMMORE_BLOCKS.add(EBONY_WALL_PANEL);
+            TMMORE_BLOCKS.add(DARK_OAK_WALL_PANEL);
+            TMMORE_BLOCKS.add(MAHOGANY_WALL_PANEL);
+
             TMMORE_BLOCKS.add(CANDY_CANE_BLOCK);
 
             TMMORE_BLOCKS.add(DARK_MARBLE_TILE);
