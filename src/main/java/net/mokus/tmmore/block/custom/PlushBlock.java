@@ -78,6 +78,6 @@ public class PlushBlock extends HorizontalFacingBlock implements Equipment {
                     this.sound, SoundCategory.BLOCKS,
                     1.0f,1.0f
             );
-        return super.onUse(state, world, pos, player, hit);
+        return ActionResult.success(world.isClient);
     }
 }

@@ -22,5 +22,23 @@
     "sounds": [
       "tmmore:doogey_plush"
     ]
+  },
+  "davidandrocket_plush": {
+    "subtitle": "sounds.tmmore.davidandrocket_plush",
+    "sounds": [
+      "tmmore:davidandrocket_plush"
+    ]
+  },
+  "duckamoly_plush": {
+    "subtitle": "sounds.tmmore.duckamoly_plush",
+    "sounds": [
+      "tmmore:duckamoly_plush"
+    ]
+  },
+  "indigo_plush": {
+    "subtitle": "sounds.tmmore.indigo_plush",
+    "sounds": [
+      "tmmore:indigo_plush"
+    ]
   }
 }
