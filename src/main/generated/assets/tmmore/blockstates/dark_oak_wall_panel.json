@@ -3,6 +3,9 @@
     "part=bottom": {
       "model": "tmmore:block/dark_oak_wall_panel_bottom"
     },
+    "part=box": {
+      "model": "tmmore:block/dark_oak_wall_panel_box"
+    },
     "part=middle": {
       "model": "tmmore:block/dark_oak_wall_panel_middle"
     },

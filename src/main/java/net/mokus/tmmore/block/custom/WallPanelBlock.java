@@ -62,7 +62,8 @@ public class WallPanelBlock extends Block {
         SINGLE("single"),
         TOP("top"),
         MIDDLE("middle"),
-        BOTTOM("bottom");
+        BOTTOM("bottom"),
+        BOX("box");
 
         private final String name;
 

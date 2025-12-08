@@ -182,10 +182,15 @@ public class ModModelProvider extends FabricModelProvider {
                 .put(TextureKey.SIDE, TextureMap.getSubId(block, "_side_bottom"))
                 .put(TextureKey.END, TextureMap.getSubId(block, "_top"));
 
+        TextureMap boxTexture = new TextureMap()
+                .put(TextureKey.SIDE, TextureMap.getSubId(block, "_top"))
+                .put(TextureKey.END, TextureMap.getSubId(block, "_top"));
+
         Identifier singleModel = Models.CUBE_COLUMN.upload(block, "_single", singleTexture, generator.modelCollector);
         Identifier topModel = Models.CUBE_COLUMN.upload(block, "_top", topTexture, generator.modelCollector);
         Identifier middleModel = Models.CUBE_COLUMN.upload(block, "_middle", middleTexture, generator.modelCollector);
         Identifier bottomModel = Models.CUBE_COLUMN.upload(block, "_bottom", bottomTexture, generator.modelCollector);
+        Identifier boxModel = Models.CUBE_COLUMN.upload(block, "_box", boxTexture, generator.modelCollector);
 
         generator.registerParentedItemModel(block,singleModel);
 
@@ -200,6 +205,8 @@ public class ModModelProvider extends FabricModelProvider {
                                         BlockStateVariant.create().put(VariantSettings.MODEL, middleModel))
                                 .register(WallPanelBlock.PartType.BOTTOM,
                                         BlockStateVariant.create().put(VariantSettings.MODEL, bottomModel))
+                                .register(WallPanelBlock.PartType.BOX,
+                                        BlockStateVariant.create().put(VariantSettings.MODEL, boxModel))
                         )
         );
     }
