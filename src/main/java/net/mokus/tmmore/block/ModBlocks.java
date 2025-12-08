@@ -430,6 +430,11 @@ public class ModBlocks {
             TMMORE_BLOCKS.add(MIXED_MARBLE_TILES);
             TMMORE_BLOCKS.add(DEEPWOKEN_TILE);
 
+            TMMORE_BLOCKS.add(PINK_CITRINE_BRICKS);
+            TMMORE_BLOCKS.add(POLISHED_PINK_CITRINE);
+            TMMORE_BLOCKS.add(SMOOTH_PINK_CITRINE);
+            TMMORE_BLOCKS.add(ASPHALT);
+
             TMMORE_BLOCKS.add(ARCADE_FLOOR);
 
             //ETC NON BLOCK CONFORMING BLOCKS
@@ -454,10 +459,7 @@ public class ModBlocks {
             TMMORE_BLOCKS.add(PENCIL_PLUSH);
             TMMORE_BLOCKS.add(INDIGO_PLUSH);
 
-            TMMORE_BLOCKS.add(PINK_CITRINE_BRICKS);
-            TMMORE_BLOCKS.add(POLISHED_PINK_CITRINE);
-            TMMORE_BLOCKS.add(SMOOTH_PINK_CITRINE);
-            TMMORE_BLOCKS.add(ASPHALT);
+
                 });
 
         Registry.register(Registries.ITEM_GROUP, MOQUETTES_KEY, MOQUETTES);
