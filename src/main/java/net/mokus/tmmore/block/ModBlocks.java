@@ -260,7 +260,7 @@ public class ModBlocks {
     public static final Block DOOGEY_PLUSH = registerBlock("doogey_plush",
             new PlushBlock(ModSounds.DOOGEY_PLUSH,AbstractBlock.Settings.copy(Blocks.WHITE_WOOL).nonOpaque()));
     public static final Block SQUID_PLUSH = registerBlock("squid_plush",
-            new PlushBlock(ModSounds.DOOGEY_PLUSH,AbstractBlock.Settings.copy(Blocks.WHITE_WOOL).nonOpaque()));
+            new PlushBlock(ModSounds.SQUID_PLUSH,AbstractBlock.Settings.copy(Blocks.WHITE_WOOL).nonOpaque()));
     public static final Block PENCIL_PLUSH = registerBlock("pencil_plush",
             new PlushBlock(ModSounds.DOOGEY_PLUSH,AbstractBlock.Settings.copy(Blocks.WHITE_WOOL).nonOpaque()));
     public static final Block INDIGO_PLUSH = registerBlock("indigo_plush",

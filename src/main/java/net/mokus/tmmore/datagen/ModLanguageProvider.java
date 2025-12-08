@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 import net.minecraft.registry.RegistryWrapper;
 import net.mokus.tmmore.block.ModBlocks;
 import net.mokus.tmmore.item.ModItems;
+import net.mokus.tmmore.util.ModSounds;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -197,6 +198,15 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.GINGERBREAD_DUCKAMOLY,"Duckamoly-bread");
         translationBuilder.add(ModItems.GINGERBREAD_RUDOLPH,"Rudolph Gingerbread");
         translationBuilder.add(ModItems.GINGERBREAD_SCARF,"Scarfed Gingerbread");
+
+        translationBuilder.add("sounds.tmmore.squid_plush","Squid plays a tune");
+        translationBuilder.add("sounds.tmmore.willo_plush","Willo \"POWs!\"");
+        translationBuilder.add("sounds.tmmore.pickle_plush","Pickle makes noise");
+        translationBuilder.add("sounds.tmmore.verid__plush","Verid opens the cashdrawer");
+        translationBuilder.add("sounds.tmmore.doogey_plush","Doogey becomes one with code");
+        translationBuilder.add("sounds.tmmore.davidandrocket_plush","davidandrocket fights a fryingpan");
+        translationBuilder.add("sounds.tmmore.duckamoly_plush","Duckamoly Quacks!");
+        translationBuilder.add("sounds.tmmore.indigo_plush","Indigo goes \"yippie\"");
 
         // Paintings
         translationBuilder.add("painting.tmmore.cold_whispings.title","Cold Whispings");

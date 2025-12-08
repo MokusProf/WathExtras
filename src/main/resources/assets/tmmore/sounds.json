@@ -35,6 +35,12 @@
       "tmmore:duckamoly_plush"
     ]
   },
+  "squid_plush": {
+    "subtitle": "sounds.tmmore.squid_plush",
+    "sounds": [
+      "tmmore:squid_plush"
+    ]
+  },
   "indigo_plush": {
     "subtitle": "sounds.tmmore.indigo_plush",
     "sounds": [
