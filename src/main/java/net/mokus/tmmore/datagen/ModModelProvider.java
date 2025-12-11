@@ -93,6 +93,10 @@ public class ModModelProvider extends FabricModelProvider {
             "block/bench_right_template", TextureKey.ALL
     );
 
+    private static final Model BENCH_ITEM = templateM(
+            "block/bench_item_template", TextureKey.ALL
+    );
+
     private static final Model DOUBLE_HULL_BLOCK= templateM(
             "block/double_hull_block_template", TextureKey.ALL
     );
@@ -101,9 +105,10 @@ public class ModModelProvider extends FabricModelProvider {
         TextureMap textureMap = TextureMap.all(block);
         Identifier leftModel = BENCH_LEFT.upload(block, "_left", textureMap, generator.modelCollector);
         Identifier centerModel = BENCH_CENTER.upload(block, "_center", textureMap, generator.modelCollector);
+        Identifier itemModel = BENCH_ITEM.upload(block, "_item", textureMap, generator.modelCollector);
         Identifier rightModel = BENCH_RIGHT.upload(block, "_right", textureMap, generator.modelCollector);
 
-        generator.registerParentedItemModel(block, centerModel);
+        generator.registerParentedItemModel(block, itemModel);
 
         generator.blockStateCollector.accept(
                 VariantsBlockStateSupplier.create(block)
