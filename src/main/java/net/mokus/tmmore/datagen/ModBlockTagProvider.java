@@ -29,7 +29,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.CORRUGATED_DARK_STEEL_WALL)
                 .add(ModBlocks.CORRUGATED_STAINLESS_STEEL_WALL)
                 .add(ModBlocks.PERFORATED_DARK_STEEL_WALL)
-                .add(ModBlocks.PERFORATED_STAINLESS_STEEL_WALL);;
+                .add(ModBlocks.PERFORATED_STAINLESS_STEEL_WALL);
         getOrCreateTagBuilder(BlockTags.SLABS)
                 .add(ModBlocks.KHAKI_RIVETED_HULL_SMALL_SLAB)
                 .add(ModBlocks.ANTHRACITE_RIVETED_HULL_SMALL_SLAB)
