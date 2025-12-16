@@ -1,6 +1,6 @@
-// 1.21.1	2025-12-15T20:21:53.2119418	TMMore/Tags for minecraft:block
+// 1.21.1	2025-12-16T19:48:26.9524432	TMMore/Tags for minecraft:block
 0373b32c32e0c814c5afd90252c700c1d1cea772 data\minecraft\tags\block\stairs.json
 3784aa637e87efd63945f1e83e8766371dbfd56a data\minecraft\tags\block\fences.json
-3784aa637e87efd63945f1e83e8766371dbfd56a data\minecraft\tags\block\wooden_fences.json
-6520e243cae2ef1eff4fc8e59590c238d7055319 data\minecraft\tags\block\slabs.json
 cc9bf3788bf9dbe1d2194fcf62968c7a9cc8b0a5 data\minecraft\tags\block\walls.json
+6520e243cae2ef1eff4fc8e59590c238d7055319 data\minecraft\tags\block\slabs.json
+3784aa637e87efd63945f1e83e8766371dbfd56a data\minecraft\tags\block\wooden_fences.json

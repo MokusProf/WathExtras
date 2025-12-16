@@ -371,6 +371,10 @@ public class ModBlocks {
     public static final  Block PERFORATED_DARK_STEEL_PANEL = registerBlock("perforated_dark_steel_panel",
             new PanelBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
 
+    public static final Block BUTTERFLY_DOOR_BLOCK = registerBlock("butterfly_door",
+            new ButterflyDoorBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL).nonOpaque()));
+
+
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name,block);
         return Registry.register(Registries.BLOCK, Identifier.of(TMMore.MOD_ID,name),block);
@@ -510,6 +514,7 @@ public class ModBlocks {
             TMMORE_BLOCKS.add(QUEEN_BENCH);
             TMMORE_BLOCKS.add(STEEL_BENCH);
             TMMORE_BLOCKS.add(THORN_BENCH);
+            TMMORE_BLOCKS.add(BUTTERFLY_DOOR_BLOCK);
 
             //Plushies
             TMMORE_BLOCKS.add(NORA_PLUSH);
