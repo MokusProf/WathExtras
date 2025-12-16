@@ -193,6 +193,8 @@ public class ModLanguageProvider extends FabricLanguageProvider {
 
         translationBuilder.add(ModBlocks.ASPHALT, "Asphalt");
 
+        translationBuilder.add(ModBlocks.BUTTERFLY_DOOR_BLOCK, "Butterfly Stoker Door");
+
         translationBuilder.add(ModItems.GINGERBREAD,"Gingerbread");
         translationBuilder.add(ModItems.GINGERBREAD_CHOCO,"Chocolate Gingerbread");
         translationBuilder.add(ModItems.GINGERBREAD_DUCKAMOLY,"Duckamoly-bread");
