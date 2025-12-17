@@ -260,5 +260,8 @@ public class ModLanguageProvider extends FabricLanguageProvider {
 
         translationBuilder.add("painting.tmmore.wall_banana.title","Wall Banana");
         translationBuilder.add("painting.tmmore.wall_banana.author","DavidAndRocket");
+
+        translationBuilder.add("painting.tmmore.dogspoker.title","Dogs Poker");
+        translationBuilder.add("painting.tmmore.dogspoker.author","willofkek");
     }
 }
