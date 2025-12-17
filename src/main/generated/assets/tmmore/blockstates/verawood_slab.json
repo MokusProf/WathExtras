@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "tmmore:block/verawood_slab"
+    },
+    "type=double": {
+      "model": "tmmore:block/verawood_planks"
+    },
+    "type=top": {
+      "model": "tmmore:block/verawood_slab_top"
+    }
+  }
+}

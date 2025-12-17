@@ -29,7 +29,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.CORRUGATED_DARK_STEEL_WALL)
                 .add(ModBlocks.CORRUGATED_STAINLESS_STEEL_WALL)
                 .add(ModBlocks.PERFORATED_DARK_STEEL_WALL)
-                .add(ModBlocks.PERFORATED_STAINLESS_STEEL_WALL);
+                .add(ModBlocks.PERFORATED_STAINLESS_STEEL_WALL)
+                .add(ModBlocks.VERAWOOD_WALL);
         getOrCreateTagBuilder(BlockTags.SLABS)
                 .add(ModBlocks.KHAKI_RIVETED_HULL_SMALL_SLAB)
                 .add(ModBlocks.ANTHRACITE_RIVETED_HULL_SMALL_SLAB)
@@ -42,7 +43,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.CORRUGATED_DARK_STEEL_SLAB)
                 .add(ModBlocks.CORRUGATED_STAINLESS_STEEL_SLAB)
                 .add(ModBlocks.PERFORATED_DARK_STEEL_SLAB)
-                .add(ModBlocks.PERFORATED_STAINLESS_STEEL_SLAB);
+                .add(ModBlocks.PERFORATED_STAINLESS_STEEL_SLAB)
+                .add(ModBlocks.VERAWOOD_SLAB);
         getOrCreateTagBuilder(BlockTags.STAIRS)
                 .add(ModBlocks.KHAKI_RIVETED_HULL_SMALL_STAIRS)
                 .add(ModBlocks.ANTHRACITE_RIVETED_HULL_SMALL_STAIRS)
@@ -55,11 +57,14 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.CORRUGATED_DARK_STEEL_STAIRS)
                 .add(ModBlocks.CORRUGATED_STAINLESS_STEEL_STAIRS)
                 .add(ModBlocks.PERFORATED_DARK_STEEL_STAIRS)
-                .add(ModBlocks.PERFORATED_STAINLESS_STEEL_STAIRS);
+                .add(ModBlocks.PERFORATED_STAINLESS_STEEL_STAIRS)
+                .add(ModBlocks.VERAWOOD_STAIRS);
         getOrCreateTagBuilder(BlockTags.FENCES)
-                .add(ModBlocks.BLEACHED_FENCE);
+                .add(ModBlocks.BLEACHED_FENCE)
+                .add(ModBlocks.VERAWOOD_FENCE);
         getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
-                .add(ModBlocks.BLEACHED_FENCE);
+                .add(ModBlocks.BLEACHED_FENCE)
+                .add(ModBlocks.VERAWOOD_FENCE);
 
     }
 }

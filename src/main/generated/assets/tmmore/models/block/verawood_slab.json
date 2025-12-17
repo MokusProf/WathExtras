@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "tmmore:block/verawood_planks",
+    "side": "tmmore:block/verawood_planks",
+    "top": "tmmore:block/verawood_planks"
+  }
+}

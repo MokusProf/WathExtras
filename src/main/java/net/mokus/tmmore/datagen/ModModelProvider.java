@@ -289,6 +289,14 @@ public class ModModelProvider extends FabricModelProvider {
         BLEACHED.wall(ModBlocks.BLEACHED_WALL);
         BLEACHED.fence(ModBlocks.BLEACHED_FENCE);
 
+        BlockStateModelGenerator.BlockTexturePool VERAWOOD =
+                generator.registerCubeAllModelTexturePool(ModBlocks.VERAWOOD_PLANKS);
+        VERAWOOD.stairs(ModBlocks.VERAWOOD_STAIRS);
+        VERAWOOD.slab(ModBlocks.VERAWOOD_SLAB);
+        VERAWOOD.wall(ModBlocks.VERAWOOD_WALL);
+        VERAWOOD.fence(ModBlocks.VERAWOOD_FENCE);
+        this.registerPanel(generator,ModBlocks.VERAWOOD_PANEL,ModBlocks.VERAWOOD_PLANKS);
+
         //Panel registration
         this.registerPanel(generator,ModBlocks.ANTHRACITE_RIVETED_HULL_SMALL_PANEL,ModBlocks.ANTHRACITE_RIVETED_HULL_SMALL);
         this.registerPanel(generator,ModBlocks.BLACK_RIVETED_HULL_SMALL_PANEL,ModBlocks.BLACK_RIVETED_HULL_SMALL);
@@ -372,6 +380,8 @@ public class ModModelProvider extends FabricModelProvider {
         registerConnectiveBlock(generator,ModBlocks.DARK_OAK_WALL_PANEL);
         registerConnectiveBlock(generator,ModBlocks.MAHOGANY_WALL_PANEL);
         registerConnectiveBlock(generator,ModBlocks.EBONY_WALL_PANEL);
+        registerConnectiveBlock(generator,ModBlocks.VERAWOOD_WALL_PANEL);
+        registerConnectiveBlock(generator,ModBlocks.BUBINGA_WALL_PANEL);
 
         BlockStateModelGenerator.BlockTexturePool PERFORATED_DARK_STEEL =
                 generator.registerCubeAllModelTexturePool(ModBlocks.PERFORATED_DARK_STEEL);
@@ -400,6 +410,11 @@ public class ModModelProvider extends FabricModelProvider {
         CORRUGATED_DARK_STEEL.slab(ModBlocks.CORRUGATED_DARK_STEEL_SLAB);
         CORRUGATED_DARK_STEEL.wall(ModBlocks.CORRUGATED_DARK_STEEL_WALL);
         this.registerPanel(generator,ModBlocks.CORRUGATED_DARK_STEEL_PANEL,ModBlocks.CORRUGATED_DARK_STEEL);
+
+        generator.registerBuiltinWithParticle(ModBlocks.KILL_BLOCK, ModBlocks.KILL_BLOCK.asItem());
+        generator.registerItemModel(ModBlocks.KILL_BLOCK.asItem());
+        this.registerPanel(generator,ModBlocks.KILL_BLOCK_PANEL,ModBlocks.KILL_BLOCK_PANEL);
+
 
     }
 

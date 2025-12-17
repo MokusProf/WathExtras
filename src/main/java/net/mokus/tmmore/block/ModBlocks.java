@@ -44,6 +44,19 @@ public class ModBlocks {
     public static final Block BLEACHED_FENCE = registerBlock("bleached_fence",
             new FenceBlock(AbstractBlock.Settings.copy(Blocks.OAK_FENCE)));
 
+    public static final Block VERAWOOD_PLANKS = registerBlock("verawood_planks",
+            new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
+    public static final Block VERAWOOD_STAIRS = registerBlock("verawood_stairs",
+            new StairsBlock(ModBlocks.VERAWOOD_PLANKS.getDefaultState(), AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
+    public static final Block VERAWOOD_SLAB = registerBlock("verawood_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
+    public static final Block VERAWOOD_WALL = registerBlock("verawood_wall",
+            new WallBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
+    public static final Block VERAWOOD_PANEL = registerBlock("verawood_panel",
+            new PanelBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
+    public static final Block VERAWOOD_FENCE = registerBlock("verawood_fence",
+            new FenceBlock(AbstractBlock.Settings.copy(Blocks.OAK_FENCE)));
+
 
     public static final Block KHAKI_RIVETED_HULL_SMALL = registerBlock("khaki_riveted_hull_small",
             new Block(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
@@ -323,6 +336,7 @@ public class ModBlocks {
     public static final Block ASPHALT = registerBlock("asphalt",
             new Block(AbstractBlock.Settings.copy(Blocks.GRAVEL)));
 
+
     public static final Block BLEACHED_WALL_PANEL = registerBlock("bleached_wall_panel",
             new WallPanelBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
     public static final Block DARK_OAK_WALL_PANEL = registerBlock("dark_oak_wall_panel",
@@ -330,6 +344,10 @@ public class ModBlocks {
     public static final Block EBONY_WALL_PANEL = registerBlock("ebony_wall_panel",
             new WallPanelBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
     public static final Block MAHOGANY_WALL_PANEL = registerBlock("mahogany_wall_panel",
+            new WallPanelBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
+    public static final Block VERAWOOD_WALL_PANEL = registerBlock("verawood_wall_panel",
+            new WallPanelBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
+    public static final Block BUBINGA_WALL_PANEL = registerBlock("bubinga_wall_panel",
             new WallPanelBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
 
     public static final Block CORRUGATED_DARK_STEEL = registerBlock("corrugated_dark_steel",
@@ -379,6 +397,11 @@ public class ModBlocks {
     public static final Block BUTTERFLY_DOOR_BLOCK = registerBlock("butterfly_door",
             new ButterflyDoorBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL).nonOpaque()));
 
+    public static final Block KILL_BLOCK_PANEL = registerBlock("kill_block_panel",
+            new KillBlockPanel(AbstractBlock.Settings.copy(TMMBlocks.BARRIER_PANEL)));
+    public static final Block KILL_BLOCK = registerBlock("kill_block",
+            new KillBlock(AbstractBlock.Settings.copy(Blocks.STONE).nonOpaque()));
+
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name,block);
@@ -389,9 +412,6 @@ public class ModBlocks {
         Registry.register(Registries.ITEM, Identifier.of(TMMore.MOD_ID,name),
                 new BlockItem(block, new Item.Settings()));
     }
-
-
-
 
     // Creative Item Group Striped Carpets
     public static final RegistryKey<ItemGroup> STRIPED_CARPET_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(TMMore.MOD_ID, "striped_carpet_group"));
@@ -490,9 +510,17 @@ public class ModBlocks {
             TMMORE_BLOCKS.add(BLEACHED_SLAB);
             TMMORE_BLOCKS.add(BLEACHED_WALL);
             TMMORE_BLOCKS.add(BLEACHED_FENCE);
+            TMMORE_BLOCKS.add(BLEACHED_WALL_PANEL);
+            TMMORE_BLOCKS.add(VERAWOOD_PLANKS);
+            TMMORE_BLOCKS.add(VERAWOOD_PANEL);
+            TMMORE_BLOCKS.add(VERAWOOD_STAIRS);
+            TMMORE_BLOCKS.add(VERAWOOD_SLAB);
+            TMMORE_BLOCKS.add(VERAWOOD_WALL);
+            TMMORE_BLOCKS.add(VERAWOOD_FENCE);
+            TMMORE_BLOCKS.add(VERAWOOD_WALL_PANEL);
 
             //Wall panels
-            TMMORE_BLOCKS.add(BLEACHED_WALL_PANEL);
+            TMMORE_BLOCKS.add(BUBINGA_WALL_PANEL);
             TMMORE_BLOCKS.add(EBONY_WALL_PANEL);
             TMMORE_BLOCKS.add(DARK_OAK_WALL_PANEL);
             TMMORE_BLOCKS.add(MAHOGANY_WALL_PANEL);
@@ -516,6 +544,8 @@ public class ModBlocks {
             TMMORE_BLOCKS.add(ARCADE_FLOOR);
 
             //ETC NON BLOCK CONFORMING BLOCKS
+            TMMORE_BLOCKS.add(KILL_BLOCK);
+            TMMORE_BLOCKS.add(KILL_BLOCK_PANEL);
             TMMORE_BLOCKS.add(ModItems.CANDELABRE_ITEM);
             TMMORE_BLOCKS.add(STACK_LIGHTS);
             TMMORE_BLOCKS.add(ROOF_LAMP);

@@ -27,11 +27,11 @@ public class ModItems {
 
 
     public static final Item MILK_GLASS = registerItem("milk_glass",
-            new CocktailItem(new Item.Settings().maxCount(1)));
+            new CocktailItem(new Item.Settings().maxCount(1).food(FoodComponents.HONEY_BOTTLE)));
     public static final Item CHOCCY_MILK_GLASS = registerItem("choccy_milk_glass",
-            new CocktailItem(new Item.Settings().maxCount(1)));
+            new CocktailItem(new Item.Settings().maxCount(1).food(FoodComponents.HONEY_BOTTLE)));
     public static final Item STRAWBERRY_MILK_GLASS = registerItem("strawberry_milk_glass",
-            new CocktailItem(new Item.Settings().maxCount(1)));
+            new CocktailItem(new Item.Settings().maxCount(1).food(FoodComponents.HONEY_BOTTLE)));
 
     public static final Item BLUE_LOLLIPOP = registerItem("blue_lollipop",
             new Item(new Item.Settings().food(FoodComponents.APPLE)));
@@ -62,32 +62,32 @@ public class ModItems {
             new VerticallyAttachableBlockItem(ModBlocks.CANDELABRE, ModBlocks.WALL_CANDELABRE, new Item.Settings(), Direction.DOWN));
 
     public static final Item BLENDED_BERRY_BLAST = registerItem("blended_berry_blast",
-            new CocktailItem(new Item.Settings().maxCount(1)));
+            new CocktailItem(new Item.Settings().maxCount(1).food(FoodComponents.HONEY_BOTTLE)));
     public static final Item COTTON_SWIZZLE = registerItem("cotton_swizzle",
-            new CocktailItem(new Item.Settings().maxCount(1)));
+            new CocktailItem(new Item.Settings().maxCount(1).food(FoodComponents.HONEY_BOTTLE)));
     public static final Item NO_BERRY_LEMON_SOUR = registerItem("no_berry_lemon_sour",
-            new CocktailItem(new Item.Settings().maxCount(1)));
+            new CocktailItem(new Item.Settings().maxCount(1).food(FoodComponents.HONEY_BOTTLE)));
     public static final Item SALTED_SEAFRUIT = registerItem("salted_seafruit",
-            new CocktailItem(new Item.Settings().maxCount(1)));
+            new CocktailItem(new Item.Settings().maxCount(1).food(FoodComponents.HONEY_BOTTLE)));
     public static final Item SAPPHIC_SUNSET = registerItem("sapphic_sunset",
-            new CocktailItem(new Item.Settings().maxCount(1)));
+            new CocktailItem(new Item.Settings().maxCount(1).food(FoodComponents.HONEY_BOTTLE)));
     public static final Item THE_ALL_IN = registerItem("the_all_in",
-            new CocktailItem(new Item.Settings().maxCount(1)));
+            new CocktailItem(new Item.Settings().maxCount(1).food(FoodComponents.HONEY_BOTTLE)));
     public static final Item THE_CHROMATIC = registerItem("the_chromatic",
-            new CocktailItem(new Item.Settings().maxCount(1)));
+            new CocktailItem(new Item.Settings().maxCount(1).food(FoodComponents.HONEY_BOTTLE)));
 
     public static final Item MIXED_MOCKTAIL = registerItem("mixed_mocktail",
-            new CocktailItem(new Item.Settings().maxCount(1)));
+            new CocktailItem(new Item.Settings().maxCount(1).food(FoodComponents.HONEY_BOTTLE)));
     public static final Item TEQUILA_SHOT = registerItem("tequila_shot",
-            new CocktailItem(new Item.Settings().maxCount(1)));
+            new CocktailItem(new Item.Settings().maxCount(1).food(FoodComponents.HONEY_BOTTLE)));
     public static final Item WHISKEY_SOUR = registerItem("whiskey_sour",
-            new CocktailItem(new Item.Settings().maxCount(1)));
+            new CocktailItem(new Item.Settings().maxCount(1).food(FoodComponents.HONEY_BOTTLE)));
     public static final Item WATER_GLASS = registerItem("water_glass",
-            new CocktailItem(new Item.Settings().maxCount(1)));
+            new CocktailItem(new Item.Settings().maxCount(1).food(FoodComponents.HONEY_BOTTLE)));
     public static final Item MOONSHINE = registerItem("moonshine",
-            new CocktailItem(new Item.Settings().maxCount(1)));
+            new CocktailItem(new Item.Settings().maxCount(1).food(FoodComponents.HONEY_BOTTLE)));
     public static final Item BEER_PINT = registerItem("beer_pint",
-            new CocktailItem(new Item.Settings().maxCount(1)));
+            new CocktailItem(new Item.Settings().maxCount(1).food(FoodComponents.HONEY_BOTTLE)));
 
 
 
@@ -130,6 +130,7 @@ public class ModItems {
             TMMORE_ITEMS.add(GINGERBREAD_DUCKAMOLY);
             TMMORE_ITEMS.add(GINGERBREAD_RUDOLPH);
             TMMORE_ITEMS.add(GINGERBREAD_SCARF);
+
         });
     }
 }

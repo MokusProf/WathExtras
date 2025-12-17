@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "tmmore:block/kill_block"
+    }
+  }
+}
