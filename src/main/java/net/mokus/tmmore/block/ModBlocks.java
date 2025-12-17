@@ -559,6 +559,7 @@ public class ModBlocks {
             TMMORE_BLOCKS.add(STEEL_BENCH);
             TMMORE_BLOCKS.add(THORN_BENCH);
             TMMORE_BLOCKS.add(BUTTERFLY_DOOR_BLOCK);
+            TMMORE_BLOCKS.add(SERVICE_BELL);
 
             //Plushies
             TMMORE_BLOCKS.add(NORA_PLUSH);
