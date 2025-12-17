@@ -269,13 +269,13 @@ public class ModBlocks {
     public static final Block WILLO_PLUSH = registerBlock("willo_plush",
             new PlushBlock(ModSounds.WILLO_PLUSH,AbstractBlock.Settings.copy(Blocks.WHITE_WOOL).nonOpaque()));
     public static final Block MOKUS_PLUSH = registerBlock("mokus_plush",
-            new PlushBlock(ModSounds.DOOGEY_PLUSH,AbstractBlock.Settings.copy(Blocks.BLACK_WOOL).nonOpaque()));
+            new PlushBlock(ModSounds.DEFAULT_PLUSH,AbstractBlock.Settings.copy(Blocks.BLACK_WOOL).nonOpaque()));
     public static final Block DOOGEY_PLUSH = registerBlock("doogey_plush",
             new PlushBlock(ModSounds.DOOGEY_PLUSH,AbstractBlock.Settings.copy(Blocks.WHITE_WOOL).nonOpaque()));
     public static final Block SQUID_PLUSH = registerBlock("squid_plush",
             new PlushBlock(ModSounds.SQUID_PLUSH,AbstractBlock.Settings.copy(Blocks.WHITE_WOOL).nonOpaque()));
     public static final Block PENCIL_PLUSH = registerBlock("pencil_plush",
-            new PlushBlock(ModSounds.DOOGEY_PLUSH,AbstractBlock.Settings.copy(Blocks.WHITE_WOOL).nonOpaque()));
+            new PlushBlock(ModSounds.PENCIL_PLUSH,AbstractBlock.Settings.copy(Blocks.WHITE_WOOL).nonOpaque()));
     public static final Block INDIGO_PLUSH = registerBlock("indigo_plush",
             new PlushBlock(ModSounds.INDIGO_PLUSH,AbstractBlock.Settings.copy(Blocks.WHITE_WOOL).nonOpaque()));
 
