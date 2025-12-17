@@ -1,7 +1,5 @@
 package net.mokus.tmmore.mixin;
 
-import dev.doctor4t.trainmurdermystery.index.TMMBlocks;
-import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.network.ClientPlayNetworkHandler;
 import net.minecraft.client.render.WorldRenderer;
 import net.minecraft.client.world.ClientWorld;
