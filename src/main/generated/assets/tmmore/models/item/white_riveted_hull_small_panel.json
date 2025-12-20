@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "tmmore:block/white_riveted_hull_small"
-  }
-}

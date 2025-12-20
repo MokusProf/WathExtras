@@ -1,6 +1,0 @@
-{
-  "parent": "trainmurdermystery:block/template_ornament_r180",
-  "textures": {
-    "texture": "tmmore:block/stainless_steel_ornament_end"
-  }
-}

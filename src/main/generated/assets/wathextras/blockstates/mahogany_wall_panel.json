@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "part=bottom": {
+      "model": "wathextras:block/mahogany_wall_panel_bottom"
+    },
+    "part=box": {
+      "model": "wathextras:block/mahogany_wall_panel_box"
+    },
+    "part=middle": {
+      "model": "wathextras:block/mahogany_wall_panel_middle"
+    },
+    "part=single": {
+      "model": "wathextras:block/mahogany_wall_panel_single"
+    },
+    "part=top": {
+      "model": "wathextras:block/mahogany_wall_panel_top"
+    }
+  }
+}

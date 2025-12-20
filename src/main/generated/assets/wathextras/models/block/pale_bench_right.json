@@ -1,0 +1,6 @@
+{
+  "parent": "wathextras:block/bench_right_template",
+  "textures": {
+    "all": "wathextras:block/pale_bench"
+  }
+}

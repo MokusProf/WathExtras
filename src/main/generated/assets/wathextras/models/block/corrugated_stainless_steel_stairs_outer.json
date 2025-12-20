@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "wathextras:block/corrugated_stainless_steel",
+    "side": "wathextras:block/corrugated_stainless_steel",
+    "top": "wathextras:block/corrugated_stainless_steel"
+  }
+}

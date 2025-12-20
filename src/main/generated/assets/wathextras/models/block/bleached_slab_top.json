@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "wathextras:block/bleached_planks",
+    "side": "wathextras:block/bleached_planks",
+    "top": "wathextras:block/bleached_planks"
+  }
+}

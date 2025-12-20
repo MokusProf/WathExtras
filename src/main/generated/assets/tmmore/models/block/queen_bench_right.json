@@ -1,6 +1,0 @@
-{
-  "parent": "tmmore:block/bench_right_template",
-  "textures": {
-    "all": "tmmore:block/queen_bench"
-  }
-}

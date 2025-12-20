@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "wathextras:block/bleached_slab"
+    },
+    "type=double": {
+      "model": "wathextras:block/bleached_planks"
+    },
+    "type=top": {
+      "model": "wathextras:block/bleached_slab_top"
+    }
+  }
+}

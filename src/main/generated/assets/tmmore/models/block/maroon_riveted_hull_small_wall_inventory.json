@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/wall_inventory",
-  "textures": {
-    "wall": "tmmore:block/maroon_riveted_hull_small"
-  }
-}

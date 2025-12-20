@@ -1,0 +1,6 @@
+{
+  "parent": "wathe:block/template_ornament_r90",
+  "textures": {
+    "texture": "wathextras:block/stainless_steel_ornament_sides"
+  }
+}

@@ -45,7 +45,7 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	modImplementation "maven.modrinth:harpy-express-mod:${project.tmm_version}"
+	modApi files("libs/wathe-1.3-1.21.1.jar")
 
 	modImplementation "dev.upcraft.datasync:datasync-minecraft-${project.minecraft_version}-fabric:${project.datasync_version}"
 	modImplementation "dev.doctor4t:ratatouille:${project.ratatouille_version}"

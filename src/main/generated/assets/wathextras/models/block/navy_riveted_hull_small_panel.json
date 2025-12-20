@@ -1,0 +1,6 @@
+{
+  "parent": "wathe:block/template_panel",
+  "textures": {
+    "all": "wathextras:block/navy_riveted_hull_small"
+  }
+}

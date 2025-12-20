@@ -1,6 +1,0 @@
-{
-  "parent": "trainmurdermystery:block/template_ornament_r90",
-  "textures": {
-    "texture": "tmmore:block/oxidized_copper_ornament_corner"
-  }
-}

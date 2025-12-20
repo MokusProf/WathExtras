@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "wathextras:block/white_riveted_hull_small"
+  }
+}

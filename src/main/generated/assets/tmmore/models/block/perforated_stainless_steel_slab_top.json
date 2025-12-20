@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "tmmore:block/perforated_stainless_steel",
-    "side": "tmmore:block/perforated_stainless_steel",
-    "top": "tmmore:block/perforated_stainless_steel"
-  }
-}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_post",
+  "textures": {
+    "wall": "wathextras:block/muntz_riveted_hull_small"
+  }
+}

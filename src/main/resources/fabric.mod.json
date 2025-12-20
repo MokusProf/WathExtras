@@ -1,9 +1,9 @@
 {
 	"schemaVersion": 1,
-	"id": "tmmore",
+	"id": "wathextras",
 	"version": "${version}",
-	"name": "TMMore",
-	"description": "Adds more building blocks in the TMM style",
+	"name": "Wathextras",
+	"description": "Adds more building blocks in the Wathe style",
 	"contributors": [
 		"_Mokus",
 		"Miss_Nora",
@@ -17,24 +17,24 @@
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/MokusProf/TMMore"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/tmmore/icon.png",
+	"icon": "assets/wathextras/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.mokus.tmmore.TMMore"
+			"net.mokus.wathextras.WathExtras"
 		],
 		"client": [
-			"net.mokus.tmmore.TMMoreClient"
+			"net.mokus.wathextras.WathExtrasClient"
 		],
 		"fabric-datagen": [
-			"net.mokus.tmmore.TMMoreDataGenerator"
+			"net.mokus.wathextras.WathExtrasDataGenerator"
 		]
 	},
 	"mixins": [
-		"tmmore.mixins.json"
+		"wathextras.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.16.10",

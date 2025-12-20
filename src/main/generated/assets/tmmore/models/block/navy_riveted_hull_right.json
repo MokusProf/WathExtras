@@ -1,6 +1,0 @@
-{
-  "parent": "tmmore:block/double_hull_block_template",
-  "textures": {
-    "all": "tmmore:block/navy_riveted_hull_right"
-  }
-}

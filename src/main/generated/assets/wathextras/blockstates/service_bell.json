@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "wathextras:block/service_bell",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "wathextras:block/service_bell"
+    },
+    "facing=south": {
+      "model": "wathextras:block/service_bell",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "wathextras:block/service_bell",
+      "y": 270
+    }
+  }
+}

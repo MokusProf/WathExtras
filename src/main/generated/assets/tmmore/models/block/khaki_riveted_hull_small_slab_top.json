@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "tmmore:block/khaki_riveted_hull_small",
-    "side": "tmmore:block/khaki_riveted_hull_small",
-    "top": "tmmore:block/khaki_riveted_hull_small"
-  }
-}

@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "tmmore:block/oxidized_copper_ornament_all"
-  }
-}

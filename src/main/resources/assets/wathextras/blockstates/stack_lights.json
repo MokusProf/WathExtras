@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "active=true,lit=false": {
+      "model": "wathextras:block/stack_lights"
+    },
+    "active=true,lit=true": {
+      "model": "wathextras:block/stack_lights_on"
+    },
+    "active=false,lit=false": {
+      "model": "wathextras:block/stack_lights"
+    },
+    "active=false,lit=true": {
+      "model": "wathextras:block/stack_lights"
+    }
+  }
+}

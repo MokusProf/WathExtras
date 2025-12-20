@@ -1,0 +1,74 @@
+{
+  "willo_plush": {
+    "subtitle": "sounds.wathextras.willo_plush",
+    "sounds": [
+      "wathextras:willo_plush"
+    ]
+  },
+  "pickle_plush": {
+    "subtitle": "sounds.wathextras.pickle_plush",
+    "sounds": [
+      "wathextras:pickle_plush"
+    ]
+  },
+  "verid__plush": {
+    "subtitle": "sounds.wathextras.verid__plush",
+    "sounds": [
+      "wathextras:verid__plush"
+    ]
+  },
+  "doogey_plush": {
+    "subtitle": "sounds.wathextras.doogey_plush",
+    "sounds": [
+      "wathextras:doogey_plush"
+    ]
+  },
+  "davidandrocket_plush": {
+    "subtitle": "sounds.wathextras.davidandrocket_plush",
+    "sounds": [
+      "wathextras:davidandrocket_plush"
+    ]
+  },
+  "duckamoly_plush": {
+    "subtitle": "sounds.wathextras.duckamoly_plush",
+    "sounds": [
+      "wathextras:duckamoly_plush"
+    ]
+  },
+  "squid_plush": {
+    "subtitle": "sounds.wathextras.squid_plush",
+    "sounds": [
+      "wathextras:squid_plush"
+    ]
+  },
+  "indigo_plush": {
+    "subtitle": "sounds.wathextras.indigo_plush",
+    "sounds": [
+      "wathextras:indigo_plush"
+    ]
+  },
+  "nora_plush": {
+    "subtitle": "sounds.wathextras.nora_plush",
+    "sounds": [
+      "wathextras:nora_plush"
+    ]
+  },
+  "pencil_plush":{
+    "subtitle": "sounds.wathextras.pencil_plush",
+    "sounds": [
+      "wathextras:pencil_plush"
+    ]
+  },
+  "plush_squish": {
+    "subtitle": "sounds.wathextras.default_plush",
+    "sounds": [
+      "wathextras:plush_squish"
+    ]
+  },
+  "service_bell": {
+    "subtitle": "sounds.wathextras.service_bell",
+    "sounds": [
+      "wathextras:service_bell"
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/carpet",
+  "textures": {
+    "wool": "wathextras:block/orange_striped_carpet_block"
+  }
+}

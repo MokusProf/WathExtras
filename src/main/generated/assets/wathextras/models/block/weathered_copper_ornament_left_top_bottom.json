@@ -1,0 +1,6 @@
+{
+  "parent": "wathe:block/template_ornament_r270",
+  "textures": {
+    "texture": "wathextras:block/weathered_copper_ornament_end"
+  }
+}

@@ -1,17 +1,17 @@
 {
   "values": [
-    "tmmore:khaki_riveted_hull_small_wall",
-    "tmmore:anthracite_riveted_hull_small_wall",
-    "tmmore:black_riveted_hull_small_wall",
-    "tmmore:maroon_riveted_hull_small_wall",
-    "tmmore:muntz_riveted_hull_small_wall",
-    "tmmore:navy_riveted_hull_small_wall",
-    "tmmore:white_riveted_hull_small_wall",
-    "tmmore:bleached_wall",
-    "tmmore:corrugated_dark_steel_wall",
-    "tmmore:corrugated_stainless_steel_wall",
-    "tmmore:perforated_dark_steel_wall",
-    "tmmore:perforated_stainless_steel_wall",
-    "tmmore:verawood_wall"
+    "wathextras:khaki_riveted_hull_small_wall",
+    "wathextras:anthracite_riveted_hull_small_wall",
+    "wathextras:black_riveted_hull_small_wall",
+    "wathextras:maroon_riveted_hull_small_wall",
+    "wathextras:muntz_riveted_hull_small_wall",
+    "wathextras:navy_riveted_hull_small_wall",
+    "wathextras:white_riveted_hull_small_wall",
+    "wathextras:bleached_wall",
+    "wathextras:corrugated_dark_steel_wall",
+    "wathextras:corrugated_stainless_steel_wall",
+    "wathextras:perforated_dark_steel_wall",
+    "wathextras:perforated_stainless_steel_wall",
+    "wathextras:verawood_wall"
   ]
 }

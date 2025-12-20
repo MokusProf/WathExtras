@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "wathextras:block/verawood_planks",
+    "side": "wathextras:block/verawood_planks",
+    "top": "wathextras:block/verawood_planks"
+  }
+}

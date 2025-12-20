@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "wathextras:block/maroon_riveted_hull_small",
+    "side": "wathextras:block/maroon_riveted_hull_small",
+    "top": "wathextras:block/maroon_riveted_hull_small"
+  }
+}

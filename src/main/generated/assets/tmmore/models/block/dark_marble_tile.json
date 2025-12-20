@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "tmmore:block/dark_marble_tile"
-  }
-}

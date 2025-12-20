@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "wathextras:block/khaki_riveted_hull_small_slab"
+    },
+    "type=double": {
+      "model": "wathextras:block/khaki_riveted_hull_small"
+    },
+    "type=top": {
+      "model": "wathextras:block/khaki_riveted_hull_small_slab_top"
+    }
+  }
+}

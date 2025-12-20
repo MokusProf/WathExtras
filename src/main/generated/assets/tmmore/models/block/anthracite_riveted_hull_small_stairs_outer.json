@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/outer_stairs",
-  "textures": {
-    "bottom": "tmmore:block/anthracite_riveted_hull_small",
-    "side": "tmmore:block/anthracite_riveted_hull_small",
-    "top": "tmmore:block/anthracite_riveted_hull_small"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/outer_stairs",
-  "textures": {
-    "bottom": "tmmore:block/perforated_dark_steel",
-    "side": "tmmore:block/perforated_dark_steel",
-    "top": "tmmore:block/perforated_dark_steel"
-  }
-}

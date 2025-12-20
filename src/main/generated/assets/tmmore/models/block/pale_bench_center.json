@@ -1,6 +1,0 @@
-{
-  "parent": "tmmore:block/bench_center_template",
-  "textures": {
-    "all": "tmmore:block/pale_bench"
-  }
-}

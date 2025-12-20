@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_side",
+  "textures": {
+    "wall": "wathextras:block/white_riveted_hull_small"
+  }
+}

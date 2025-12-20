@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "tmmore:block/muntz_riveted_hull_small",
-    "side": "tmmore:block/muntz_riveted_hull_small",
-    "top": "tmmore:block/muntz_riveted_hull_small"
-  }
-}

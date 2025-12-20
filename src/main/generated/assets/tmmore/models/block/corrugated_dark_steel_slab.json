@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "tmmore:block/corrugated_dark_steel",
-    "side": "tmmore:block/corrugated_dark_steel",
-    "top": "tmmore:block/corrugated_dark_steel"
-  }
-}

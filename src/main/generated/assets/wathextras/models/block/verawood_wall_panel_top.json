@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "wathextras:block/verawood_wall_panel_top",
+    "side": "wathextras:block/verawood_wall_panel_side_top"
+  }
+}

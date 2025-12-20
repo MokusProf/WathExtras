@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "wathextras:block/corrugated_dark_steel"
+  }
+}

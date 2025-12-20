@@ -1,0 +1,6 @@
+{
+  "parent": "wathextras:block/bench_center_template",
+  "textures": {
+    "all": "wathextras:block/steel_bench"
+  }
+}

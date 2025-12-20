@@ -1,0 +1,6 @@
+{
+  "parent": "wathextras:block/double_hull_block_template",
+  "textures": {
+    "all": "wathextras:block/anthracite_riveted_hull_left"
+  }
+}

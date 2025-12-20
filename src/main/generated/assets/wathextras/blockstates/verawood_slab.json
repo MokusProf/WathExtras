@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "wathextras:block/verawood_slab"
+    },
+    "type=double": {
+      "model": "wathextras:block/verawood_planks"
+    },
+    "type=top": {
+      "model": "wathextras:block/verawood_slab_top"
+    }
+  }
+}

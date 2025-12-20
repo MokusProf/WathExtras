@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "wathextras:block/gray_striped_carpet_block"
+  }
+}

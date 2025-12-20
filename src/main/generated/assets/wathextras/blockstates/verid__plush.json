@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "wathextras:block/verid__plush",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "wathextras:block/verid__plush"
+    },
+    "facing=south": {
+      "model": "wathextras:block/verid__plush",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "wathextras:block/verid__plush",
+      "y": 270
+    }
+  }
+}

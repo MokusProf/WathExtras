@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "wathextras:block/navy_riveted_hull_small",
+    "side": "wathextras:block/navy_riveted_hull_small",
+    "top": "wathextras:block/navy_riveted_hull_small"
+  }
+}

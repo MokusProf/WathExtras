@@ -1,0 +1,6 @@
+{
+  "parent": "wathe:block/template_panel",
+  "textures": {
+    "all": "wathextras:block/perforated_stainless_steel"
+  }
+}

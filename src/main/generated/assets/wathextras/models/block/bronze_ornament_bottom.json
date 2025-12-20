@@ -1,0 +1,6 @@
+{
+  "parent": "wathe:block/template_ornament_r270",
+  "textures": {
+    "texture": "wathextras:block/bronze_ornament_side"
+  }
+}

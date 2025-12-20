@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "tmmore:block/ebony_wall_panel_top",
-    "side": "tmmore:block/ebony_wall_panel_side_bottom"
-  }
-}
