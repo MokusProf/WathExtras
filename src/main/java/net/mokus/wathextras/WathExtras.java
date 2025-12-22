@@ -10,7 +10,6 @@ import org.slf4j.LoggerFactory;
 
 public class WathExtras implements ModInitializer {
 	public static final String MOD_ID = "wathextras";
-	public static final String OLD_MOD_ID = "tmmore";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	@Override
