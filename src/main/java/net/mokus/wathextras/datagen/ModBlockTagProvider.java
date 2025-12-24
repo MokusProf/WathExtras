@@ -65,6 +65,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
                 .add(ModBlocks.BLEACHED_FENCE)
                 .add(ModBlocks.VERAWOOD_FENCE);
+        getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
+                .add(ModBlocks.BLEACHED_FENCE)
+                .add(ModBlocks.VERAWOOD_FENCE);
 
     }
 }

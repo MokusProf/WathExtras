@@ -1,6 +1,6 @@
 {
   "parent": "wathe:block/template_panel",
   "textures": {
-    "all": "minecraft:block/air"
+    "all": "wathextras:block/steppable_panel"
   }
 }

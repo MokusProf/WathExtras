@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "wathe:block/golden_glass_panel_trim"
+    "layer0": "wathextras:block/broken_glass_panel_item"
   }
 }

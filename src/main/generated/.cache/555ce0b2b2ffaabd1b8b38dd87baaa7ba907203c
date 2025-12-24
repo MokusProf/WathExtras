@@ -1,6 +1,6 @@
-// 1.21.1	2025-12-21T16:26:14.5775072	Wathextras/Tags for minecraft:block
-a883275766275211759b4f85a824efb1bd53eb4d data\minecraft\tags\block\stairs.json
-1928648abecd9b65cc014415f4d0dc7db7937a77 data\minecraft\tags\block\wooden_fences.json
-1928648abecd9b65cc014415f4d0dc7db7937a77 data\minecraft\tags\block\fences.json
-54ef80c77d2c395ff4efe50246cdbbc1eacc0910 data\minecraft\tags\block\slabs.json
-8d04169439ed63f35da9aaf25f2a0c980c1b1da8 data\minecraft\tags\block\walls.json
+// 1.21.1	2025-12-23T20:30:59.00279	Wathextras/Tags for minecraft:block
+8d04169439ed63f35da9aaf25f2a0c980c1b1da8 data/minecraft/tags/block/walls.json
+1928648abecd9b65cc014415f4d0dc7db7937a77 data/minecraft/tags/block/fences.json
+54ef80c77d2c395ff4efe50246cdbbc1eacc0910 data/minecraft/tags/block/slabs.json
+a883275766275211759b4f85a824efb1bd53eb4d data/minecraft/tags/block/stairs.json
+eddf3a8242bf610e325b60efeb4bc7ee3e99594a data/minecraft/tags/block/wooden_fences.json

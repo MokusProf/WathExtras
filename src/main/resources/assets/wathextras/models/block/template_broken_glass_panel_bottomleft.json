@@ -1,6 +1,6 @@
 {
 	"textures": {
-		"4": "#panel"
+		"panel": "#panel"
 	},
 	"elements": [
 		{
@@ -8,8 +8,8 @@
 			"from": [10, 0, 15],
 			"to": [16, 6, 16],
 			"faces": {
-				"north": {"uv": [9, 0, 12, 3], "texture": "#4", "cullface": "north"},
-				"south": {"uv": [9, 3, 12, 6], "texture": "#4"}
+				"north": {"uv": [9, 0, 12, 3], "texture": "#panel", "cullface": "north"},
+				"south": {"uv": [9, 3, 12, 6], "texture": "#panel"}
 			}
 		}
 	]

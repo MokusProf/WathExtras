@@ -15,11 +15,13 @@ import net.minecraft.util.math.Direction;
 import net.mokus.wathextras.WathExtras;
 import net.mokus.wathextras.block.ModBlocks;
 import net.mokus.wathextras.block.custom.BenchBlock;
+import net.mokus.wathextras.block.custom.BrokenGlassPanelBlock;
 import net.mokus.wathextras.block.custom.DoubleHullBlock;
 import net.mokus.wathextras.block.custom.WallPanelBlock;
 import net.mokus.wathextras.item.ModItems;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.Map;
 import java.util.Optional;
 import java.util.function.Function;
 
@@ -313,6 +315,123 @@ public class ModModelProvider extends FabricModelProvider {
         generator.blockStateCollector.accept(multipartBlockStateSupplier);
     }
 
+    private static final TextureKey PANEL_KEY = TextureKey.of("panel");
+    private static final TextureKey EDGE_KEY = TextureKey.of("edge");
+
+    private static final Model BROKEN_GLASS_PANEL = template(
+            Identifier.of(WathExtras.MOD_ID, "block/template_broken_glass_panel_base"), EDGE_KEY
+    );
+
+    private static final Model BROKEN_GLASS_PANEL_TOP = template(
+            Identifier.of(WathExtras.MOD_ID, "block/template_broken_glass_panel_top"), PANEL_KEY
+    );
+
+    private static final Model BROKEN_GLASS_PANEL_TOPLEFT = template(
+            Identifier.of(WathExtras.MOD_ID, "block/template_broken_glass_panel_topleft"), PANEL_KEY
+    );
+
+    private static final Model BROKEN_GLASS_PANEL_LEFT = template(
+            Identifier.of(WathExtras.MOD_ID, "block/template_broken_glass_panel_left"), PANEL_KEY
+    );
+
+    private static final Model BROKEN_GLASS_PANEL_BOTTOMLEFT = template(
+            Identifier.of(WathExtras.MOD_ID, "block/template_broken_glass_panel_bottomleft"), PANEL_KEY
+    );
+
+    private static final Model BROKEN_GLASS_PANEL_BOTTOM = template(
+            Identifier.of(WathExtras.MOD_ID, "block/template_broken_glass_panel_bottom"), PANEL_KEY
+    );
+
+    private static final Model BROKEN_GLASS_PANEL_BOTTOMRIGHT = template(
+            Identifier.of(WathExtras.MOD_ID, "block/template_broken_glass_panel_bottomright"), PANEL_KEY
+    );
+
+    private static final Model BROKEN_GLASS_PANEL_RIGHT = template(
+            Identifier.of(WathExtras.MOD_ID, "block/template_broken_glass_panel_right"), PANEL_KEY
+    );
+
+    private static final Model BROKEN_GLASS_PANEL_TOPRIGHT = template(
+            Identifier.of(WathExtras.MOD_ID, "block/template_broken_glass_panel_topright"), PANEL_KEY
+    );
+
+    private void addRotatedVariants(MultipartBlockStateSupplier supplier, java.util.function.Supplier<When.PropertyCondition> conditionFactory, Identifier modelId) {
+        supplier.with(conditionFactory.get().set(Properties.FACING, Direction.NORTH), BlockStateVariant.create().put(VariantSettings.MODEL, modelId));
+        supplier.with(conditionFactory.get().set(Properties.FACING, Direction.EAST), BlockStateVariant.create().put(VariantSettings.MODEL, modelId).put(VariantSettings.Y, VariantSettings.Rotation.R90));
+        supplier.with(conditionFactory.get().set(Properties.FACING, Direction.SOUTH), BlockStateVariant.create().put(VariantSettings.MODEL, modelId).put(VariantSettings.Y, VariantSettings.Rotation.R180));
+        supplier.with(conditionFactory.get().set(Properties.FACING, Direction.WEST), BlockStateVariant.create().put(VariantSettings.MODEL, modelId).put(VariantSettings.Y, VariantSettings.Rotation.R270));
+        supplier.with(conditionFactory.get().set(Properties.FACING, Direction.UP), BlockStateVariant.create().put(VariantSettings.MODEL, modelId).put(VariantSettings.X, VariantSettings.Rotation.R270));
+        supplier.with(conditionFactory.get().set(Properties.FACING, Direction.DOWN), BlockStateVariant.create().put(VariantSettings.MODEL, modelId).put(VariantSettings.X, VariantSettings.Rotation.R90));
+    }
+
+    private void registerBrokenGlassPanel(BlockStateModelGenerator generator, Block block) {
+        Models.GENERATED.upload(ModelIds.getItemModelId(block.asItem()), TextureMap.layer0(Identifier.of(WathExtras.MOD_ID, "block/broken_glass_panel_item")), generator.modelCollector);
+        MultipartBlockStateSupplier supplier = MultipartBlockStateSupplier.create(block);
+
+        Identifier baseModel = BROKEN_GLASS_PANEL.upload(block, "_base", new TextureMap().put(EDGE_KEY, Identifier.of(Wathe.MOD_ID, "block/golden_glass_panel_trim")), generator.modelCollector);
+        addRotatedVariants(supplier, When::create, baseModel);
+
+        TextureMap innerMap = new TextureMap().put(PANEL_KEY, Identifier.of(WathExtras.MOD_ID, "block/broken_glass_panel_inner"));
+        TextureMap outerMap = new TextureMap().put(PANEL_KEY, Identifier.of(WathExtras.MOD_ID, "block/broken_glass_panel_outer"));
+        TextureMap verticalMap = new TextureMap().put(PANEL_KEY, Identifier.of(WathExtras.MOD_ID, "block/broken_glass_panel_vertical"));
+        TextureMap horizontalMap = new TextureMap().put(PANEL_KEY, Identifier.of(WathExtras.MOD_ID, "block/broken_glass_panel_horizontal"));
+        TextureMap emptyMap = new TextureMap().put(PANEL_KEY, Identifier.of(WathExtras.MOD_ID, "block/broken_glass_panel"));
+
+        QuadConsumer<BooleanProperty, Model, String, String> registerSide = (prop, model, name, suffix) -> {
+            Identifier inner = model.upload(block, "_" + name + "_inner", innerMap, generator.modelCollector);
+            Identifier empty = model.upload(block, "_" + name + "_empty", emptyMap, generator.modelCollector);
+            
+            addRotatedVariants(supplier, () -> When.create().set(prop, false), inner);
+            addRotatedVariants(supplier, () -> When.create().set(prop, true), empty);
+        };
+
+        registerSide.accept(BrokenGlassPanelBlock.TOP, BROKEN_GLASS_PANEL_TOP, "top", "");
+        registerSide.accept(BrokenGlassPanelBlock.BOTTOM, BROKEN_GLASS_PANEL_BOTTOM, "bottom", "");
+        registerSide.accept(BrokenGlassPanelBlock.LEFT, BROKEN_GLASS_PANEL_LEFT, "left", "");
+        registerSide.accept(BrokenGlassPanelBlock.RIGHT, BROKEN_GLASS_PANEL_RIGHT, "right", "");
+
+        QuintConsumer<BooleanProperty, BooleanProperty, BooleanProperty, Model, String> registerCorner = (side1, side2, corner, model, name) -> {
+            Identifier inner = model.upload(block, "_" + name + "_inner", innerMap, generator.modelCollector);
+            Identifier outer = model.upload(block, "_" + name + "_outer", outerMap, generator.modelCollector);
+            Identifier vertical = model.upload(block, "_" + name + "_vertical", verticalMap, generator.modelCollector);
+            Identifier horizontal = model.upload(block, "_" + name + "_horizontal", horizontalMap, generator.modelCollector);
+            Identifier empty = model.upload(block, "_" + name + "_empty", emptyMap, generator.modelCollector);
+
+
+            addRotatedVariants(supplier, () -> When.create().set(side1, false).set(side2, false), inner);
+            addRotatedVariants(supplier, () -> When.create().set(side1, true).set(side2, false), vertical);
+            addRotatedVariants(supplier, () -> When.create().set(side1, false).set(side2, true), horizontal);
+            addRotatedVariants(supplier, () -> When.create().set(side1, true).set(side2, true).set(corner, false), outer);
+            addRotatedVariants(supplier, () -> When.create().set(side1, true).set(side2, true).set(corner, true), empty);
+        };
+
+        registerCorner.accept(BrokenGlassPanelBlock.TOP, BrokenGlassPanelBlock.RIGHT, BrokenGlassPanelBlock.TOPRIGHT, BROKEN_GLASS_PANEL_TOPRIGHT, "topright");
+        registerCorner.accept(BrokenGlassPanelBlock.TOP, BrokenGlassPanelBlock.LEFT, BrokenGlassPanelBlock.TOPLEFT, BROKEN_GLASS_PANEL_TOPLEFT, "topleft");
+        registerCorner.accept(BrokenGlassPanelBlock.BOTTOM, BrokenGlassPanelBlock.RIGHT, BrokenGlassPanelBlock.BOTTOMRIGHT, BROKEN_GLASS_PANEL_BOTTOMRIGHT, "bottomright");
+        registerCorner.accept(BrokenGlassPanelBlock.BOTTOM, BrokenGlassPanelBlock.LEFT, BrokenGlassPanelBlock.BOTTOMLEFT, BROKEN_GLASS_PANEL_BOTTOMLEFT, "bottomleft");
+
+        generator.blockStateCollector.accept(supplier);
+    }
+
+    @FunctionalInterface
+    interface QuadConsumer<A, B, C, D> {
+        void accept(A a, B b, C c, D d);
+    }
+    @FunctionalInterface
+    interface QuintConsumer<A, B, C, D, E> {
+        void accept(A a, B b, C c, D d, E e);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator generator) {
 
@@ -404,7 +523,7 @@ public class ModModelProvider extends FabricModelProvider {
         this.registerPanel(generator,ModBlocks.BLEACHED_PANEL,ModBlocks.BLEACHED_PLANKS);
         this.registerPanel(generator,ModBlocks.KHAKI_RIVETED_HULL_SMALL_PANEL, ModBlocks.KHAKI_RIVETED_HULL_SMALL);
 
-
+        this.registerPanel(generator,ModBlocks.STEPPABLE_PANEL,ModBlocks.STEPPABLE_PANEL);
 
 
 
@@ -526,7 +645,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         this.registerChristmasLights(generator,ModBlocks.CHRISTMAS_LIGHTS);
 
-
+        registerBrokenGlassPanel(generator, ModBlocks.BROKEN_GOLDEN_GLASS_PANEL);
     }
 
     @Override

@@ -237,6 +237,7 @@ public class ModLanguageProvider extends FabricLanguageProvider {
 
         translationBuilder.add(ModItems.GLASS_HAMMER, "Glass Hammer");
         translationBuilder.add(ModBlocks.BROKEN_GOLDEN_GLASS_PANEL, "Broken Glass Panel");
+        translationBuilder.add(ModBlocks.STEPPABLE_PANEL, "Steppable Panel");
 
         translationBuilder.add("sounds.tmmore.squid_plush","Squid plays a tune");
         translationBuilder.add("sounds.tmmore.willo_plush","Willo \"POWs!\"");
