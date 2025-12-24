@@ -1,0 +1,16 @@
+{
+	"textures": {
+		"7": "#panel"
+	},
+	"elements": [
+		{
+			"name": "panel",
+			"from": [10, 6, 15],
+			"to": [16, 10, 16],
+			"faces": {
+				"north": {"uv": [4, 8, 7, 10], "texture": "#7", "cullface": "north"},
+				"south": {"uv": [7, 8, 10, 10], "texture": "#7"}
+			}
+		}
+	]
+}

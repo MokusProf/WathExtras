@@ -1,0 +1,2801 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_base"
+      },
+      "when": {
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_base",
+        "y": 90
+      },
+      "when": {
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_base",
+        "y": 180
+      },
+      "when": {
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_base",
+        "y": 270
+      },
+      "when": {
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_base",
+        "x": 270
+      },
+      "when": {
+        "facing": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_base",
+        "x": 90
+      },
+      "when": {
+        "facing": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_top_inner"
+      },
+      "when": {
+        "top": "false",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_top_inner",
+        "y": 90
+      },
+      "when": {
+        "top": "false",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_top_inner",
+        "y": 180
+      },
+      "when": {
+        "top": "false",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_top_inner",
+        "y": 270
+      },
+      "when": {
+        "top": "false",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_top_inner",
+        "x": 270
+      },
+      "when": {
+        "top": "false",
+        "facing": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_top_inner",
+        "x": 90
+      },
+      "when": {
+        "top": "false",
+        "facing": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_top_empty"
+      },
+      "when": {
+        "top": "true",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_top_empty",
+        "y": 90
+      },
+      "when": {
+        "top": "true",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_top_empty",
+        "y": 180
+      },
+      "when": {
+        "top": "true",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_top_empty",
+        "y": 270
+      },
+      "when": {
+        "top": "true",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_top_empty",
+        "x": 270
+      },
+      "when": {
+        "top": "true",
+        "facing": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_top_empty",
+        "x": 90
+      },
+      "when": {
+        "top": "true",
+        "facing": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_inner"
+      },
+      "when": {
+        "top": "false",
+        "right": "false",
+        "topright": "false",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_inner",
+        "y": 90
+      },
+      "when": {
+        "top": "false",
+        "right": "false",
+        "topright": "false",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_inner",
+        "y": 180
+      },
+      "when": {
+        "top": "false",
+        "right": "false",
+        "topright": "false",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_inner",
+        "y": 270
+      },
+      "when": {
+        "top": "false",
+        "right": "false",
+        "topright": "false",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_inner",
+        "x": 270
+      },
+      "when": {
+        "top": "false",
+        "right": "false",
+        "topright": "false",
+        "facing": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_inner",
+        "x": 90
+      },
+      "when": {
+        "top": "false",
+        "right": "false",
+        "topright": "false",
+        "facing": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_vertical"
+      },
+      "when": {
+        "top": "true",
+        "right": "false",
+        "topright": "false",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_vertical",
+        "y": 90
+      },
+      "when": {
+        "top": "true",
+        "right": "false",
+        "topright": "false",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_vertical",
+        "y": 180
+      },
+      "when": {
+        "top": "true",
+        "right": "false",
+        "topright": "false",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_vertical",
+        "y": 270
+      },
+      "when": {
+        "top": "true",
+        "right": "false",
+        "topright": "false",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_vertical",
+        "x": 270
+      },
+      "when": {
+        "top": "true",
+        "right": "false",
+        "topright": "false",
+        "facing": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_vertical",
+        "x": 90
+      },
+      "when": {
+        "top": "true",
+        "right": "false",
+        "topright": "false",
+        "facing": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_horizontal"
+      },
+      "when": {
+        "top": "false",
+        "right": "true",
+        "topright": "false",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_horizontal",
+        "y": 90
+      },
+      "when": {
+        "top": "false",
+        "right": "true",
+        "topright": "false",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_horizontal",
+        "y": 180
+      },
+      "when": {
+        "top": "false",
+        "right": "true",
+        "topright": "false",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_horizontal",
+        "y": 270
+      },
+      "when": {
+        "top": "false",
+        "right": "true",
+        "topright": "false",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_horizontal",
+        "x": 270
+      },
+      "when": {
+        "top": "false",
+        "right": "true",
+        "topright": "false",
+        "facing": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_horizontal",
+        "x": 90
+      },
+      "when": {
+        "top": "false",
+        "right": "true",
+        "topright": "false",
+        "facing": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_outer"
+      },
+      "when": {
+        "top": "true",
+        "right": "true",
+        "topright": "false",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_outer",
+        "y": 90
+      },
+      "when": {
+        "top": "true",
+        "right": "true",
+        "topright": "false",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_outer",
+        "y": 180
+      },
+      "when": {
+        "top": "true",
+        "right": "true",
+        "topright": "false",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_outer",
+        "y": 270
+      },
+      "when": {
+        "top": "true",
+        "right": "true",
+        "topright": "false",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_outer",
+        "x": 270
+      },
+      "when": {
+        "top": "true",
+        "right": "true",
+        "topright": "false",
+        "facing": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_outer",
+        "x": 90
+      },
+      "when": {
+        "top": "true",
+        "right": "true",
+        "topright": "false",
+        "facing": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_inner"
+      },
+      "when": {
+        "top": "false",
+        "right": "false",
+        "topright": "true",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_inner",
+        "y": 90
+      },
+      "when": {
+        "top": "false",
+        "right": "false",
+        "topright": "true",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_inner",
+        "y": 180
+      },
+      "when": {
+        "top": "false",
+        "right": "false",
+        "topright": "true",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_inner",
+        "y": 270
+      },
+      "when": {
+        "top": "false",
+        "right": "false",
+        "topright": "true",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_inner",
+        "x": 270
+      },
+      "when": {
+        "top": "false",
+        "right": "false",
+        "topright": "true",
+        "facing": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_inner",
+        "x": 90
+      },
+      "when": {
+        "top": "false",
+        "right": "false",
+        "topright": "true",
+        "facing": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_vertical"
+      },
+      "when": {
+        "top": "true",
+        "right": "false",
+        "topright": "true",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_vertical",
+        "y": 90
+      },
+      "when": {
+        "top": "true",
+        "right": "false",
+        "topright": "true",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_vertical",
+        "y": 180
+      },
+      "when": {
+        "top": "true",
+        "right": "false",
+        "topright": "true",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_vertical",
+        "y": 270
+      },
+      "when": {
+        "top": "true",
+        "right": "false",
+        "topright": "true",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_vertical",
+        "x": 270
+      },
+      "when": {
+        "top": "true",
+        "right": "false",
+        "topright": "true",
+        "facing": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_vertical",
+        "x": 90
+      },
+      "when": {
+        "top": "true",
+        "right": "false",
+        "topright": "true",
+        "facing": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_horizontal"
+      },
+      "when": {
+        "top": "false",
+        "right": "true",
+        "topright": "true",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_horizontal",
+        "y": 90
+      },
+      "when": {
+        "top": "false",
+        "right": "true",
+        "topright": "true",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_horizontal",
+        "y": 180
+      },
+      "when": {
+        "top": "false",
+        "right": "true",
+        "topright": "true",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_horizontal",
+        "y": 270
+      },
+      "when": {
+        "top": "false",
+        "right": "true",
+        "topright": "true",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_horizontal",
+        "x": 270
+      },
+      "when": {
+        "top": "false",
+        "right": "true",
+        "topright": "true",
+        "facing": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_horizontal",
+        "x": 90
+      },
+      "when": {
+        "top": "false",
+        "right": "true",
+        "topright": "true",
+        "facing": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_empty"
+      },
+      "when": {
+        "top": "true",
+        "right": "true",
+        "topright": "true",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_empty",
+        "y": 90
+      },
+      "when": {
+        "top": "true",
+        "right": "true",
+        "topright": "true",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_empty",
+        "y": 180
+      },
+      "when": {
+        "top": "true",
+        "right": "true",
+        "topright": "true",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_empty",
+        "y": 270
+      },
+      "when": {
+        "top": "true",
+        "right": "true",
+        "topright": "true",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_empty",
+        "x": 270
+      },
+      "when": {
+        "top": "true",
+        "right": "true",
+        "topright": "true",
+        "facing": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topright_empty",
+        "x": 90
+      },
+      "when": {
+        "top": "true",
+        "right": "true",
+        "topright": "true",
+        "facing": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_right_inner"
+      },
+      "when": {
+        "right": "false",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_right_inner",
+        "y": 90
+      },
+      "when": {
+        "right": "false",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_right_inner",
+        "y": 180
+      },
+      "when": {
+        "right": "false",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_right_inner",
+        "y": 270
+      },
+      "when": {
+        "right": "false",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_right_inner",
+        "x": 270
+      },
+      "when": {
+        "right": "false",
+        "facing": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_right_inner",
+        "x": 90
+      },
+      "when": {
+        "right": "false",
+        "facing": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_right_empty"
+      },
+      "when": {
+        "right": "true",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_right_empty",
+        "y": 90
+      },
+      "when": {
+        "right": "true",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_right_empty",
+        "y": 180
+      },
+      "when": {
+        "right": "true",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_right_empty",
+        "y": 270
+      },
+      "when": {
+        "right": "true",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_right_empty",
+        "x": 270
+      },
+      "when": {
+        "right": "true",
+        "facing": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_right_empty",
+        "x": 90
+      },
+      "when": {
+        "right": "true",
+        "facing": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_inner"
+      },
+      "when": {
+        "bottom": "false",
+        "right": "false",
+        "bottomright": "false",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_inner",
+        "y": 90
+      },
+      "when": {
+        "bottom": "false",
+        "right": "false",
+        "bottomright": "false",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_inner",
+        "y": 180
+      },
+      "when": {
+        "bottom": "false",
+        "right": "false",
+        "bottomright": "false",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_inner",
+        "y": 270
+      },
+      "when": {
+        "bottom": "false",
+        "right": "false",
+        "bottomright": "false",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_inner",
+        "x": 270
+      },
+      "when": {
+        "bottom": "false",
+        "right": "false",
+        "bottomright": "false",
+        "facing": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_inner",
+        "x": 90
+      },
+      "when": {
+        "bottom": "false",
+        "right": "false",
+        "bottomright": "false",
+        "facing": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_vertical"
+      },
+      "when": {
+        "bottom": "true",
+        "right": "false",
+        "bottomright": "false",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_vertical",
+        "y": 90
+      },
+      "when": {
+        "bottom": "true",
+        "right": "false",
+        "bottomright": "false",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_vertical",
+        "y": 180
+      },
+      "when": {
+        "bottom": "true",
+        "right": "false",
+        "bottomright": "false",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_vertical",
+        "y": 270
+      },
+      "when": {
+        "bottom": "true",
+        "right": "false",
+        "bottomright": "false",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_vertical",
+        "x": 270
+      },
+      "when": {
+        "bottom": "true",
+        "right": "false",
+        "bottomright": "false",
+        "facing": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_vertical",
+        "x": 90
+      },
+      "when": {
+        "bottom": "true",
+        "right": "false",
+        "bottomright": "false",
+        "facing": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_horizontal"
+      },
+      "when": {
+        "bottom": "false",
+        "right": "true",
+        "bottomright": "false",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_horizontal",
+        "y": 90
+      },
+      "when": {
+        "bottom": "false",
+        "right": "true",
+        "bottomright": "false",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_horizontal",
+        "y": 180
+      },
+      "when": {
+        "bottom": "false",
+        "right": "true",
+        "bottomright": "false",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_horizontal",
+        "y": 270
+      },
+      "when": {
+        "bottom": "false",
+        "right": "true",
+        "bottomright": "false",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_horizontal",
+        "x": 270
+      },
+      "when": {
+        "bottom": "false",
+        "right": "true",
+        "bottomright": "false",
+        "facing": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_horizontal",
+        "x": 90
+      },
+      "when": {
+        "bottom": "false",
+        "right": "true",
+        "bottomright": "false",
+        "facing": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_outer"
+      },
+      "when": {
+        "bottom": "true",
+        "right": "true",
+        "bottomright": "false",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_outer",
+        "y": 90
+      },
+      "when": {
+        "bottom": "true",
+        "right": "true",
+        "bottomright": "false",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_outer",
+        "y": 180
+      },
+      "when": {
+        "bottom": "true",
+        "right": "true",
+        "bottomright": "false",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_outer",
+        "y": 270
+      },
+      "when": {
+        "bottom": "true",
+        "right": "true",
+        "bottomright": "false",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_outer",
+        "x": 270
+      },
+      "when": {
+        "bottom": "true",
+        "right": "true",
+        "bottomright": "false",
+        "facing": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_outer",
+        "x": 90
+      },
+      "when": {
+        "bottom": "true",
+        "right": "true",
+        "bottomright": "false",
+        "facing": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_inner"
+      },
+      "when": {
+        "bottom": "false",
+        "right": "false",
+        "bottomright": "true",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_inner",
+        "y": 90
+      },
+      "when": {
+        "bottom": "false",
+        "right": "false",
+        "bottomright": "true",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_inner",
+        "y": 180
+      },
+      "when": {
+        "bottom": "false",
+        "right": "false",
+        "bottomright": "true",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_inner",
+        "y": 270
+      },
+      "when": {
+        "bottom": "false",
+        "right": "false",
+        "bottomright": "true",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_inner",
+        "x": 270
+      },
+      "when": {
+        "bottom": "false",
+        "right": "false",
+        "bottomright": "true",
+        "facing": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_inner",
+        "x": 90
+      },
+      "when": {
+        "bottom": "false",
+        "right": "false",
+        "bottomright": "true",
+        "facing": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_vertical"
+      },
+      "when": {
+        "bottom": "true",
+        "right": "false",
+        "bottomright": "true",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_vertical",
+        "y": 90
+      },
+      "when": {
+        "bottom": "true",
+        "right": "false",
+        "bottomright": "true",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_vertical",
+        "y": 180
+      },
+      "when": {
+        "bottom": "true",
+        "right": "false",
+        "bottomright": "true",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_vertical",
+        "y": 270
+      },
+      "when": {
+        "bottom": "true",
+        "right": "false",
+        "bottomright": "true",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_vertical",
+        "x": 270
+      },
+      "when": {
+        "bottom": "true",
+        "right": "false",
+        "bottomright": "true",
+        "facing": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_vertical",
+        "x": 90
+      },
+      "when": {
+        "bottom": "true",
+        "right": "false",
+        "bottomright": "true",
+        "facing": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_horizontal"
+      },
+      "when": {
+        "bottom": "false",
+        "right": "true",
+        "bottomright": "true",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_horizontal",
+        "y": 90
+      },
+      "when": {
+        "bottom": "false",
+        "right": "true",
+        "bottomright": "true",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_horizontal",
+        "y": 180
+      },
+      "when": {
+        "bottom": "false",
+        "right": "true",
+        "bottomright": "true",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_horizontal",
+        "y": 270
+      },
+      "when": {
+        "bottom": "false",
+        "right": "true",
+        "bottomright": "true",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_horizontal",
+        "x": 270
+      },
+      "when": {
+        "bottom": "false",
+        "right": "true",
+        "bottomright": "true",
+        "facing": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_horizontal",
+        "x": 90
+      },
+      "when": {
+        "bottom": "false",
+        "right": "true",
+        "bottomright": "true",
+        "facing": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_empty"
+      },
+      "when": {
+        "bottom": "true",
+        "right": "true",
+        "bottomright": "true",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_empty",
+        "y": 90
+      },
+      "when": {
+        "bottom": "true",
+        "right": "true",
+        "bottomright": "true",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_empty",
+        "y": 180
+      },
+      "when": {
+        "bottom": "true",
+        "right": "true",
+        "bottomright": "true",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_empty",
+        "y": 270
+      },
+      "when": {
+        "bottom": "true",
+        "right": "true",
+        "bottomright": "true",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_empty",
+        "x": 270
+      },
+      "when": {
+        "bottom": "true",
+        "right": "true",
+        "bottomright": "true",
+        "facing": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomright_empty",
+        "x": 90
+      },
+      "when": {
+        "bottom": "true",
+        "right": "true",
+        "bottomright": "true",
+        "facing": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottom_inner"
+      },
+      "when": {
+        "bottom": "false",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottom_inner",
+        "y": 90
+      },
+      "when": {
+        "bottom": "false",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottom_inner",
+        "y": 180
+      },
+      "when": {
+        "bottom": "false",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottom_inner",
+        "y": 270
+      },
+      "when": {
+        "bottom": "false",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottom_inner",
+        "x": 270
+      },
+      "when": {
+        "bottom": "false",
+        "facing": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottom_inner",
+        "x": 90
+      },
+      "when": {
+        "bottom": "false",
+        "facing": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottom_empty"
+      },
+      "when": {
+        "bottom": "true",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottom_empty",
+        "y": 90
+      },
+      "when": {
+        "bottom": "true",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottom_empty",
+        "y": 180
+      },
+      "when": {
+        "bottom": "true",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottom_empty",
+        "y": 270
+      },
+      "when": {
+        "bottom": "true",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottom_empty",
+        "x": 270
+      },
+      "when": {
+        "bottom": "true",
+        "facing": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottom_empty",
+        "x": 90
+      },
+      "when": {
+        "bottom": "true",
+        "facing": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_inner"
+      },
+      "when": {
+        "bottom": "false",
+        "left": "false",
+        "bottomleft": "false",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_inner",
+        "y": 90
+      },
+      "when": {
+        "bottom": "false",
+        "left": "false",
+        "bottomleft": "false",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_inner",
+        "y": 180
+      },
+      "when": {
+        "bottom": "false",
+        "left": "false",
+        "bottomleft": "false",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_inner",
+        "y": 270
+      },
+      "when": {
+        "bottom": "false",
+        "left": "false",
+        "bottomleft": "false",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_inner",
+        "x": 270
+      },
+      "when": {
+        "bottom": "false",
+        "left": "false",
+        "bottomleft": "false",
+        "facing": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_inner",
+        "x": 90
+      },
+      "when": {
+        "bottom": "false",
+        "left": "false",
+        "bottomleft": "false",
+        "facing": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_vertical"
+      },
+      "when": {
+        "bottom": "true",
+        "left": "false",
+        "bottomleft": "false",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_vertical",
+        "y": 90
+      },
+      "when": {
+        "bottom": "true",
+        "left": "false",
+        "bottomleft": "false",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_vertical",
+        "y": 180
+      },
+      "when": {
+        "bottom": "true",
+        "left": "false",
+        "bottomleft": "false",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_vertical",
+        "y": 270
+      },
+      "when": {
+        "bottom": "true",
+        "left": "false",
+        "bottomleft": "false",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_vertical",
+        "x": 270
+      },
+      "when": {
+        "bottom": "true",
+        "left": "false",
+        "bottomleft": "false",
+        "facing": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_vertical",
+        "x": 90
+      },
+      "when": {
+        "bottom": "true",
+        "left": "false",
+        "bottomleft": "false",
+        "facing": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_horizontal"
+      },
+      "when": {
+        "bottom": "false",
+        "left": "true",
+        "bottomleft": "false",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_horizontal",
+        "y": 90
+      },
+      "when": {
+        "bottom": "false",
+        "left": "true",
+        "bottomleft": "false",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_horizontal",
+        "y": 180
+      },
+      "when": {
+        "bottom": "false",
+        "left": "true",
+        "bottomleft": "false",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_horizontal",
+        "y": 270
+      },
+      "when": {
+        "bottom": "false",
+        "left": "true",
+        "bottomleft": "false",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_horizontal",
+        "x": 270
+      },
+      "when": {
+        "bottom": "false",
+        "left": "true",
+        "bottomleft": "false",
+        "facing": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_horizontal",
+        "x": 90
+      },
+      "when": {
+        "bottom": "false",
+        "left": "true",
+        "bottomleft": "false",
+        "facing": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_outer"
+      },
+      "when": {
+        "bottom": "true",
+        "left": "true",
+        "bottomleft": "false",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_outer",
+        "y": 90
+      },
+      "when": {
+        "bottom": "true",
+        "left": "true",
+        "bottomleft": "false",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_outer",
+        "y": 180
+      },
+      "when": {
+        "bottom": "true",
+        "left": "true",
+        "bottomleft": "false",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_outer",
+        "y": 270
+      },
+      "when": {
+        "bottom": "true",
+        "left": "true",
+        "bottomleft": "false",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_outer",
+        "x": 270
+      },
+      "when": {
+        "bottom": "true",
+        "left": "true",
+        "bottomleft": "false",
+        "facing": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_outer",
+        "x": 90
+      },
+      "when": {
+        "bottom": "true",
+        "left": "true",
+        "bottomleft": "false",
+        "facing": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_inner"
+      },
+      "when": {
+        "bottom": "false",
+        "left": "false",
+        "bottomleft": "true",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_inner",
+        "y": 90
+      },
+      "when": {
+        "bottom": "false",
+        "left": "false",
+        "bottomleft": "true",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_inner",
+        "y": 180
+      },
+      "when": {
+        "bottom": "false",
+        "left": "false",
+        "bottomleft": "true",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_inner",
+        "y": 270
+      },
+      "when": {
+        "bottom": "false",
+        "left": "false",
+        "bottomleft": "true",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_inner",
+        "x": 270
+      },
+      "when": {
+        "bottom": "false",
+        "left": "false",
+        "bottomleft": "true",
+        "facing": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_inner",
+        "x": 90
+      },
+      "when": {
+        "bottom": "false",
+        "left": "false",
+        "bottomleft": "true",
+        "facing": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_vertical"
+      },
+      "when": {
+        "bottom": "true",
+        "left": "false",
+        "bottomleft": "true",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_vertical",
+        "y": 90
+      },
+      "when": {
+        "bottom": "true",
+        "left": "false",
+        "bottomleft": "true",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_vertical",
+        "y": 180
+      },
+      "when": {
+        "bottom": "true",
+        "left": "false",
+        "bottomleft": "true",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_vertical",
+        "y": 270
+      },
+      "when": {
+        "bottom": "true",
+        "left": "false",
+        "bottomleft": "true",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_vertical",
+        "x": 270
+      },
+      "when": {
+        "bottom": "true",
+        "left": "false",
+        "bottomleft": "true",
+        "facing": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_vertical",
+        "x": 90
+      },
+      "when": {
+        "bottom": "true",
+        "left": "false",
+        "bottomleft": "true",
+        "facing": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_horizontal"
+      },
+      "when": {
+        "bottom": "false",
+        "left": "true",
+        "bottomleft": "true",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_horizontal",
+        "y": 90
+      },
+      "when": {
+        "bottom": "false",
+        "left": "true",
+        "bottomleft": "true",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_horizontal",
+        "y": 180
+      },
+      "when": {
+        "bottom": "false",
+        "left": "true",
+        "bottomleft": "true",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_horizontal",
+        "y": 270
+      },
+      "when": {
+        "bottom": "false",
+        "left": "true",
+        "bottomleft": "true",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_horizontal",
+        "x": 270
+      },
+      "when": {
+        "bottom": "false",
+        "left": "true",
+        "bottomleft": "true",
+        "facing": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_horizontal",
+        "x": 90
+      },
+      "when": {
+        "bottom": "false",
+        "left": "true",
+        "bottomleft": "true",
+        "facing": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_empty"
+      },
+      "when": {
+        "bottom": "true",
+        "left": "true",
+        "bottomleft": "true",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_empty",
+        "y": 90
+      },
+      "when": {
+        "bottom": "true",
+        "left": "true",
+        "bottomleft": "true",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_empty",
+        "y": 180
+      },
+      "when": {
+        "bottom": "true",
+        "left": "true",
+        "bottomleft": "true",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_empty",
+        "y": 270
+      },
+      "when": {
+        "bottom": "true",
+        "left": "true",
+        "bottomleft": "true",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_empty",
+        "x": 270
+      },
+      "when": {
+        "bottom": "true",
+        "left": "true",
+        "bottomleft": "true",
+        "facing": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_bottomleft_empty",
+        "x": 90
+      },
+      "when": {
+        "bottom": "true",
+        "left": "true",
+        "bottomleft": "true",
+        "facing": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_left_inner"
+      },
+      "when": {
+        "left": "false",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_left_inner",
+        "y": 90
+      },
+      "when": {
+        "left": "false",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_left_inner",
+        "y": 180
+      },
+      "when": {
+        "left": "false",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_left_inner",
+        "y": 270
+      },
+      "when": {
+        "left": "false",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_left_inner",
+        "x": 270
+      },
+      "when": {
+        "left": "false",
+        "facing": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_left_inner",
+        "x": 90
+      },
+      "when": {
+        "left": "false",
+        "facing": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_left_empty"
+      },
+      "when": {
+        "left": "true",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_left_empty",
+        "y": 90
+      },
+      "when": {
+        "left": "true",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_left_empty",
+        "y": 180
+      },
+      "when": {
+        "left": "true",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_left_empty",
+        "y": 270
+      },
+      "when": {
+        "left": "true",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_left_empty",
+        "x": 270
+      },
+      "when": {
+        "left": "true",
+        "facing": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_left_empty",
+        "x": 90
+      },
+      "when": {
+        "left": "true",
+        "facing": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_inner"
+      },
+      "when": {
+        "top": "false",
+        "left": "false",
+        "topleft": "false",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_inner",
+        "y": 90
+      },
+      "when": {
+        "top": "false",
+        "left": "false",
+        "topleft": "false",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_inner",
+        "y": 180
+      },
+      "when": {
+        "top": "false",
+        "left": "false",
+        "topleft": "false",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_inner",
+        "y": 270
+      },
+      "when": {
+        "top": "false",
+        "left": "false",
+        "topleft": "false",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_inner",
+        "x": 270
+      },
+      "when": {
+        "top": "false",
+        "left": "false",
+        "topleft": "false",
+        "facing": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_inner",
+        "x": 90
+      },
+      "when": {
+        "top": "false",
+        "left": "false",
+        "topleft": "false",
+        "facing": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_vertical"
+      },
+      "when": {
+        "top": "true",
+        "left": "false",
+        "topleft": "false",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_vertical",
+        "y": 90
+      },
+      "when": {
+        "top": "true",
+        "left": "false",
+        "topleft": "false",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_vertical",
+        "y": 180
+      },
+      "when": {
+        "top": "true",
+        "left": "false",
+        "topleft": "false",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_vertical",
+        "y": 270
+      },
+      "when": {
+        "top": "true",
+        "left": "false",
+        "topleft": "false",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_vertical",
+        "x": 270
+      },
+      "when": {
+        "top": "true",
+        "left": "false",
+        "topleft": "false",
+        "facing": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_vertical",
+        "x": 90
+      },
+      "when": {
+        "top": "true",
+        "left": "false",
+        "topleft": "false",
+        "facing": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_horizontal"
+      },
+      "when": {
+        "top": "false",
+        "left": "true",
+        "topleft": "false",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_horizontal",
+        "y": 90
+      },
+      "when": {
+        "top": "false",
+        "left": "true",
+        "topleft": "false",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_horizontal",
+        "y": 180
+      },
+      "when": {
+        "top": "false",
+        "left": "true",
+        "topleft": "false",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_horizontal",
+        "y": 270
+      },
+      "when": {
+        "top": "false",
+        "left": "true",
+        "topleft": "false",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_horizontal",
+        "x": 270
+      },
+      "when": {
+        "top": "false",
+        "left": "true",
+        "topleft": "false",
+        "facing": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_horizontal",
+        "x": 90
+      },
+      "when": {
+        "top": "false",
+        "left": "true",
+        "topleft": "false",
+        "facing": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_outer"
+      },
+      "when": {
+        "top": "true",
+        "left": "true",
+        "topleft": "false",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_outer",
+        "y": 90
+      },
+      "when": {
+        "top": "true",
+        "left": "true",
+        "topleft": "false",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_outer",
+        "y": 180
+      },
+      "when": {
+        "top": "true",
+        "left": "true",
+        "topleft": "false",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_outer",
+        "y": 270
+      },
+      "when": {
+        "top": "true",
+        "left": "true",
+        "topleft": "false",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_outer",
+        "x": 270
+      },
+      "when": {
+        "top": "true",
+        "left": "true",
+        "topleft": "false",
+        "facing": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_outer",
+        "x": 90
+      },
+      "when": {
+        "top": "true",
+        "left": "true",
+        "topleft": "false",
+        "facing": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_inner"
+      },
+      "when": {
+        "top": "false",
+        "left": "false",
+        "topleft": "true",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_inner",
+        "y": 90
+      },
+      "when": {
+        "top": "false",
+        "left": "false",
+        "topleft": "true",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_inner",
+        "y": 180
+      },
+      "when": {
+        "top": "false",
+        "left": "false",
+        "topleft": "true",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_inner",
+        "y": 270
+      },
+      "when": {
+        "top": "false",
+        "left": "false",
+        "topleft": "true",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_inner",
+        "x": 270
+      },
+      "when": {
+        "top": "false",
+        "left": "false",
+        "topleft": "true",
+        "facing": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_inner",
+        "x": 90
+      },
+      "when": {
+        "top": "false",
+        "left": "false",
+        "topleft": "true",
+        "facing": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_vertical"
+      },
+      "when": {
+        "top": "true",
+        "left": "false",
+        "topleft": "true",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_vertical",
+        "y": 90
+      },
+      "when": {
+        "top": "true",
+        "left": "false",
+        "topleft": "true",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_vertical",
+        "y": 180
+      },
+      "when": {
+        "top": "true",
+        "left": "false",
+        "topleft": "true",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_vertical",
+        "y": 270
+      },
+      "when": {
+        "top": "true",
+        "left": "false",
+        "topleft": "true",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_vertical",
+        "x": 270
+      },
+      "when": {
+        "top": "true",
+        "left": "false",
+        "topleft": "true",
+        "facing": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_vertical",
+        "x": 90
+      },
+      "when": {
+        "top": "true",
+        "left": "false",
+        "topleft": "true",
+        "facing": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_horizontal"
+      },
+      "when": {
+        "top": "false",
+        "left": "true",
+        "topleft": "true",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_horizontal",
+        "y": 90
+      },
+      "when": {
+        "top": "false",
+        "left": "true",
+        "topleft": "true",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_horizontal",
+        "y": 180
+      },
+      "when": {
+        "top": "false",
+        "left": "true",
+        "topleft": "true",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_horizontal",
+        "y": 270
+      },
+      "when": {
+        "top": "false",
+        "left": "true",
+        "topleft": "true",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_horizontal",
+        "x": 270
+      },
+      "when": {
+        "top": "false",
+        "left": "true",
+        "topleft": "true",
+        "facing": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_horizontal",
+        "x": 90
+      },
+      "when": {
+        "top": "false",
+        "left": "true",
+        "topleft": "true",
+        "facing": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_empty"
+      },
+      "when": {
+        "top": "true",
+        "left": "true",
+        "topleft": "true",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_empty",
+        "y": 90
+      },
+      "when": {
+        "top": "true",
+        "left": "true",
+        "topleft": "true",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_empty",
+        "y": 180
+      },
+      "when": {
+        "top": "true",
+        "left": "true",
+        "topleft": "true",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_empty",
+        "y": 270
+      },
+      "when": {
+        "top": "true",
+        "left": "true",
+        "topleft": "true",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_empty",
+        "x": 270
+      },
+      "when": {
+        "top": "true",
+        "left": "true",
+        "topleft": "true",
+        "facing": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "wathextras:block/broken_glass_panel_topleft_empty",
+        "x": 90
+      },
+      "when": {
+        "top": "true",
+        "left": "true",
+        "topleft": "true",
+        "facing": "down"
+      }
+    }
+  ]
+}

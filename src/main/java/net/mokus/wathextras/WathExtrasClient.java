@@ -38,7 +38,8 @@ public class WathExtrasClient implements ClientModInitializer {
                 ModBlocks.COPPER_ORNAMENT,
                 ModBlocks.EXPOSED_COPPER_ORNAMENT,
                 ModBlocks.OXIDIZED_COPPER_ORNAMENT,
-                ModBlocks.WEATHERED_COPPER_ORNAMENT);
+                ModBlocks.WEATHERED_COPPER_ORNAMENT,
+                ModBlocks.BROKEN_GOLDEN_GLASS_PANEL);
         BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getTranslucent(),
                 ModBlocks.ROOF_LAMP,
                 ModBlocks.CHRISTMAS_LIGHTS);

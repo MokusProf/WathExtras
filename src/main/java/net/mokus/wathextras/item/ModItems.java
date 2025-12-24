@@ -1,5 +1,6 @@
 package net.mokus.wathextras.item;
 
+import dev.doctor4t.wathe.index.WatheItems;
 import dev.doctor4t.wathe.item.CocktailItem;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -14,6 +15,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.Direction;
 import net.mokus.wathextras.WathExtras;
 import net.mokus.wathextras.block.ModBlocks;
+import net.mokus.wathextras.item.custom.GlassHammerItem;
 
 public class ModItems {
 
@@ -87,7 +89,8 @@ public class ModItems {
     public static final Item BEER_PINT = registerItem("beer_pint",
             new CocktailItem(new Item.Settings().maxCount(1).food(FoodComponents.HONEY_BOTTLE)));
 
-
+    public static final Item GLASS_HAMMER = registerItem("glass_hammer",
+            new GlassHammerItem(new Item.Settings().maxCount(1)));
 
 
     private static Item registerItem(String name, Item item){
@@ -96,6 +99,12 @@ public class ModItems {
 
     public static void init(){
         Registry.register(Registries.ITEM_GROUP, TMMORE_ITEM_KEY, TMMORE_ITEM);
+
+
+        ItemGroupEvents.modifyEntriesEvent(WatheItems.EQUIPMENT_GROUP).register(entries -> {
+            entries.add(GLASS_HAMMER);
+        });
+
         ItemGroupEvents.modifyEntriesEvent(ModItems.TMMORE_ITEM_KEY).register(TMMORE_ITEMS -> {
             // Cocktails
             TMMORE_ITEMS.add(WATER_GLASS);
@@ -128,7 +137,6 @@ public class ModItems {
             TMMORE_ITEMS.add(GINGERBREAD_DUCKAMOLY);
             TMMORE_ITEMS.add(GINGERBREAD_RUDOLPH);
             TMMORE_ITEMS.add(GINGERBREAD_SCARF);
-
         });
     }
 }

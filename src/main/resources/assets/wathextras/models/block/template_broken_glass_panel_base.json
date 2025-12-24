@@ -1,0 +1,43 @@
+{
+	"textures": {
+		"particle": "#edge"
+	},
+	"elements": [
+		{
+			"name": "edge",
+			"from": [0, 0, 16],
+			"to": [16, 0.025, 15],
+			"faces": {
+				"up": {"uv": [0, 15, 16, 16], "texture": "#edge", "cullface": "down"},
+				"down": {"uv": [0, 15, 16, 16], "texture": "#edge", "cullface": "down"}
+			}
+		},
+		{
+			"name": "edge",
+			"from": [0, 15.975, 16],
+			"to": [16, 16, 15],
+			"faces": {
+				"up": {"uv": [0, 0, 16, 1], "texture": "#edge", "cullface": "up"},
+				"down": {"uv": [0, 0, 16, 1], "texture": "#edge", "cullface": "up"}
+			}
+		},
+		{
+			"name": "edge",
+			"from": [0, 0, 16],
+			"to": [0.025, 16, 15],
+			"faces": {
+				"east": {"uv": [0, 0, 1, 16], "texture": "#edge", "cullface": "west"},
+				"west": {"uv": [0, 0, 1, 16], "texture": "#edge", "cullface": "west"}
+			}
+		},
+		{
+			"name": "edge",
+			"from": [15.975, 0, 16],
+			"to": [16, 16, 15],
+			"faces": {
+				"east": {"uv": [15, 0, 16, 16], "texture": "#edge", "cullface": "east"},
+				"west": {"uv": [15, 0, 16, 16], "texture": "#edge", "cullface": "east"}
+			}
+		}
+	]
+}

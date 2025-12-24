@@ -1,0 +1,19 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"5": "block/#panel"
+	},
+	"elements": [
+		{
+			"name": "panel",
+			"from": [6, 6, 15],
+			"to": [10, 10, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-4, -4, 0]},
+			"faces": {
+				"north": {"uv": [0, 0, 4, 6], "texture": "#5", "cullface": "north"},
+				"south": {"uv": [4, 0, 8, 6], "texture": "#5"}
+			}
+		}
+	]
+}

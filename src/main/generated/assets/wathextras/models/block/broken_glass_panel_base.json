@@ -1,0 +1,6 @@
+{
+  "parent": "wathextras:block/template_broken_glass_panel_base",
+  "textures": {
+    "edge": "wathe:block/golden_glass_panel_trim"
+  }
+}

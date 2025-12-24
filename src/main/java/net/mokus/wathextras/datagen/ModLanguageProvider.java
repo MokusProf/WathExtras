@@ -235,6 +235,9 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.GINGERBREAD_RUDOLPH,"Rudolph Gingerbread");
         translationBuilder.add(ModItems.GINGERBREAD_SCARF,"Scarfed Gingerbread");
 
+        translationBuilder.add(ModItems.GLASS_HAMMER, "Glass Hammer");
+        translationBuilder.add(ModBlocks.BROKEN_GOLDEN_GLASS_PANEL, "Broken Glass Panel");
+
         translationBuilder.add("sounds.tmmore.squid_plush","Squid plays a tune");
         translationBuilder.add("sounds.tmmore.willo_plush","Willo \"POWs!\"");
         translationBuilder.add("sounds.tmmore.pickle_plush","Pickle makes noise");

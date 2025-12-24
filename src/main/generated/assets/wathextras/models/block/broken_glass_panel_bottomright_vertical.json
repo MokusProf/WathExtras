@@ -1,0 +1,6 @@
+{
+  "parent": "wathextras:block/template_broken_glass_panel_bottomright",
+  "textures": {
+    "panel": "wathextras:block/broken_glass_panel_vertical"
+  }
+}

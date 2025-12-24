@@ -425,6 +425,11 @@ public class ModBlocks {
     public static final Block CHRISTMAS_LIGHTS = registerBlock("christmas_lights",
             new ChristmasLights(AbstractBlock.Settings.copy(Blocks.VINE).sounds(BlockSoundGroup.COPPER_BULB).nonOpaque()));
 
+    public static final Block BROKEN_GOLDEN_GLASS_PANEL = registerBlock("broken_golden_glass_panel",
+            new BrokenGlassPanelBlock(AbstractBlock.Settings.create().strength(0.3f).sounds(BlockSoundGroup.GLASS).allowsSpawning(Blocks::never)));
+
+    public static final Block STEPPABLE_PANEL = registerBlock("steppable_panel",
+            new SteppablePanelBlock(AbstractBlock.Settings.create().strength(0.3f).sounds(BlockSoundGroup.GLASS).allowsSpawning(Blocks::never)));
 
 
     private static Block registerBlock(String name, Block block){
@@ -604,7 +609,8 @@ public class ModBlocks {
             TMMORE_BLOCKS.add(PENCIL_PLUSH);
             TMMORE_BLOCKS.add(INDIGO_PLUSH);
 
-
+            TMMORE_BLOCKS.add(BROKEN_GOLDEN_GLASS_PANEL);
+            TMMORE_BLOCKS.add(STEPPABLE_PANEL);
                 });
 
         Registry.register(Registries.ITEM_GROUP, MOQUETTES_KEY, MOQUETTES);

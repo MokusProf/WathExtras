@@ -2,6 +2,7 @@ package net.mokus.wathextras;
 
 import net.fabricmc.api.ModInitializer;
 import net.mokus.wathextras.block.ModBlocks;
+import net.mokus.wathextras.game.ModifyGameConstants;
 import net.mokus.wathextras.item.ModItems;
 import net.mokus.wathextras.util.ModSounds;
 import org.slf4j.Logger;
@@ -19,6 +20,6 @@ public class WathExtras implements ModInitializer {
 		ModBlocks.init();
 		ModSounds.init();
 
-
+        ModifyGameConstants.init();
 	}
 }
