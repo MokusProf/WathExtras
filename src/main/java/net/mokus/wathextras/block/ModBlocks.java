@@ -425,6 +425,10 @@ public class ModBlocks {
     public static final Block CHRISTMAS_LIGHTS = registerBlock("christmas_lights",
             new ChristmasLights(AbstractBlock.Settings.copy(Blocks.VINE).sounds(BlockSoundGroup.COPPER_BULB).nonOpaque()));
 
+    public static final Block WREATH = registerBlock("wreath",
+            new WreathBlock(AbstractBlock.Settings.copy(Blocks.VINE).sounds(BlockSoundGroup.AZALEA_LEAVES).nonOpaque()));
+    public static final Block SNOWY_WREATH = registerBlock("snowy_wreath",
+            new WreathBlock(AbstractBlock.Settings.copy(Blocks.VINE).sounds(BlockSoundGroup.AZALEA_LEAVES).nonOpaque()));
 
 
     private static Block registerBlock(String name, Block block){
@@ -579,6 +583,9 @@ public class ModBlocks {
 
             //ETC NON BLOCK CONFORMING BLOCKS
             TMMORE_BLOCKS.add(CHRISTMAS_LIGHTS);
+            TMMORE_BLOCKS.add(SNOWY_WREATH);
+            TMMORE_BLOCKS.add(WREATH);
+
             TMMORE_BLOCKS.add(KILL_BLOCK);
             TMMORE_BLOCKS.add(KILL_BLOCK_PANEL);
             TMMORE_BLOCKS.add(ModItems.CANDELABRE_ITEM);

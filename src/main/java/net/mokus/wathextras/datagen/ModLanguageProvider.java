@@ -181,6 +181,24 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.BLEACHED_SLAB, "Bleached Slab");
         translationBuilder.add(ModBlocks.BLEACHED_WALL, "Bleached Wall");
 
+        translationBuilder.add(ModBlocks.VERAWOOD_PLANKS, "Verawood Planks");
+        translationBuilder.add(ModBlocks.VERAWOOD_STAIRS, "Verawood Stairs");
+        translationBuilder.add(ModBlocks.VERAWOOD_SLAB, "Verawood Slab");
+        translationBuilder.add(ModBlocks.VERAWOOD_FENCE, "Verawood Fence");
+        translationBuilder.add(ModBlocks.VERAWOOD_PANEL, "Verawood Panel");
+        translationBuilder.add(ModBlocks.VERAWOOD_WALL, "Verawood Wall");
+        translationBuilder.add(ModBlocks.VERAWOOD_WALL_PANEL, "Verawood Panel Wall");
+
+        // Ornaments
+        translationBuilder.add(ModBlocks.DARK_STEEL_ORNAMENT,"Dark Steel Ornament");
+        translationBuilder.add(ModBlocks.STAINLESS_STEEL_ORNAMENT,"Stainless Steel Ornament");
+        translationBuilder.add(ModBlocks.BRONZE_ORNAMENT,"Bronze Ornament");
+        translationBuilder.add(ModBlocks.PLATINUM_ORNAMENT,"Platinum Ornament");
+        translationBuilder.add(ModBlocks.COPPER_ORNAMENT,"Copper Ornament");
+        translationBuilder.add(ModBlocks.EXPOSED_COPPER_ORNAMENT,"Exposed Copper Ornament");
+        translationBuilder.add(ModBlocks.WEATHERED_COPPER_ORNAMENT,"Weathered Copper Ornament");
+        translationBuilder.add(ModBlocks.OXIDIZED_COPPER_ORNAMENT,"Oxidized Copper Ornament");
+
         // Candy Cane
         translationBuilder.add(ModBlocks.CANDY_CANE_BLOCK,"Candy Cane Block");
         translationBuilder.add(ModBlocks.ZIGZAG_CANDY_BLOCK, "Zig Zag Candy Cane");
@@ -224,16 +242,25 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.STACK_LIGHTS, "Modern Stack Lights");
         translationBuilder.add(ModBlocks.ROOF_LAMP, "Roof Lamp");
 
+        translationBuilder.add(ModBlocks.KILL_BLOCK,"Kill Block");
+        translationBuilder.add(ModBlocks.KILL_BLOCK_PANEL,"Kill Panel");
+
         translationBuilder.add(ModBlocks.EBONY_WALL_PANEL, "Ebony Panel Wall");
         translationBuilder.add(ModBlocks.BLEACHED_WALL_PANEL, "Bleached Panel Wall");
         translationBuilder.add(ModBlocks.MAHOGANY_WALL_PANEL, "Mahogany Panel Wall");
         translationBuilder.add(ModBlocks.DARK_OAK_WALL_PANEL, "Dark Oak Panel Wall");
+        translationBuilder.add(ModBlocks.BUBINGA_WALL_PANEL,"Bubinga Panel Wall");
 
         translationBuilder.add(ModItems.GINGERBREAD,"Gingerbread");
         translationBuilder.add(ModItems.GINGERBREAD_CHOCO,"Chocolate Gingerbread");
         translationBuilder.add(ModItems.GINGERBREAD_DUCKAMOLY,"Duckamoly-bread");
+        translationBuilder.add(ModItems.GINGERBREAD_NORA,"Nora-bread");
         translationBuilder.add(ModItems.GINGERBREAD_RUDOLPH,"Rudolph Gingerbread");
         translationBuilder.add(ModItems.GINGERBREAD_SCARF,"Scarfed Gingerbread");
+
+        translationBuilder.add(ModBlocks.CHRISTMAS_LIGHTS,"Christmas Lights");
+        translationBuilder.add(ModBlocks.WREATH,"Wreath");
+        translationBuilder.add(ModBlocks.SNOWY_WREATH,"Snowy Wreath");
 
         translationBuilder.add("sounds.tmmore.squid_plush","Squid plays a tune");
         translationBuilder.add("sounds.tmmore.willo_plush","Willo \"POWs!\"");

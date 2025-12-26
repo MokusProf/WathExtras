@@ -31,6 +31,8 @@ public class WathExtrasClient implements ClientModInitializer {
                 ModBlocks.KILL_BLOCK_PANEL,
                 ModBlocks.KILL_BLOCK,
                 ModBlocks.SERVICE_BELL,
+                ModBlocks.WREATH,
+                ModBlocks.SNOWY_WREATH,
                 ModBlocks.DARK_STEEL_ORNAMENT,
                 ModBlocks.STAINLESS_STEEL_ORNAMENT,
                 ModBlocks.BRONZE_ORNAMENT,

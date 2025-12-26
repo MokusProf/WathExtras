@@ -460,6 +460,9 @@ public class ModModelProvider extends FabricModelProvider {
 
         generator.registerNorthDefaultHorizontalRotation(ModBlocks.SERVICE_BELL);
 
+        generator.registerNorthDefaultHorizontalRotation(ModBlocks.WREATH);
+        generator.registerNorthDefaultHorizontalRotation(ModBlocks.SNOWY_WREATH);
+
         generator.registerSimpleCubeAll(ModBlocks.PINK_CITRINE_BRICKS);
         generator.registerSimpleCubeAll(ModBlocks.POLISHED_PINK_CITRINE);
         generator.registerSimpleCubeAll(ModBlocks.SMOOTH_PINK_CITRINE);
@@ -542,6 +545,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemGen.register(ModItems.GINGERBREAD, Models.GENERATED);
         itemGen.register(ModItems.GINGERBREAD_CHOCO, Models.GENERATED);
         itemGen.register(ModItems.GINGERBREAD_DUCKAMOLY, Models.GENERATED);
+        itemGen.register(ModItems.GINGERBREAD_NORA, Models.GENERATED);
         itemGen.register(ModItems.GINGERBREAD_RUDOLPH, Models.GENERATED);
         itemGen.register(ModItems.GINGERBREAD_SCARF, Models.GENERATED);
         itemGen.register(ModItems.BLENDED_BERRY_BLAST, Models.GENERATED);

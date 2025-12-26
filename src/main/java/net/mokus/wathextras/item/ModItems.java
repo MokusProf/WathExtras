@@ -46,6 +46,8 @@ public class ModItems {
             new Item(new Item.Settings().food(FoodComponents.BREAD)));
     public static final Item GINGERBREAD_DUCKAMOLY = registerItem("gingerbread_duckamoly",
             new Item(new Item.Settings().food(FoodComponents.BREAD)));
+    public static final Item GINGERBREAD_NORA = registerItem("gingerbread_nora",
+            new Item(new Item.Settings().food(FoodComponents.BREAD)));
     public static final Item GINGERBREAD_RUDOLPH = registerItem("gingerbread_rudolph",
             new Item(new Item.Settings().food(FoodComponents.BREAD)));
     public static final Item GINGERBREAD_SCARF = registerItem("gingerbread_scarf",
@@ -126,6 +128,7 @@ public class ModItems {
             TMMORE_ITEMS.add(GINGERBREAD);
             TMMORE_ITEMS.add(GINGERBREAD_CHOCO);
             TMMORE_ITEMS.add(GINGERBREAD_DUCKAMOLY);
+            TMMORE_ITEMS.add(GINGERBREAD_NORA);
             TMMORE_ITEMS.add(GINGERBREAD_RUDOLPH);
             TMMORE_ITEMS.add(GINGERBREAD_SCARF);
 
