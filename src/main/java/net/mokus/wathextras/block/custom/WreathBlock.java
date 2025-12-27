@@ -24,10 +24,10 @@ public class WreathBlock extends HorizontalFacingBlock {
         super(settings);
     }
 
-    private static final VoxelShape EAST_SHAPE = Block.createCuboidShape(0.0, 0.0, 0.0, 2.0, 16.0, 16.0);
-    private static final VoxelShape WEST_SHAPE = Block.createCuboidShape(14.0, 0.0, 0.0, 16.0, 16.0, 16.0);
-    private static final VoxelShape SOUTH_SHAPE = Block.createCuboidShape(0.0, 0.0, 0.0, 16.0, 16.0, 2.0);
-    private static final VoxelShape NORTH_SHAPE = Block.createCuboidShape(0.0, 0.0, 14.0, 16.0, 16.0, 16.0);
+    private static final VoxelShape EAST_SHAPE = Block.createCuboidShape(0.0, 2.0, 1.0, 2.0, 16.0, 15.0);
+    private static final VoxelShape WEST_SHAPE = Block.createCuboidShape(14.0, 2.0, 1.0, 16.0, 16.0, 15.0);
+    private static final VoxelShape SOUTH_SHAPE = Block.createCuboidShape(0.0, 2.0, 0.0, 16.0, 16.0, 2.0);
+    private static final VoxelShape NORTH_SHAPE = Block.createCuboidShape(0.0, 2.0, 14.0, 16.0, 16.0, 16.0);
 
     protected VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         Direction dir = state.get(FACING);
