@@ -22,7 +22,9 @@ public class KillBlock extends BarrierBlock {
 
     @Override
     public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
-        GameFunctions.killPlayer((PlayerEntity) entity,false,null, GameConstants.DeathReasons.FELL_OUT_OF_TRAIN);
+        if (entity instanceof PlayerEntity player) {
+            GameFunctions.killPlayer(player, false, null, GameConstants.DeathReasons.FELL_OUT_OF_TRAIN);
+        }
         super.onSteppedOn(world, pos, state, entity);
     }
 

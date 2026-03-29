@@ -22,7 +22,9 @@ public class KillBlockPanel extends BarrierPanelBlock {
 
     @Override
     protected void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
-        GameFunctions.killPlayer((PlayerEntity) entity,false,null, GameConstants.DeathReasons.FELL_OUT_OF_TRAIN);
+        if (entity instanceof PlayerEntity player) {
+            GameFunctions.killPlayer(player, false, null, GameConstants.DeathReasons.FELL_OUT_OF_TRAIN);
+        }
         super.onEntityCollision(state, world, pos, entity);
     }
 
