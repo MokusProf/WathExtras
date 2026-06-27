@@ -430,6 +430,33 @@ public class ModBlocks {
     public static final Block SNOWY_WREATH = registerBlock("snowy_wreath",
             new WreathBlock(AbstractBlock.Settings.copy(Blocks.VINE).sounds(BlockSoundGroup.AZALEA_LEAVES).nonOpaque()));
 
+    public static final Block LOCKPICKABLE_TRAPDOOR = registerBlock("lockpickable_trapdoor",
+            new LockpickableTrapdoor(BlockSetType.OAK,AbstractBlock.Settings.copy(Blocks.OAK_TRAPDOOR)));
+    public static final Block LOCKPICKABLE_OAK_TRAPDOOR = registerBlock("lockpickable_oak_trapdoor",
+            new LockpickableTrapdoor(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_TRAPDOOR)));
+    public static final Block LOCKPICKABLE_SPRUCE_TRAPDOOR = registerBlock("lockpickable_spruce_trapdoor",
+            new LockpickableTrapdoor(BlockSetType.SPRUCE, AbstractBlock.Settings.copy(Blocks.SPRUCE_TRAPDOOR)));
+    public static final Block LOCKPICKABLE_BIRCH_TRAPDOOR = registerBlock("lockpickable_birch_trapdoor",
+            new LockpickableTrapdoor(BlockSetType.BIRCH, AbstractBlock.Settings.copy(Blocks.BIRCH_TRAPDOOR)));
+    public static final Block LOCKPICKABLE_JUNGLE_TRAPDOOR = registerBlock("lockpickable_jungle_trapdoor",
+            new LockpickableTrapdoor(BlockSetType.JUNGLE, AbstractBlock.Settings.copy(Blocks.JUNGLE_TRAPDOOR)));
+    public static final Block LOCKPICKABLE_ACACIA_TRAPDOOR = registerBlock("lockpickable_acacia_trapdoor",
+            new LockpickableTrapdoor(BlockSetType.ACACIA, AbstractBlock.Settings.copy(Blocks.ACACIA_TRAPDOOR)));
+    public static final Block LOCKPICKABLE_DARK_OAK_TRAPDOOR = registerBlock("lockpickable_dark_oak_trapdoor",
+            new LockpickableTrapdoor(BlockSetType.DARK_OAK, AbstractBlock.Settings.copy(Blocks.DARK_OAK_TRAPDOOR)));
+    public static final Block LOCKPICKABLE_MANGROVE_TRAPDOOR = registerBlock("lockpickable_mangrove_trapdoor",
+            new LockpickableTrapdoor(BlockSetType.MANGROVE, AbstractBlock.Settings.copy(Blocks.MANGROVE_TRAPDOOR)));
+    public static final Block LOCKPICKABLE_CHERRY_TRAPDOOR = registerBlock("lockpickable_cherry_trapdoor",
+            new LockpickableTrapdoor(BlockSetType.CHERRY, AbstractBlock.Settings.copy(Blocks.CHERRY_TRAPDOOR)));
+    public static final Block LOCKPICKABLE_BAMBOO_TRAPDOOR = registerBlock("lockpickable_bamboo_trapdoor",
+            new LockpickableTrapdoor(BlockSetType.BAMBOO, AbstractBlock.Settings.copy(Blocks.BAMBOO_TRAPDOOR)));
+    public static final Block LOCKPICKABLE_CRIMSON_TRAPDOOR = registerBlock("lockpickable_crimson_trapdoor",
+            new LockpickableTrapdoor(BlockSetType.CRIMSON, AbstractBlock.Settings.copy(Blocks.CRIMSON_TRAPDOOR)));
+    public static final Block LOCKPICKABLE_WARPED_TRAPDOOR = registerBlock("lockpickable_warped_trapdoor",
+            new LockpickableTrapdoor(BlockSetType.WARPED, AbstractBlock.Settings.copy(Blocks.WARPED_TRAPDOOR)));
+    public static final Block LOCKPICKABLE_IRON_TRAPDOOR = registerBlock("lockpickable_iron_trapdoor",
+            new LockpickableTrapdoor(BlockSetType.IRON, AbstractBlock.Settings.copy(Blocks.IRON_TRAPDOOR)));
+
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name,block);
@@ -588,6 +615,19 @@ public class ModBlocks {
 
             TMMORE_BLOCKS.add(KILL_BLOCK);
             TMMORE_BLOCKS.add(KILL_BLOCK_PANEL);
+            TMMORE_BLOCKS.add(LOCKPICKABLE_TRAPDOOR);
+            TMMORE_BLOCKS.add(LOCKPICKABLE_OAK_TRAPDOOR);
+            TMMORE_BLOCKS.add(LOCKPICKABLE_SPRUCE_TRAPDOOR);
+            TMMORE_BLOCKS.add(LOCKPICKABLE_BIRCH_TRAPDOOR);
+            TMMORE_BLOCKS.add(LOCKPICKABLE_JUNGLE_TRAPDOOR);
+            TMMORE_BLOCKS.add(LOCKPICKABLE_ACACIA_TRAPDOOR);
+            TMMORE_BLOCKS.add(LOCKPICKABLE_DARK_OAK_TRAPDOOR);
+            TMMORE_BLOCKS.add(LOCKPICKABLE_MANGROVE_TRAPDOOR);
+            TMMORE_BLOCKS.add(LOCKPICKABLE_CHERRY_TRAPDOOR);
+            TMMORE_BLOCKS.add(LOCKPICKABLE_BAMBOO_TRAPDOOR);
+            TMMORE_BLOCKS.add(LOCKPICKABLE_CRIMSON_TRAPDOOR);
+            TMMORE_BLOCKS.add(LOCKPICKABLE_WARPED_TRAPDOOR);
+            TMMORE_BLOCKS.add(LOCKPICKABLE_IRON_TRAPDOOR);
             TMMORE_BLOCKS.add(ModItems.CANDELABRE_ITEM);
             TMMORE_BLOCKS.add(STACK_LIGHTS);
             TMMORE_BLOCKS.add(ROOF_LAMP);

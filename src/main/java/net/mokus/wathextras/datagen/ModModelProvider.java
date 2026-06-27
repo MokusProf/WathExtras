@@ -6,6 +6,7 @@ import dev.doctor4t.wathe.block.OrnamentBlock;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.client.*;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.Properties;
@@ -501,6 +502,20 @@ public class ModModelProvider extends FabricModelProvider {
         this.registerOrnament(generator,ModBlocks.EXPOSED_COPPER_ORNAMENT);
         this.registerOrnament(generator,ModBlocks.OXIDIZED_COPPER_ORNAMENT);
         this.registerOrnament(generator,ModBlocks.WEATHERED_COPPER_ORNAMENT);
+
+        generator.registerTrapdoor(ModBlocks.LOCKPICKABLE_TRAPDOOR);
+        generator.registerParentedTrapdoor(Blocks.OAK_TRAPDOOR, ModBlocks.LOCKPICKABLE_OAK_TRAPDOOR);
+        generator.registerParentedTrapdoor(Blocks.SPRUCE_TRAPDOOR, ModBlocks.LOCKPICKABLE_SPRUCE_TRAPDOOR);
+        generator.registerParentedTrapdoor(Blocks.BIRCH_TRAPDOOR, ModBlocks.LOCKPICKABLE_BIRCH_TRAPDOOR);
+        generator.registerParentedTrapdoor(Blocks.JUNGLE_TRAPDOOR, ModBlocks.LOCKPICKABLE_JUNGLE_TRAPDOOR);
+        generator.registerParentedTrapdoor(Blocks.ACACIA_TRAPDOOR, ModBlocks.LOCKPICKABLE_ACACIA_TRAPDOOR);
+        generator.registerParentedTrapdoor(Blocks.DARK_OAK_TRAPDOOR, ModBlocks.LOCKPICKABLE_DARK_OAK_TRAPDOOR);
+        generator.registerParentedTrapdoor(Blocks.MANGROVE_TRAPDOOR, ModBlocks.LOCKPICKABLE_MANGROVE_TRAPDOOR);
+        generator.registerParentedTrapdoor(Blocks.CHERRY_TRAPDOOR, ModBlocks.LOCKPICKABLE_CHERRY_TRAPDOOR);
+        generator.registerParentedTrapdoor(Blocks.BAMBOO_TRAPDOOR, ModBlocks.LOCKPICKABLE_BAMBOO_TRAPDOOR);
+        generator.registerParentedTrapdoor(Blocks.CRIMSON_TRAPDOOR, ModBlocks.LOCKPICKABLE_CRIMSON_TRAPDOOR);
+        generator.registerParentedTrapdoor(Blocks.WARPED_TRAPDOOR, ModBlocks.LOCKPICKABLE_WARPED_TRAPDOOR);
+        generator.registerParentedTrapdoor(Blocks.IRON_TRAPDOOR, ModBlocks.LOCKPICKABLE_IRON_TRAPDOOR);
 
 
     }

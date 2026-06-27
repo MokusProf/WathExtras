@@ -228,15 +228,6 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.YELLOW_LOLLIPOP, "Yellow Lollipop");
         translationBuilder.add(ModItems.GREEN_LOLLIPOP, "Green Lollipop");
 
-        translationBuilder.add(ModItems.BLENDED_BERRY_BLAST,"Blended Berry Blast");
-        translationBuilder.add(ModItems.COTTON_SWIZZLE,"Cotton Swizzle");
-        translationBuilder.add(ModItems.NO_BERRY_LEMON_SOUR,"No Berry Lemon Sour");
-        translationBuilder.add(ModItems.SALTED_SEAFRUIT,"Salted Seafruit");
-        translationBuilder.add(ModItems.SAPPHIC_SUNSET,"Sapphic Sunset");
-        translationBuilder.add(ModItems.THE_ALL_IN,"The All In");
-        translationBuilder.add(ModItems.THE_CHROMATIC,"The Chromatic");
-        translationBuilder.add(ModItems.CAKESLICE,"Slice of Cake");
-
         translationBuilder.add(ModItems.HOT_CHOCOLATE,"Hot Chocolate");
 
         translationBuilder.add(ModBlocks.PINK_CITRINE_BRICKS,"Pink Citrine Bricks");
@@ -261,6 +252,20 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.KILL_BLOCK, "Kill Block");
         translationBuilder.add(ModBlocks.KILL_BLOCK_PANEL, "Kill Block Panel");
 
+        translationBuilder.add(ModBlocks.LOCKPICKABLE_TRAPDOOR,"Lockpickable Trapdoor");
+        translationBuilder.add(ModBlocks.LOCKPICKABLE_OAK_TRAPDOOR, "Lockpickable Oak Trapdoor");
+        translationBuilder.add(ModBlocks.LOCKPICKABLE_SPRUCE_TRAPDOOR, "Lockpickable Spruce Trapdoor");
+        translationBuilder.add(ModBlocks.LOCKPICKABLE_BIRCH_TRAPDOOR, "Lockpickable Birch Trapdoor");
+        translationBuilder.add(ModBlocks.LOCKPICKABLE_JUNGLE_TRAPDOOR, "Lockpickable Jungle Trapdoor");
+        translationBuilder.add(ModBlocks.LOCKPICKABLE_ACACIA_TRAPDOOR, "Lockpickable Acacia Trapdoor");
+        translationBuilder.add(ModBlocks.LOCKPICKABLE_DARK_OAK_TRAPDOOR, "Lockpickable Dark Oak Trapdoor");
+        translationBuilder.add(ModBlocks.LOCKPICKABLE_MANGROVE_TRAPDOOR, "Lockpickable Mangrove Trapdoor");
+        translationBuilder.add(ModBlocks.LOCKPICKABLE_CHERRY_TRAPDOOR, "Lockpickable Cherry Trapdoor");
+        translationBuilder.add(ModBlocks.LOCKPICKABLE_BAMBOO_TRAPDOOR, "Lockpickable Bamboo Trapdoor");
+        translationBuilder.add(ModBlocks.LOCKPICKABLE_CRIMSON_TRAPDOOR, "Lockpickable Crimson Trapdoor");
+        translationBuilder.add(ModBlocks.LOCKPICKABLE_WARPED_TRAPDOOR, "Lockpickable Warped Trapdoor");
+        translationBuilder.add(ModBlocks.LOCKPICKABLE_IRON_TRAPDOOR, "Lockpickable Iron Trapdoor");
+
         translationBuilder.add(ModItems.GINGERBREAD,"Gingerbread");
         translationBuilder.add(ModItems.GINGERBREAD_CHOCO,"Chocolate Gingerbread");
         translationBuilder.add(ModItems.GINGERBREAD_DUCKAMOLY,"Duckamoly-bread");
@@ -272,7 +277,6 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.WREATH,"Wreath");
         translationBuilder.add(ModBlocks.SNOWY_WREATH,"Snowy Wreath");
 
-        translationBuilder.add(ModItems.CAKESLICE,"Slice of Cake");
 
         translationBuilder.add(ModItems.WATER_GLASS,"Glass of Water");
         translationBuilder.add(ModItems.MIXED_MOCKTAIL,"Mixed Mocktail");
@@ -280,7 +284,6 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.WHISKEY_SOUR,"Whiskey Sour");
         translationBuilder.add(ModItems.MOONSHINE,"Moonshine");
         translationBuilder.add(ModItems.BEER_PINT,"Pint of Beer");
-        translationBuilder.add(ModItems.HOT_CHOCOLATE,"Hot Chocolate");
 
         translationBuilder.add(ModItems.BLENDED_BERRY_BLAST,"\"Blended Berry Blast\"");
         translationBuilder.add(ModItems.COTTON_SWIZZLE,"\"Cotton Swizzle\"");
