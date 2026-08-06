@@ -17,7 +17,6 @@ public class ModSounds {
     public static final SoundEvent DUCKAMOLY_PLUSH = registerSound("duckamoly_plush");
     public static final SoundEvent INDIGO_PLUSH = registerSound("indigo_plush");
     public static final SoundEvent SQUID_PLUSH = registerSound("squid_plush");
-    public static final SoundEvent NORA_PLUSH = registerSound("nora_plush");
     public static final SoundEvent PENCIL_PLUSH = registerSound("pencil_plush");
     public static final SoundEvent SERVICE_BELL = registerSound("service_bell");
 

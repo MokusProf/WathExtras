@@ -255,8 +255,6 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.copy(Blocks.QUARTZ_BRICKS).strength(-1.0f,3600000.0f)));
 
     // Plushies
-    public static final Block NORA_PLUSH = registerBlock("nora_plush",
-            new PlushBlock(ModSounds.NORA_PLUSH,AbstractBlock.Settings.copy(Blocks.RED_WOOL).nonOpaque()));
     public static final Block DAVIDANDROCKET_PLUSH = registerBlock("davidandrocket_plush",
             new PlushBlock(ModSounds.DAVIDANDROCKET_PLUSH,AbstractBlock.Settings.copy(Blocks.ORANGE_WOOL).nonOpaque()));
     public static final Block DUCKAMOLY_PLUSH = registerBlock("duckamoly_plush",
@@ -279,8 +277,6 @@ public class ModBlocks {
             new PlushBlock(ModSounds.INDIGO_PLUSH,AbstractBlock.Settings.copy(Blocks.WHITE_WOOL).nonOpaque()));
 
     // Candy Cane
-    public static final Block CANDY_CANE_BLOCK = registerBlock("candy_cane_block",
-            new PillarBlock(AbstractBlock.Settings.copy(Blocks.BONE_BLOCK)));
     public static final Block ZIGZAG_CANDY_BLOCK = registerBlock("zigzagcandy",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.BONE_BLOCK)));
 
@@ -421,9 +417,7 @@ public class ModBlocks {
             new OrnamentBlock(AbstractBlock.Settings.copy(WatheBlocks.GOLD_ORNAMENT)));
     public static final Block WEATHERED_COPPER_ORNAMENT = registerBlock("weathered_copper_ornament",
             new OrnamentBlock(AbstractBlock.Settings.copy(WatheBlocks.GOLD_ORNAMENT)));
-
-    public static final Block CHRISTMAS_LIGHTS = registerBlock("christmas_lights",
-            new ChristmasLights(AbstractBlock.Settings.copy(Blocks.VINE).sounds(BlockSoundGroup.COPPER_BULB).nonOpaque()));
+    
 
     public static final Block WREATH = registerBlock("wreath",
             new WreathBlock(AbstractBlock.Settings.copy(Blocks.VINE).sounds(BlockSoundGroup.AZALEA_LEAVES).nonOpaque()));
@@ -590,7 +584,6 @@ public class ModBlocks {
             TMMORE_BLOCKS.add(DARK_OAK_WALL_PANEL);
             TMMORE_BLOCKS.add(MAHOGANY_WALL_PANEL);
 
-            TMMORE_BLOCKS.add(CANDY_CANE_BLOCK);
 
             TMMORE_BLOCKS.add(DARK_MARBLE_TILE);
             TMMORE_BLOCKS.add(CHECKERED_MARBLE_TILES);
@@ -609,7 +602,6 @@ public class ModBlocks {
             TMMORE_BLOCKS.add(ARCADE_FLOOR);
 
             //ETC NON BLOCK CONFORMING BLOCKS
-            TMMORE_BLOCKS.add(CHRISTMAS_LIGHTS);
             TMMORE_BLOCKS.add(SNOWY_WREATH);
             TMMORE_BLOCKS.add(WREATH);
 
@@ -639,7 +631,6 @@ public class ModBlocks {
             TMMORE_BLOCKS.add(SERVICE_BELL);
 
             //Plushies
-            TMMORE_BLOCKS.add(NORA_PLUSH);
             TMMORE_BLOCKS.add(DAVIDANDROCKET_PLUSH);
             TMMORE_BLOCKS.add(PICKLE_PLUSH);
             TMMORE_BLOCKS.add(DUCKAMOLY_PLUSH);

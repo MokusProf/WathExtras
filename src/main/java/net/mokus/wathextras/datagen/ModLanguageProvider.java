@@ -86,7 +86,6 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.BROWN_STRIPED_CARPET,"Brown Striped Carpet");
 
         // Plushies
-        translationBuilder.add(ModBlocks.NORA_PLUSH,"Nora Plushie");
         translationBuilder.add(ModBlocks.DUCKAMOLY_PLUSH,"Duckamoly Plushie");
         translationBuilder.add(ModBlocks.DAVIDANDROCKET_PLUSH,"DavidandRocket Plushie");
         translationBuilder.add(ModBlocks.PICKLE_PLUSH,"Pickle Plushie");
@@ -200,7 +199,6 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.OXIDIZED_COPPER_ORNAMENT,"Oxidized Copper Ornament");
 
         // Candy Cane
-        translationBuilder.add(ModBlocks.CANDY_CANE_BLOCK,"Candy Cane Block");
         translationBuilder.add(ModBlocks.ZIGZAG_CANDY_BLOCK, "Zig Zag Candy Cane");
 
         // Benches
@@ -269,11 +267,9 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.GINGERBREAD,"Gingerbread");
         translationBuilder.add(ModItems.GINGERBREAD_CHOCO,"Chocolate Gingerbread");
         translationBuilder.add(ModItems.GINGERBREAD_DUCKAMOLY,"Duckamoly-bread");
-        translationBuilder.add(ModItems.GINGERBREAD_NORA,"Nora-bread");
         translationBuilder.add(ModItems.GINGERBREAD_RUDOLPH,"Rudolph Gingerbread");
         translationBuilder.add(ModItems.GINGERBREAD_SCARF,"Scarfed Gingerbread");
 
-        translationBuilder.add(ModBlocks.CHRISTMAS_LIGHTS,"Christmas Lights");
         translationBuilder.add(ModBlocks.WREATH,"Wreath");
         translationBuilder.add(ModBlocks.SNOWY_WREATH,"Snowy Wreath");
 

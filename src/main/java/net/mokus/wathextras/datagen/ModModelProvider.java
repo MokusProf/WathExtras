@@ -422,7 +422,6 @@ public class ModModelProvider extends FabricModelProvider {
         generator.registerSimpleCubeAll(ModBlocks.DEEPWOKEN_TILE);
 
         // Plushies!
-        generator.registerNorthDefaultHorizontalRotation(ModBlocks.NORA_PLUSH);
         generator.registerNorthDefaultHorizontalRotation(ModBlocks.PICKLE_PLUSH);
         generator.registerNorthDefaultHorizontalRotation(ModBlocks.DAVIDANDROCKET_PLUSH);
         generator.registerNorthDefaultHorizontalRotation(ModBlocks.VERID__PLUSH);
@@ -447,7 +446,6 @@ public class ModModelProvider extends FabricModelProvider {
         generator.registerSimpleCubeAll(ModBlocks.POLISHED_FORTERRA);
 
         // Candy Cane
-        generator.registerAxisRotated(ModBlocks.CANDY_CANE_BLOCK,TexturedModel.END_FOR_TOP_CUBE_COLUMN, TexturedModel.END_FOR_TOP_CUBE_COLUMN_HORIZONTAL);
         generator.registerSimpleCubeAll(ModBlocks.ZIGZAG_CANDY_BLOCK);
 
         generator.registerSimpleCubeAll(ModBlocks.ARCADE_FLOOR);
@@ -533,7 +531,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemGen.register(ModItems.GINGERBREAD, Models.GENERATED);
         itemGen.register(ModItems.GINGERBREAD_CHOCO, Models.GENERATED);
         itemGen.register(ModItems.GINGERBREAD_DUCKAMOLY, Models.GENERATED);
-        itemGen.register(ModItems.GINGERBREAD_NORA, Models.GENERATED);
         itemGen.register(ModItems.GINGERBREAD_RUDOLPH, Models.GENERATED);
         itemGen.register(ModItems.GINGERBREAD_SCARF, Models.GENERATED);
         itemGen.register(ModItems.BLENDED_BERRY_BLAST, Models.GENERATED);
