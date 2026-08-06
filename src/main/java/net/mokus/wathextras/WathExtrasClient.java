@@ -10,7 +10,6 @@ public class WathExtrasClient implements ClientModInitializer {
     public void onInitializeClient() {
 
         BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(),
-                ModBlocks.NORA_PLUSH,
                 ModBlocks.DAVIDANDROCKET_PLUSH,
                 ModBlocks.DUCKAMOLY_PLUSH,
                 ModBlocks.PICKLE_PLUSH,
@@ -49,10 +48,10 @@ public class WathExtrasClient implements ClientModInitializer {
                 ModBlocks.LOCKPICKABLE_CRIMSON_TRAPDOOR,
                 ModBlocks.LOCKPICKABLE_WARPED_TRAPDOOR,
                 ModBlocks.LOCKPICKABLE_IRON_TRAPDOOR,
-                ModBlocks.LOCKPICKABLE_OAK_TRAPDOOR);
+                ModBlocks.LOCKPICKABLE_OAK_TRAPDOOR,
+                ModBlocks.LOCKPICKABLE_TRAPDOOR);
         BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getTranslucent(),
-                ModBlocks.ROOF_LAMP,
-                ModBlocks.CHRISTMAS_LIGHTS);
+                ModBlocks.ROOF_LAMP);
 
     }
 }
